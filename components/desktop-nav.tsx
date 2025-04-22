@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useRef, useEffect } from "react"
 import Link from "next/link"
 import { ChevronDown } from "lucide-react"
 import { cn } from "@/lib/utils"
@@ -48,7 +48,34 @@ const navItems: NavItem[] = [
 ]
 
 export function DesktopNav() {
-  const [hoveredItem, setHoveredItem] = useState<string | null>(null)
+  const [activeItem, setActiveItem] = useState<string | null>(null)
+  const timeoutRef = useRef<NodeJS.Timeout | null>(null)
+
+  const handleMouseEnter = (title: string) => {
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current)
+      timeoutRef.current = null
+    }
+    setActiveItem(title)
+  }
+
+  const handleMouseLeave = () => {
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current)
+    }
+    timeoutRef.current = setTimeout(() => {
+      setActiveItem(null)
+    }, 150) // Small delay to prevent menu from closing immediately
+  }
+
+  // Clean up timeout on unmount
+  useEffect(() => {
+    return () => {
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current)
+      }
+    }
+  }, [])
 
   return (
     <nav className="hidden md:flex space-x-6">
@@ -56,14 +83,14 @@ export function DesktopNav() {
         <div
           key={item.title}
           className="relative"
-          onMouseEnter={() => setHoveredItem(item.title)}
-          onMouseLeave={() => setHoveredItem(null)}
+          onMouseEnter={() => handleMouseEnter(item.title)}
+          onMouseLeave={handleMouseLeave}
         >
           <Link
             href={item.href}
             className={cn(
               "text-white hover:text-yellow-300 flex items-center",
-              hoveredItem === item.title && item.children ? "text-yellow-300" : "",
+              activeItem === item.title && item.children ? "text-yellow-300" : "",
             )}
           >
             {item.title}
@@ -74,7 +101,7 @@ export function DesktopNav() {
             <div
               className={cn(
                 "absolute left-0 top-full mt-2 w-48 bg-white rounded-md shadow-lg overflow-hidden z-20 transition-all duration-200 ease-in-out",
-                hoveredItem === item.title
+                activeItem === item.title
                   ? "opacity-100 translate-y-0 pointer-events-auto"
                   : "opacity-0 translate-y-2 pointer-events-none",
               )}
@@ -85,6 +112,7 @@ export function DesktopNav() {
                     key={child.title}
                     href={child.href}
                     className="block px-4 py-2 text-sm text-gray-800 hover:bg-[#0a3b25] hover:text-white"
+                    onClick={() => setActiveItem(null)} // Close dropdown when link is clicked
                   >
                     {child.title}
                   </Link>

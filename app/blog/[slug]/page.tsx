@@ -584,14 +584,6 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                   <Button className="bg-[#0a3b25] hover:bg-[#0a3b25]/90 text-white font-medium rounded-sm px-8 py-3">
                     GET STARTED
                   </Button>
-                  <div className="absolute -right-16 -top-16">
-                    <div className="relative w-32 h-32">
-                      <div className="absolute inset-0 rounded-full border-2 border-[#0a3b25] animate-spin-slow"></div>
-                      <div className="absolute inset-0 flex items-center justify-center">
-                        <span className="text-xs text-[#0a3b25] font-bold">GET STARTED</span>
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>

@@ -112,7 +112,7 @@ export default function ProjectDetailPage() {
 
             <div className="mb-12">
               <Image
-                src="/placeholder.svg?height=500&width=1200"
+                src="https://images.pexels.com/photos/1108701/pexels-photo-1108701.jpeg"
                 alt="Public park aerial view"
                 width={1200}
                 height={500}
@@ -261,7 +261,7 @@ export default function ProjectDetailPage() {
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
                 <div className="relative">
                   <Image
-                    src="/placeholder.svg?height=200&width=300"
+                    src="https://images.pexels.com/photos/1769734/pexels-photo-1769734.jpeg"
                     alt="Park project image 1"
                     width={300}
                     height={200}
@@ -270,7 +270,7 @@ export default function ProjectDetailPage() {
                 </div>
                 <div className="relative">
                   <Image
-                    src="/placeholder.svg?height=200&width=300"
+                    src="https://images.pexels.com/photos/589/garden-grass-meadow-green.jpg"
                     alt="Park project image 2"
                     width={300}
                     height={200}
@@ -279,7 +279,7 @@ export default function ProjectDetailPage() {
                 </div>
                 <div className="relative">
                   <Image
-                    src="/placeholder.svg?height=200&width=300"
+                    src="https://images.pexels.com/photos/1108701/pexels-photo-1108701.jpeg"
                     alt="Park project image 3"
                     width={300}
                     height={200}
@@ -288,7 +288,7 @@ export default function ProjectDetailPage() {
                 </div>
                 <div className="relative">
                   <Image
-                    src="/placeholder.svg?height=200&width=300"
+                    src="https://images.pexels.com/photos/1769734/pexels-photo-1769734.jpeg"
                     alt="Park project image 4"
                     width={300}
                     height={200}
@@ -318,7 +318,7 @@ export default function ProjectDetailPage() {
         <section className="py-16 bg-yellow-400 relative overflow-hidden">
           <div className="absolute inset-0 opacity-20">
             <Image
-              src="/placeholder.svg?height=600&width=1920"
+              src="https://images.pexels.com/photos/3862130/pexels-photo-3862130.jpeg"
               alt="Background texture"
               width={1920}
               height={600}
@@ -335,21 +335,9 @@ export default function ProjectDetailPage() {
               <p className="mb-8 text-[#0a3b25]">
                 Contact us today to experience professional solutions tailored to your community's needs!
               </p>
-              <div className="flex justify-center">
-                <div className="relative">
-                  <Button className="bg-[#0a3b25] hover:bg-[#0a3b25]/90 text-white font-medium rounded-sm px-8 py-3">
-                    GET STARTED
-                  </Button>
-                  <div className="absolute -right-16 -top-16">
-                    <div className="relative w-32 h-32">
-                      <div className="absolute inset-0 rounded-full border-2 border-[#0a3b25] animate-spin-slow"></div>
-                      <div className="absolute inset-0 flex items-center justify-center">
-                        <span className="text-xs text-[#0a3b25] font-bold">GET STARTED</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <Button className="bg-[#0a3b25] hover:bg-[#0a3b25]/90 text-white font-medium rounded-sm px-8 py-3">
+                GET STARTED
+              </Button>
             </div>
           </div>
         </section>

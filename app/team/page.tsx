@@ -82,7 +82,7 @@ export default function TeamPage() {
               <div className="bg-[#0a3b25] text-white overflow-hidden">
                 <div className="relative h-80">
                   <Image
-                    src="/placeholder.svg?height=400&width=300"
+                    src="https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg"
                     alt="Mike Jones"
                     width={300}
                     height={400}
@@ -99,7 +99,7 @@ export default function TeamPage() {
               <div className="bg-[#0a3b25] text-white overflow-hidden">
                 <div className="relative h-80">
                   <Image
-                    src="/placeholder.svg?height=400&width=300"
+                    src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg"
                     alt="Emily Carter"
                     width={300}
                     height={400}
@@ -116,7 +116,7 @@ export default function TeamPage() {
               <div className="bg-[#0a3b25] text-white overflow-hidden">
                 <div className="relative h-80">
                   <Image
-                    src="/placeholder.svg?height=400&width=300"
+                    src="https://images.pexels.com/photos/3184405/pexels-photo-3184405.jpeg"
                     alt="Sarah Johnson"
                     width={300}
                     height={400}
@@ -133,7 +133,7 @@ export default function TeamPage() {
               <div className="bg-[#0a3b25] text-white overflow-hidden">
                 <div className="relative h-80">
                   <Image
-                    src="/placeholder.svg?height=400&width=300"
+                    src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg"
                     alt="Michael O'Connor"
                     width={300}
                     height={400}
@@ -150,7 +150,7 @@ export default function TeamPage() {
               <div className="bg-[#0a3b25] text-white overflow-hidden">
                 <div className="relative h-80">
                   <Image
-                    src="/placeholder.svg?height=400&width=300"
+                    src="https://images.pexels.com/photos/3184317/pexels-photo-3184317.jpeg"
                     alt="Sophia Reed"
                     width={300}
                     height={400}
@@ -167,7 +167,7 @@ export default function TeamPage() {
               <div className="bg-[#0a3b25] text-white overflow-hidden">
                 <div className="relative h-80">
                   <Image
-                    src="/placeholder.svg?height=400&width=300"
+                    src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg"
                     alt="Daniel Morgan"
                     width={300}
                     height={400}
@@ -203,8 +203,8 @@ export default function TeamPage() {
               <div className="grid grid-cols-2 gap-4">
                 <div className="relative h-full">
                   <Image
-                    src="/placeholder.svg?height=300&width=250"
-                    alt="Park maintenance"
+                    src="https://images.pexels.com/photos/3862130/pexels-photo-3862130.jpeg"
+                    alt="Manufacturing facility"
                     width={250}
                     height={300}
                     className="w-full h-full object-cover rounded-lg"
@@ -212,8 +212,8 @@ export default function TeamPage() {
                 </div>
                 <div className="relative h-full">
                   <Image
-                    src="/placeholder.svg?height=300&width=250"
-                    alt="Street lighting"
+                    src="https://images.pexels.com/photos/2760243/pexels-photo-2760243.jpeg"
+                    alt="Precision machining"
                     width={250}
                     height={300}
                     className="w-full h-full object-cover rounded-lg"
@@ -292,7 +292,7 @@ export default function TeamPage() {
         <section className="py-16 bg-yellow-400 relative overflow-hidden">
           <div className="absolute inset-0 opacity-20">
             <Image
-              src="/placeholder.svg?height=600&width=1920"
+              src="https://images.pexels.com/photos/3862130/pexels-photo-3862130.jpeg"
               alt="Background texture"
               width={1920}
               height={600}
@@ -309,21 +309,9 @@ export default function TeamPage() {
               <p className="mb-8 text-[#0a3b25]">
                 Contact us today to experience professional solutions tailored to your community's needs!
               </p>
-              <div className="flex justify-center">
-                <div className="relative">
-                  <Button className="bg-[#0a3b25] hover:bg-[#0a3b25]/90 text-white font-medium rounded-sm px-8 py-3">
-                    GET STARTED
-                  </Button>
-                  <div className="absolute -right-16 -top-16">
-                    <div className="relative w-32 h-32">
-                      <div className="absolute inset-0 rounded-full border-2 border-[#0a3b25] animate-spin-slow"></div>
-                      <div className="absolute inset-0 flex items-center justify-center">
-                        <span className="text-xs text-[#0a3b25] font-bold">GET STARTED</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <Button className="bg-[#0a3b25] hover:bg-[#0a3b25]/90 text-white font-medium rounded-sm px-8 py-3">
+                GET STARTED
+              </Button>
             </div>
           </div>
         </section>

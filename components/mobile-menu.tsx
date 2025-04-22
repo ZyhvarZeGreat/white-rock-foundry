@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import Link from "next/link"
 import { ChevronDown, Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -59,6 +59,30 @@ export function MobileMenu() {
     }))
   }
 
+  // Close menu when route changes
+  useEffect(() => {
+    const handleRouteChange = () => {
+      setIsOpen(false)
+    }
+
+    window.addEventListener("popstate", handleRouteChange)
+    return () => {
+      window.removeEventListener("popstate", handleRouteChange)
+    }
+  }, [])
+
+  // Prevent scrolling when menu is open
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden"
+    } else {
+      document.body.style.overflow = ""
+    }
+    return () => {
+      document.body.style.overflow = ""
+    }
+  }, [isOpen])
+
   return (
     <div className="md:hidden">
       <Button
@@ -83,7 +107,7 @@ export function MobileMenu() {
       {/* Mobile menu panel */}
       <div
         className={cn(
-          "fixed top-0 right-0 z-50 h-full w-[80%] max-w-sm bg-[#0a3b25] p-6 shadow-xl transition-transform duration-300 ease-in-out",
+          "fixed top-0 right-0 z-50 h-full w-[80%] max-w-sm bg-[#0a3b25] p-6 shadow-xl transition-transform duration-300 ease-in-out overflow-y-auto",
           isOpen ? "translate-x-0" : "translate-x-full",
         )}
       >
@@ -148,9 +172,11 @@ export function MobileMenu() {
         </nav>
 
         <div className="mt-8 pt-6 border-t border-[#0a3b25]/20">
-          <Button className="w-full bg-yellow-400 hover:bg-yellow-500 text-black font-medium rounded-sm">
-            GET A QUOTE
-          </Button>
+          <Link href="/quote" onClick={() => setIsOpen(false)}>
+            <Button className="w-full bg-yellow-400 hover:bg-yellow-500 text-black font-medium rounded-sm">
+              GET A QUOTE
+            </Button>
+          </Link>
         </div>
       </div>
     </div>

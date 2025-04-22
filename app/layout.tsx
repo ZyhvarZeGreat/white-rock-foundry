@@ -1,12 +1,14 @@
 import type React from "react"
 import "@/app/globals.css"
-import { DM_Sans, Plus_Jakarta_Sans } from "next/font/google"
+import { Inter, Plus_Jakarta_Sans } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
+import { SiteHeader } from "@/components/site-header"
+import { SiteFooter } from "@/components/site-footer"
 
-const dmSans = DM_Sans({
+const inter = Inter({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
-  variable: "--font-dm-sans",
+  variable: "--font-inter",
 })
 
 const plusJakartaSans = Plus_Jakarta_Sans({
@@ -26,11 +28,21 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
+  // Check if the current path is in the admin section
+  const isAdminPage = typeof window !== "undefined" ? window.location.pathname.startsWith("/admin") : false
+
   return (
     <html lang="en">
-      <body className={`${dmSans.variable} ${plusJakartaSans.variable} font-sans`}>
+      <body className={`${inter.variable} ${plusJakartaSans.variable} font-sans`}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
-          {children}
+          {!isAdminPage && (
+            <div className="flex flex-col min-h-screen">
+              <SiteHeader />
+              <main className="flex-grow">{children}</main>
+              <SiteFooter />
+            </div>
+          )}
+          {isAdminPage && children}
         </ThemeProvider>
       </body>
     </html>
