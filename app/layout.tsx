@@ -3,6 +3,7 @@ import "@/app/globals.css"
 import { Inter, Plus_Jakarta_Sans } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
 import ClientLayout from "@/components/client-layout"
+import NextTopLoader from "nextjs-toploader"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -30,6 +31,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable} ${plusJakartaSans.variable} font-sans`}>
+        <NextTopLoader 
+          color="#fff"
+          initialPosition={0.08}
+          crawlSpeed={200}
+          height={3}
+          crawl={true}
+          showSpinner={false}
+          easing="ease"
+          speed={200}
+        />
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
           <ClientLayout>{children}</ClientLayout>
         </ThemeProvider>

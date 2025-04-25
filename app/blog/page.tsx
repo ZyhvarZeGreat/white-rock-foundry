@@ -7,58 +7,7 @@ export default function BlogPage() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Header/Navigation */}
-      <header className="bg-[#0a3b25] text-white">
-        <div className="container mx-auto flex items-center justify-between py-4 px-4">
-          <div className="flex items-center">
-            <Link href="/" className="text-xl font-bold">
-              White Rock Foundry
-            </Link>
-          </div>
-          <nav className="hidden md:flex space-x-6">
-            <Link href="/" className="text-white hover:text-yellow-300">
-              HOME
-            </Link>
-            <Link href="/about" className="text-white hover:text-yellow-300">
-              ABOUT
-            </Link>
-            <Link href="/services" className="text-white hover:text-yellow-300">
-              SERVICES
-            </Link>
-            <Link href="/projects" className="text-white hover:text-yellow-300">
-              PORTFOLIO
-            </Link>
-            <Link href="#" className="text-white hover:text-yellow-300">
-              ALL PAGES
-            </Link>
-          </nav>
-          <div className="flex items-center space-x-4">
-            <div className="relative">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="h-6 w-6"
-              >
-                <circle cx="8" cy="21" r="1" />
-                <circle cx="19" cy="21" r="1" />
-                <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" />
-              </svg>
-              <span className="absolute -top-2 -right-2 bg-black text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
-                0
-              </span>
-            </div>
-            <Button className="bg-yellow-400 hover:bg-yellow-500 text-black font-medium rounded-sm px-4 py-2">
-              CONTACT
-            </Button>
-          </div>
-        </div>
-      </header>
+   
 
       <main className="flex-grow bg-gray-50">
         {/* Blog Hero Section */}
@@ -409,61 +358,7 @@ export default function BlogPage() {
         </section>
       </main>
 
-      {/* Footer */}
-      <footer className="bg-white text-[#0a3b25] py-12 border-t">
-        <div className="container mx-auto px-4">
-          <div className="mb-8 text-center">
-            <h2 className="text-xl font-bold mb-4">White Rock Foundry</h2>
-            <p className="max-w-md mx-auto text-gray-600">
-              Precision engineering solutions for modern manufacturing challenges
-            </p>
-            <div className="mt-6 max-w-md mx-auto flex">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="flex-grow px-4 py-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#0a3b25] rounded-l-sm"
-              />
-              <Button className="bg-black hover:bg-black/90 text-white font-medium rounded-r-sm rounded-l-none">
-                SUBSCRIBE
-              </Button>
-            </div>
-          </div>
-          <div className="flex flex-col items-center justify-center space-y-4">
-            <div className="flex flex-wrap justify-center gap-6">
-              <Link href="/about" className="text-gray-600 hover:text-[#0a3b25]">
-                ABOUT US
-              </Link>
-              <Link href="/pricing" className="text-gray-600 hover:text-[#0a3b25]">
-                PRICING
-              </Link>
-              <Link href="/services" className="text-gray-600 hover:text-[#0a3b25]">
-                SERVICES
-              </Link>
-              <Link href="/portfolio" className="text-gray-600 hover:text-[#0a3b25]">
-                PORTFOLIO
-              </Link>
-              <Link href="/career" className="text-gray-600 hover:text-[#0a3b25]">
-                CAREER
-              </Link>
-              <Link href="/faq" className="text-gray-600 hover:text-[#0a3b25]">
-                FAQ
-              </Link>
-              <Link href="/shop" className="text-gray-600 hover:text-[#0a3b25]">
-                SHOP
-              </Link>
-              <Link href="/contact" className="text-gray-600 hover:text-[#0a3b25]">
-                CONTACT US
-              </Link>
-            </div>
-            <p className="text-gray-500 text-sm">
-              © 2023 White Rock Foundry. All Rights Reserved.{" "}
-              <Link href="#" className="underline">
-                Licensing
-              </Link>
-            </p>
-          </div>
-        </div>
-      </footer>
+  
     </div>
   )
 }

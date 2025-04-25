@@ -3,15 +3,13 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { SiteHeader } from "@/components/site-header"
-import { SiteFooter } from "@/components/site-footer"
 import { ScrollAnimation } from "@/components/scroll-animation"
 
 export default function ContactPage() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Header/Navigation */}
-      <SiteHeader />
+ 
 
       <main className="flex-grow">
         {/* Contact Form Section */}
@@ -197,32 +195,10 @@ export default function ContactPage() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-16 bg-white">
-          <div className="container mx-auto px-4 text-center">
-            <ScrollAnimation type="fade-up">
-              <h2 className="text-xl font-bold mb-4">White Rock Foundry</h2>
-              <h3 className="text-2xl md:text-3xl font-bold mb-4 font-heading">
-                Precision engineering solutions
-                <br />
-                for modern manufacturing challenges
-              </h3>
-              <div className="mt-6 max-w-md mx-auto flex">
-                <input
-                  type="email"
-                  placeholder="Enter your email"
-                  className="flex-grow px-4 py-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#0a3b25] rounded-l-sm"
-                />
-                <Button className="bg-black hover:bg-black/90 text-white font-medium rounded-r-sm rounded-l-none">
-                  SUBSCRIBE
-                </Button>
-              </div>
-            </ScrollAnimation>
-          </div>
-        </section>
+    
       </main>
 
-      {/* Footer */}
-      <SiteFooter />
+
     </div>
   )
 }

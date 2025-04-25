@@ -318,60 +318,7 @@ export default function TeamPage() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-white text-[#0a3b25] py-12 border-t">
-        <div className="container mx-auto px-4">
-          <div className="mb-8 text-center">
-            <h2 className="text-xl font-bold mb-4">Street Care</h2>
-            <p className="max-w-md mx-auto text-gray-600">
-              Let's make the city cleaner together – get in touch with us!
-            </p>
-            <div className="mt-6 max-w-md mx-auto flex">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="flex-grow px-4 py-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#0a3b25] rounded-l-sm"
-              />
-              <Button className="bg-black hover:bg-black/90 text-white font-medium rounded-r-sm rounded-l-none">
-                SUBSCRIBE
-              </Button>
-            </div>
-          </div>
-          <div className="flex flex-col items-center justify-center space-y-4">
-            <div className="flex flex-wrap justify-center gap-6">
-              <Link href="/about" className="text-gray-600 hover:text-[#0a3b25]">
-                ABOUT US
-              </Link>
-              <Link href="/pricing" className="text-gray-600 hover:text-[#0a3b25]">
-                PRICING
-              </Link>
-              <Link href="/services" className="text-gray-600 hover:text-[#0a3b25]">
-                SERVICES
-              </Link>
-              <Link href="/portfolio" className="text-gray-600 hover:text-[#0a3b25]">
-                PORTFOLIO
-              </Link>
-              <Link href="/career" className="text-gray-600 hover:text-[#0a3b25]">
-                CAREER
-              </Link>
-              <Link href="/faq" className="text-gray-600 hover:text-[#0a3b25]">
-                FAQ
-              </Link>
-              <Link href="/shop" className="text-gray-600 hover:text-[#0a3b25]">
-                SHOP
-              </Link>
-              <Link href="/contact" className="text-gray-600 hover:text-[#0a3b25]">
-                CONTACT US
-              </Link>
-            </div>
-            <p className="text-gray-500 text-sm">
-              © 2023 Street Care. All Rights Reserved.{" "}
-              <Link href="#" className="underline">
-                Licensing
-              </Link>
-            </p>
-          </div>
-        </div>
-      </footer>
+    
     </div>
   )
 }
