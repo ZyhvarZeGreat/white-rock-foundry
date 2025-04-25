@@ -1,18 +1,12 @@
 "use server"
 
-import { getServerSupabaseClient } from "@/lib/supabase"
+import { quoteRequestSchema } from "@/lib/validations/quote"
+import { quoteApi } from "@/lib/api-client"
 import { revalidatePath } from "next/cache"
 
-export async function getQuoteRequests(): Promise<any[]> {
+export async function getQuoteRequests() {
   try {
-    const supabase = getServerSupabaseClient()
-    const { data, error } = await supabase.from("quote_requests").select("*").order("created_at", { ascending: false })
-
-    if (error) {
-      console.error("Error fetching quote requests:", error)
-      return []
-    }
-
+    const data = await quoteApi.getRequests()
     return data
   } catch (error) {
     console.error("Error in getQuoteRequests:", error)
@@ -20,20 +14,28 @@ export async function getQuoteRequests(): Promise<any[]> {
   }
 }
 
-export async function updateQuoteStatus(quoteId: number, newStatus: string): Promise<boolean> {
+export async function updateQuoteStatus(quoteId: number, newStatus: string) {
   try {
-    const supabase = getServerSupabaseClient()
-    const { error } = await supabase.from("quote_requests").update({ status: newStatus }).eq("id", quoteId)
-
-    if (error) {
-      console.error("Error updating quote status:", error)
-      return false
-    }
-
+    await quoteApi.updateStatus(quoteId, newStatus)
     revalidatePath("/admin/quotes")
     return true
   } catch (error) {
     console.error("Error in updateQuoteStatus:", error)
+    return false
+  }
+}
+
+export async function submitQuoteRequest(formData: FormData) {
+  try {
+    const data = Object.fromEntries(formData.entries())
+    const validatedData = quoteRequestSchema.parse(data)
+    
+
+    await quoteApi.submitRequest(validatedData)
+    // revalidatePath("/admin/quotes")
+    return true
+  } catch (error) {
+    console.error("Error in submitQuoteRequest:", error)
     return false
   }
 }
