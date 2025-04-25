@@ -30,6 +30,9 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Loader2, Search, Plus, MoreHorizontal, FileText, Download, Eye, CheckCircle, XCircle } from "lucide-react"
 import { getQuoteRequests, updateQuoteStatus } from "@/app/actions/quote-actions"
 import { ExportPDF } from "./export-pdf"
+import { quoteRequestSchema } from "@/lib/validations/quote"
+import { toast } from "sonner"
+import { Toaster } from "sonner"
 
 export default function QuotesPage() {
   const [quotes, setQuotes] = useState<any[]>([])
@@ -57,7 +60,11 @@ export default function QuotesPage() {
       const data = await getQuoteRequests()
       setQuotes(data)
     } catch (error) {
-      console.error("Error loading quotes:", error)
+      if (error instanceof Error) {
+        toast.error(error.message)
+      } else {
+        toast.error("Failed to load quotes")
+      }
     } finally {
       setIsLoading(false)
     }
@@ -94,7 +101,11 @@ export default function QuotesPage() {
         prevQuotes.map((quote) => (quote.id === quoteId ? { ...quote, status: newStatus } : quote)),
       )
     } catch (error) {
-      console.error("Error updating quote status:", error)
+      if (error instanceof Error) {
+        toast.error(error.message)
+      } else {
+        toast.error("Failed to update quote status")
+      }
     } finally {
       setIsUpdating(null)
     }
@@ -133,6 +144,7 @@ export default function QuotesPage() {
 
   return (
     <div className="flex flex-col min-h-screen">
+      <Toaster />
       {/* Header/Navigation */}
       
 

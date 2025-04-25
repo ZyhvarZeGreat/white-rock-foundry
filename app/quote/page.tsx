@@ -9,56 +9,77 @@ import { Checkbox } from "@/components/ui/checkbox"
 import { Label } from "@/components/ui/label"
 import { ScrollAnimation } from "@/components/scroll-animation"
 import { submitQuoteRequest } from "@/app/actions/quote-actions"
-import { useToast } from "@/components/ui/use-toast"
-import { Toaster } from "@/components/ui/toaster"
+
+import { quoteRequestSchema } from "@/lib/validations/quote"
+
+import { useForm } from "react-hook-form"
+import { zodResolver } from '@hookform/resolvers/zod';
+import type { QuoteRequestFormData } from "@/lib/validations/quote"
+import { quoteApi } from "@/lib/api-client"
 import Image from "next/image"
+import { useToast } from "@/hooks/use-toast"
+import { Toaster } from "@/components/ui/toaster"
 
 export default function QuotePage() {
-  const { toast } = useToast()
   const [isSubmitting, setIsSubmitting] = useState(false)
-  const [formData, setFormData] = useState({
-    service: "",
-    industry: "",
-    timeline: "",
-    budget: "",
+  const { toast } = useToast()
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    reset,
+    setValue,
+    watch
+  } = useForm<QuoteRequestFormData>({
+    resolver: zodResolver(quoteRequestSchema),
+    defaultValues: {
+      service_type: "",
+      industry: "",
+      timeline: "",
+      budget: "",
+      has_drawings: false,
+      requires_nda: false,
+      newsletter_subscription: true
+    }
   })
 
-  const handleSelectChange = (name: string, value: string) => {
-    setFormData((prev) => ({ ...prev, [name]: value }))
+  const handleSelectChange = (name: keyof QuoteRequestFormData, value: string) => {
+    setValue(name, value)
   }
 
-  async function handleSubmit(formData: FormData) {
+  async function onSubmit(data: QuoteRequestFormData) {
     setIsSubmitting(true)
     try {
-      const result = await submitQuoteRequest(formData)
+      const formData = new FormData()
+      Object.entries(data).forEach(([key, value]) => {
+        formData.append(key, value.toString())
+      })
 
-      if (result.success) {
+      
+
+      await quoteApi.submitRequest(data)
+      toast({
+        title: "Quote request submitted successfully",
+        description: "We will get back to you within 24 hours.",
+        className: "bg-green-500/40 text-white"
+      })
+      reset()
+    } catch (error) {
+      if (error instanceof Error) {
         toast({
-          title: "Success!",
-          description: result.message,
-          variant: "default",
-        })
-        // Reset form
-        document.querySelector("form")?.reset()
-        setFormData({
-          service: "",
-          industry: "",
-          timeline: "",
-          budget: "",
+          title: "Error submitting quote request",
+          description: error.message,
+          variant: "destructive",
+          className: "bg-red-500/40 text-white"
         })
       } else {
         toast({
-          title: "Error",
-          description: result.message,
+          title: "Error submitting quote request",
+          description: "An unexpected error occurred. Please try again.",
           variant: "destructive",
+          className: "bg-red-500/40 text-white"
         })
       }
-    } catch (error) {
-      toast({
-        title: "Error",
-        description: "An unexpected error occurred. Please try again.",
-        variant: "destructive",
-      })
     } finally {
       setIsSubmitting(false)
     }
@@ -80,30 +101,67 @@ export default function QuotePage() {
 
           {/* Quote Form */}
           <div className="max-w-3xl mx-auto bg-white rounded-lg shadow-sm p-8">
-            <form action={handleSubmit} className="space-y-8">
+            <form onSubmit={handleSubmit(onSubmit)} className="space-y-8">
               {/* Contact Information */}
               <div>
                 <h3 className="text-xl font-bold mb-4 font-heading">Contact Information</h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
-                    <Label htmlFor="firstName">First Name *</Label>
-                    <Input id="firstName" name="firstName" placeholder="Enter your first name" required />
+                    <Label htmlFor="first_name">First Name *</Label>
+                    <Input 
+                      id="first_name" 
+                      {...register("first_name")} 
+                      placeholder="Enter your first name" 
+                    />
+                    {errors.first_name && (
+                      <p className="text-sm text-red-500">{errors.first_name.message}</p>
+                    )}
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="lastName">Last Name *</Label>
-                    <Input id="lastName" name="lastName" placeholder="Enter your last name" required />
+                    <Label htmlFor="last_name">Last Name *</Label>
+                    <Input 
+                      id="last_name" 
+                      {...register("last_name")} 
+                      placeholder="Enter your last name" 
+                    />
+                    {errors.last_name && (
+                      <p className="text-sm text-red-500">{errors.last_name.message}</p>
+                    )}
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="email">Email Address *</Label>
-                    <Input id="email" name="email" type="email" placeholder="Enter your email address" required />
+                    <Input 
+                      id="email" 
+                      type="email" 
+                      {...register("email")} 
+                      placeholder="Enter your email address" 
+                    />
+                    {errors.email && (
+                      <p className="text-sm text-red-500">{errors.email.message}</p>
+                    )}
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="phone">Phone Number *</Label>
-                    <Input id="phone" name="phone" type="tel" placeholder="Enter your phone number" required />
+                    <Input 
+                      id="phone" 
+                      type="tel" 
+                      {...register("phone")} 
+                      placeholder="Enter your phone number" 
+                    />
+                    {errors.phone && (
+                      <p className="text-sm text-red-500">{errors.phone.message}</p>
+                    )}
                   </div>
                   <div className="space-y-2 md:col-span-2">
                     <Label htmlFor="company">Company Name</Label>
-                    <Input id="company" name="company" placeholder="Enter your company name (if applicable)" />
+                    <Input 
+                      id="company" 
+                      {...register("company_name")} 
+                      placeholder="Enter your company name (if applicable)" 
+                    />
+                    {errors.company_name && (
+                      <p className="text-sm text-red-500">{errors.company_name.message}</p>
+                    )}
                   </div>
                 </div>
               </div>
@@ -115,10 +173,8 @@ export default function QuotePage() {
                   <div className="space-y-2">
                     <Label htmlFor="service">Service Type *</Label>
                     <Select
-                      name="service"
-                      value={formData.service}
-                      onValueChange={(value) => handleSelectChange("service", value)}
-                      required
+                      value={watch("service_type")}
+                      onValueChange={(value) => handleSelectChange("service_type", value)}
                     >
                       <SelectTrigger>
                         <SelectValue placeholder="Select a service" />
@@ -133,14 +189,15 @@ export default function QuotePage() {
                         <SelectItem value="other">Other</SelectItem>
                       </SelectContent>
                     </Select>
+                    {errors.service_type && (
+                      <p className="text-sm text-red-500">{errors.service_type.message}</p>
+                    )}
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="industry">Industry *</Label>
                     <Select
-                      name="industry"
-                      value={formData.industry}
+                      value={watch("industry")}
                       onValueChange={(value) => handleSelectChange("industry", value)}
-                      required
                     >
                       <SelectTrigger>
                         <SelectValue placeholder="Select your industry" />
@@ -155,14 +212,15 @@ export default function QuotePage() {
                         <SelectItem value="other">Other</SelectItem>
                       </SelectContent>
                     </Select>
+                    {errors.industry && (
+                      <p className="text-sm text-red-500">{errors.industry.message}</p>
+                    )}
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="timeline">Project Timeline *</Label>
                     <Select
-                      name="timeline"
-                      value={formData.timeline}
+                      value={watch("timeline")}
                       onValueChange={(value) => handleSelectChange("timeline", value)}
-                      required
                     >
                       <SelectTrigger>
                         <SelectValue placeholder="Select your timeline" />
@@ -174,12 +232,14 @@ export default function QuotePage() {
                         <SelectItem value="long-term">Long-term (3+ months)</SelectItem>
                       </SelectContent>
                     </Select>
+                    {errors.timeline && (
+                      <p className="text-sm text-red-500">{errors.timeline.message}</p>
+                    )}
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="budget">Estimated Budget</Label>
                     <Select
-                      name="budget"
-                      value={formData.budget}
+                      value={watch("budget")}
                       onValueChange={(value) => handleSelectChange("budget", value)}
                     >
                       <SelectTrigger>
@@ -194,16 +254,21 @@ export default function QuotePage() {
                         <SelectItem value="over-100k">Over $100,000</SelectItem>
                       </SelectContent>
                     </Select>
+                    {errors.budget && (
+                      <p className="text-sm text-red-500">{errors.budget.message}</p>
+                    )}
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="description">Project Description *</Label>
                     <Textarea
-                      id="description"
-                      name="description"
+                      id="project_description"
+                      {...register("project_description")}
                       placeholder="Please describe your project in detail, including specifications, materials, quantities, and any other relevant information."
                       rows={6}
-                      required
                     />
+                    {errors.project_description && (
+                      <p className="text-sm text-red-500">{errors.project_description.message}</p>
+                    )}
                   </div>
                 </div>
               </div>
@@ -213,10 +278,13 @@ export default function QuotePage() {
                 <h3 className="text-xl font-bold mb-4 font-heading">Additional Information</h3>
                 <div className="grid grid-cols-1 gap-6">
                   <div className="flex items-start space-x-2">
-                    <Checkbox id="drawings" name="drawings" />
+                    <Checkbox 
+                      id="has_drawings" 
+                      {...register("has_drawings")} 
+                    />
                     <div className="grid gap-1.5 leading-none">
                       <Label
-                        htmlFor="drawings"
+                        htmlFor="has_drawings"
                         className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
                       >
                         I have technical drawings or CAD files to share
@@ -224,10 +292,13 @@ export default function QuotePage() {
                     </div>
                   </div>
                   <div className="flex items-start space-x-2">
-                    <Checkbox id="nda" name="nda" />
+                    <Checkbox 
+                      id="requires_nda" 
+                      {...register("requires_nda")} 
+                    />
                     <div className="grid gap-1.5 leading-none">
                       <Label
-                        htmlFor="nda"
+                        htmlFor="requires_nda"
                         className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
                       >
                         I require an NDA before sharing project details
@@ -235,10 +306,14 @@ export default function QuotePage() {
                     </div>
                   </div>
                   <div className="flex items-start space-x-2">
-                    <Checkbox id="newsletter" name="newsletter" defaultChecked />
+                    <Checkbox 
+                      id="newsletter_subscription" 
+                      {...register("newsletter_subscription")} 
+                      defaultChecked 
+                    />
                     <div className="grid gap-1.5 leading-none">
                       <Label
-                        htmlFor="newsletter"
+                        htmlFor="newsletter_subscription"
                         className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
                       >
                         Subscribe to our newsletter for industry insights and updates
@@ -246,13 +321,16 @@ export default function QuotePage() {
                     </div>
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="comments">Additional Comments</Label>
+                    <Label htmlFor="additional_comments">Additional Comments</Label>
                     <Textarea
-                      id="comments"
-                      name="comments"
+                      id="additional_comments"
+                      {...register("additional_comments")}
                       placeholder="Any other information you'd like to share with us"
                       rows={4}
                     />
+                    {errors.additional_comments && (
+                        <p className="text-sm text-red-500">{errors.additional_comments.message}</p>
+                    )}
                   </div>
                 </div>
               </div>
