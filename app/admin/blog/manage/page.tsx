@@ -103,23 +103,7 @@ export default function BlogManagePage() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Header/Navigation */}
-      <header className="bg-[#0a3b25] text-white">
-        <div className="container mx-auto flex items-center justify-between py-4 px-4">
-          <div className="flex items-center">
-            <Link href="/" className="text-xl font-bold">
-              White Rock Foundry
-            </Link>
-          </div>
-          <div className="flex items-center space-x-4">
-            <Link href="/admin" className="text-white hover:text-yellow-300">
-              Admin Dashboard
-            </Link>
-            <Button className="bg-yellow-400 hover:bg-yellow-500 text-black font-medium rounded-sm px-4 py-2">
-              Logout
-            </Button>
-          </div>
-        </div>
-      </header>
+    
 
       <main className="flex-grow bg-gray-50 py-12">
         <div className="container mx-auto px-4">
@@ -262,11 +246,7 @@ export default function BlogManagePage() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-[#0a3b25] text-white py-6">
-        <div className="container mx-auto px-4">
-          <p className="text-center text-sm">© 2023 White Rock Foundry Admin Portal. All Rights Reserved.</p>
-        </div>
-      </footer>
+      
     </div>
   )
 }

@@ -42,7 +42,7 @@ export default function Home() {
                 </Button>
                 <Button
                   variant="outline"
-                  className="border-white text-white hover:bg-white hover:text-black rounded-sm transition-colors"
+                  className="border-white bg-transparent text-white hover:bg-white hover:text-black rounded-sm transition-colors"
                 >
                   LEARN MORE
                 </Button>
@@ -310,7 +310,7 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-yellow-400 relative overflow-hidden">
+      <section className="py-32 bg-yellow-400 relative overflow-hidden">
         <div className="absolute inset-0 opacity-20">
           <Image
             src="https://images.pexels.com/photos/3862130/pexels-photo-3862130.jpeg"

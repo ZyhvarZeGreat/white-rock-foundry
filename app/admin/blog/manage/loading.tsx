@@ -34,11 +34,7 @@ export default function BlogManageLoading() {
         </div>
       </main>
 
-      <footer className="bg-[#0a3b25] text-white py-6">
-        <div className="container mx-auto px-4">
-          <p className="text-center text-sm">© 2023 White Rock Foundry Admin Portal. All Rights Reserved.</p>
-        </div>
-      </footer>
+      
     </div>
   )
 }
