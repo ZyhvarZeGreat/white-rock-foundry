@@ -32,12 +32,12 @@ export function AdminSidebar({ children }: { children: React.ReactNode }) {
 
   const handleLogout = () => {
     // In a real app, you would handle logout logic here
-    router.push("/admin/login")
+    router.push("/")
   }
 
   return (
     <SidebarProvider>
-      <div className="flex min-h-screen">
+      <div className="flex w-full min-h-screen">
         <Sidebar>
           <SidebarHeader className="flex h-16 items-center border-b px-4">
             <Link href="/admin/dashboard" className="flex items-center space-x-2">
@@ -45,11 +45,16 @@ export function AdminSidebar({ children }: { children: React.ReactNode }) {
             </Link>
           </SidebarHeader>
 
-          <SidebarContent>
-            <SidebarMenu>
+          <SidebarContent className="">
+          
+            <SidebarMenu className="p-4 space-y-2">
               <SidebarMenuItem>
-                <SidebarMenuButton asChild isActive={isActive("/admin/dashboard")}>
-                  <Link href="/admin/dashboard">
+                <SidebarMenuButton 
+                  asChild 
+                  isActive={isActive("/admin/dashboard")}
+                  className={isActive("/admin/dashboard") ? "bg-[#0a3b25] text-white" : "bg-transparent text-foreground"}
+                >
+                  <Link href="/admin/dashboard" className="flex items-center gap-2">
                     <LayoutDashboard className="h-5 w-5" />
                     <span>Dashboard</span>
                   </Link>
@@ -57,8 +62,12 @@ export function AdminSidebar({ children }: { children: React.ReactNode }) {
               </SidebarMenuItem>
 
               <SidebarMenuItem>
-                <SidebarMenuButton asChild isActive={isActive("/admin/quotes")}>
-                  <Link href="/admin/quotes">
+                <SidebarMenuButton 
+                  asChild 
+                  isActive={isActive("/admin/quotes")}
+                  className={isActive("/admin/quotes") ? "bg-[#0a3b25] text-white" : "bg-transparent text-foreground"}
+                >
+                  <Link href="/admin/quotes" className="flex items-center gap-2">
                     <MessageSquareQuote className="h-5 w-5" />
                     <span>Quote Requests</span>
                   </Link>
@@ -66,34 +75,54 @@ export function AdminSidebar({ children }: { children: React.ReactNode }) {
               </SidebarMenuItem>
 
               <SidebarMenuItem>
-                <SidebarMenuButton asChild isActive={isActive("/admin/blog")}>
-                  <Link href="/admin/blog/manage">
+                <SidebarMenuButton 
+                  asChild 
+                  isActive={isActive("/admin/blog")}
+                  className={isActive("/admin/blog") ? "bg-[#0a3b25] text-white" : "bg-transparent text-foreground"}
+                >
+                  <Link href="/admin/blog/manage" className="flex items-center gap-2">
                     <FileText className="h-5 w-5" />
                     <span>Blog</span>
                   </Link>
                 </SidebarMenuButton>
                 <SidebarMenuSub>
                   <SidebarMenuSubItem>
-                    <SidebarMenuSubButton asChild isActive={isActive("/admin/blog/manage")}>
-                      <Link href="/admin/blog/manage">All Posts</Link>
+                    <SidebarMenuSubButton 
+                      asChild 
+                      isActive={isActive("/admin/blog/manage")}
+                      className={isActive("/admin/blog/manage") ? "bg-[#0a3b25] text-white" : "bg-transparent text-foreground"}
+                    >
+                      <Link href="/admin/blog/manage" className="pl-7">All Posts</Link>
                     </SidebarMenuSubButton>
                   </SidebarMenuSubItem>
                   <SidebarMenuSubItem>
-                    <SidebarMenuSubButton asChild isActive={isActive("/admin/blog/upload")}>
-                      <Link href="/admin/blog/upload">Add New Post</Link>
+                    <SidebarMenuSubButton 
+                      asChild 
+                      isActive={isActive("/admin/blog/upload")}
+                      className={isActive("/admin/blog/upload") ? "bg-[#0a3b25] text-white" : "bg-transparent text-foreground"}
+                    >
+                      <Link href="/admin/blog/upload" className="pl-7">Add New Post</Link>
                     </SidebarMenuSubButton>
                   </SidebarMenuSubItem>
                   <SidebarMenuSubItem>
-                    <SidebarMenuSubButton asChild isActive={isActive("/admin/blog/categories")}>
-                      <Link href="/admin/blog/categories">Categories</Link>
+                    <SidebarMenuSubButton 
+                      asChild 
+                      isActive={isActive("/admin/blog/categories")}
+                      className={isActive("/admin/blog/categories") ? "bg-[#0a3b25] text-white" : "bg-transparent text-foreground"}
+                    >
+                      <Link href="/admin/blog/categories" className="pl-7">Categories</Link>
                     </SidebarMenuSubButton>
                   </SidebarMenuSubItem>
                 </SidebarMenuSub>
               </SidebarMenuItem>
 
               <SidebarMenuItem>
-                <SidebarMenuButton asChild isActive={isActive("/admin/media")}>
-                  <Link href="/admin/media">
+                <SidebarMenuButton 
+                  asChild 
+                  isActive={isActive("/admin/media")}
+                  className={isActive("/admin/media") ? "bg-[#0a3b25] text-white" : "bg-transparent text-foreground"}
+                >
+                  <Link href="/admin/media" className="flex items-center gap-2">
                     <ImageIcon className="h-5 w-5" />
                     <span>Media Library</span>
                   </Link>
@@ -101,8 +130,12 @@ export function AdminSidebar({ children }: { children: React.ReactNode }) {
               </SidebarMenuItem>
 
               <SidebarMenuItem>
-                <SidebarMenuButton asChild isActive={isActive("/admin/settings")}>
-                  <Link href="/admin/settings">
+                <SidebarMenuButton 
+                  asChild 
+                  isActive={isActive("/admin/settings")}
+                  className={isActive("/admin/settings") ? "bg-[#0a3b25] text-white" : "bg-transparent text-foreground"}
+                >
+                  <Link href="/admin/settings" className="flex items-center gap-2">
                     <Settings className="h-5 w-5" />
                     <span>Settings</span>
                   </Link>
@@ -124,7 +157,7 @@ export function AdminSidebar({ children }: { children: React.ReactNode }) {
         </Sidebar>
 
         {/* Main content */}
-        <div className="flex-1 overflow-auto">{children}</div>
+        <div className="flex-1 w-full mx-auto  overflow-auto">{children}</div>
       </div>
     </SidebarProvider>
   )

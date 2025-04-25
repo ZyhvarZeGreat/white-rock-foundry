@@ -2,6 +2,8 @@ import type React from "react"
 import "@/app/globals.css"
 import { Inter } from "next/font/google"
 import { AdminSidebar } from "@/components/admin/sidebar"
+import { AdminHeader } from "@/components/admin/header"
+import NextTopLoader from "nextjs-toploader"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -15,5 +17,13 @@ export const metadata = {
 }
 
 export default function AdminLayout({ children }: { children: React.ReactNode }) {
-  return <AdminSidebar>{children}</AdminSidebar>
+  return (
+    <div className={inter.variable}>
+      <NextTopLoader color="#000" />
+      <AdminSidebar>
+        <AdminHeader />
+        {children}
+      </AdminSidebar>
+    </div>
+  )
 }
