@@ -58,6 +58,7 @@ export default function QuotesPage() {
     setIsLoading(true)
     try {
       const data = await getQuoteRequests()
+    console.log('Data',  data)
       setQuotes(data)
     } catch (error) {
       if (error instanceof Error) {
@@ -232,9 +233,9 @@ export default function QuotesPage() {
                           {filteredQuotes.map((quote) => (
                             <TableRow key={quote.id}>
                               <TableCell className="font-medium">#{quote.id}</TableCell>
-                              <TableCell>{quote.name}</TableCell>
-                              <TableCell>{quote.company || "—"}</TableCell>
-                              <TableCell>{quote.project_type || "—"}</TableCell>
+                              <TableCell>{quote.first_name} {quote.last_name}</TableCell>
+                              <TableCell>{quote.company_name || "—"}</TableCell>
+                              <TableCell>{quote.service_type || "—"}</TableCell>
                               <TableCell>{formatDate(quote.created_at)}</TableCell>
                               <TableCell>{getStatusBadge(quote.status)}</TableCell>
                               <TableCell className="text-right">

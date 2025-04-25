@@ -30,6 +30,7 @@ export default function BlogManagePage() {
     setIsLoading(true)
     try {
       const data = await getBlogPosts({ status: statusFilter === "all" ? "all" : statusFilter })
+      console.log('Data',data)
       setPosts(data)
     } catch (error) {
       console.error("Error loading posts:", error)

@@ -15,7 +15,22 @@ export function getClientSupabaseClient() {
 
 // Create a server-side Supabase client (for use in Server Components and Server Actions)
 export function getServerSupabaseClient() {
-  return supabaseCreateClient(process.env.SUPABASE_URL!, process.env.SUPABASE_SERVICE_ROLE_KEY!)
+  return supabaseCreateClient(process.env.NEXT_PUBLIC_SUPABASE_URL!, process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!, {
+    auth: {
+      autoRefreshToken: false,
+      persistSession: false,
+    },
+  })
+}
+
+// Create a Supabase client with service role key for admin operations
+export function getServiceRoleClient() {
+  return supabaseCreateClient(process.env.NEXT_PUBLIC_SUPABASE_URL!, process.env.SUPABASE_SERVICE_ROLE_KEY!, {
+    auth: {
+      autoRefreshToken: false,
+      persistSession: false,
+    },
+  })
 }
 
 export const createClient = supabaseCreateClient
