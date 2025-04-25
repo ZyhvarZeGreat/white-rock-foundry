@@ -13,7 +13,7 @@ import { Loader2, Plus, Edit, Trash2, Save, X } from "lucide-react"
 import { useToast } from "@/hooks/use-toast"
 import { getServerSupabaseClient } from "@/lib/supabase"
 import type { BlogCategory } from "@/types/blog"
-
+import { getBlogCategories } from "@/app/actions/blog-actions"
 export default function BlogCategoriesPage() {
   const { toast } = useToast()
   const [categories, setCategories] = useState<BlogCategory[]>([])
@@ -38,12 +38,11 @@ export default function BlogCategoriesPage() {
   }, [])
 
   async function loadCategories() {
+    console.log('Loading Categories')
     setIsLoading(true)
     try {
-      const supabase = getServerSupabaseClient()
-      const { data, error } = await supabase.from("blog_categories").select("*").order("name")
-
-      if (error) throw error
+        const data = await getBlogCategories()
+console.log('Categories Data',data)
       setCategories(data || [])
     } catch (error) {
       console.error("Error loading categories:", error)

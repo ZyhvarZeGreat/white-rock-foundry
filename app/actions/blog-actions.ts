@@ -54,6 +54,7 @@ export async function getBlogPosts({
     console.error("Error fetching blog posts:", error)
     throw new Error("Failed to fetch blog posts")
   }
+  console.log('Blog Data', data)
 
   return data as (BlogPost & { author: BlogAuthor; category: BlogCategory })[]
 }

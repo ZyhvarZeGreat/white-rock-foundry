@@ -3,7 +3,7 @@
 import type React from "react"
 
 import { useState, useEffect, useRef, useCallback } from "react"
-import { getClientSupabaseClient } from "@/lib/supabase"
+import {  getClientSupabaseClient, getServerSupabaseClient, getServiceRoleClient } from "@/lib/supabase"
 import { Card, CardContent } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
@@ -88,7 +88,7 @@ export default function MediaLibraryPage() {
   const fetchMediaItems = async () => {
     setLoading(true)
     try {
-      const supabase = getClientSupabaseClient()
+      const supabase = getServiceRoleClient()
       const { data, error } = await supabase.storage.from("images").list("", {
         sortBy: { column: "created_at", order: "desc" },
       })
@@ -245,7 +245,7 @@ export default function MediaLibraryPage() {
     if (!mediaToDelete) return
 
     try {
-      const supabase = getClientSupabaseClient()
+      const supabase = getServiceRoleClient()
       const { error } = await supabase.storage.from("images").remove([mediaToDelete.name])
 
       if (error) {
