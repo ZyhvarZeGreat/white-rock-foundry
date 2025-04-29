@@ -12,7 +12,7 @@ export default function Home() {
         <div className="absolute inset-0">
           <Image
             src="https://images.pexels.com/photos/3862130/pexels-photo-3862130.jpeg"
-            alt="Industrial manufacturing facility"
+            alt="GLB manufacturing facility"
             width={1920}
             height={500}
             className="w-full h-full object-cover"
@@ -24,21 +24,20 @@ export default function Home() {
           <div className="max-w-2xl">
             <ScrollAnimation type="fade-up">
               <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 font-heading">
-                Precision <span className="text-yellow-400">engineering</span>
+                Sustainable <span className="text-yellow-400">GLB</span>
                 <br />
-                for modern manufacturing
+                for modern construction
               </h1>
             </ScrollAnimation>
             <ScrollAnimation type="fade-up" delay={200}>
               <p className="text-white mb-8 max-w-md">
-                Delivering innovative metal casting and precision engineering solutions for industries that demand
-                excellence
+                Delivering innovative Glue Laminated Bamboo solutions for construction, furniture, and interior design industries
               </p>
             </ScrollAnimation>
             <ScrollAnimation type="fade-up" delay={400}>
               <div className="flex space-x-4">
                 <Button className="bg-yellow-400 hover:bg-yellow-500 text-black font-medium rounded-sm px-6 py-2">
-                  GET STARTED
+                  GET A QUOTE
                 </Button>
                 <Button
                   variant="outline"
@@ -58,26 +57,26 @@ export default function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <ScrollAnimation type="fade-up">
               <div>
-                <p className="text-3xl font-bold text-[#0a3b25]">500+</p>
-                <p className="text-gray-600">Projects completed</p>
+                <p className="text-3xl font-bold text-[#0a3b25]">5,000+</p>
+                <p className="text-gray-600">Cubic meters annual capacity</p>
               </div>
             </ScrollAnimation>
             <ScrollAnimation type="fade-up" delay={100}>
               <div>
-                <p className="text-3xl font-bold text-[#0a3b25]">15+</p>
-                <p className="text-gray-600">Years of experience</p>
+                <p className="text-3xl font-bold text-[#0a3b25]">100%</p>
+                <p className="text-gray-600">Ethically sourced bamboo</p>
               </div>
             </ScrollAnimation>
             <ScrollAnimation type="fade-up" delay={200}>
               <div>
-                <p className="text-3xl font-bold text-[#0a3b25]">30+</p>
-                <p className="text-gray-600">Industries served</p>
+                <p className="text-3xl font-bold text-[#0a3b25]">25%</p>
+                <p className="text-gray-600">Market share target</p>
               </div>
             </ScrollAnimation>
             <ScrollAnimation type="fade-up" delay={300}>
               <div>
-                <p className="text-3xl font-bold text-[#0a3b25]">99.8%</p>
-                <p className="text-gray-600">Quality assurance rate</p>
+                <p className="text-3xl font-bold text-[#0a3b25]">ISO</p>
+                <p className="text-gray-600">Certified quality</p>
               </div>
             </ScrollAnimation>
           </div>
@@ -89,9 +88,9 @@ export default function Home() {
         <div className="container mx-auto px-4 md:px-6">
           <ScrollAnimation type="fade-up">
             <h2 className="text-2xl md:text-3xl font-bold text-center mb-12 font-heading">
-              Comprehensive solutions for
+              Sustainable solutions for
               <br />
-              precision manufacturing
+              modern construction
             </h2>
           </ScrollAnimation>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -100,10 +99,9 @@ export default function Home() {
                 <div className="bg-[#0a3b25] w-10 h-10 rounded-full flex items-center justify-center mb-4">
                   <span className="text-white font-bold">1</span>
                 </div>
-                <h3 className="text-xl font-bold mb-3">Precision Metal Casting</h3>
+                <h3 className="text-xl font-bold mb-3">Structural GLB</h3>
                 <p className="text-gray-600 mb-4">
-                  State-of-the-art metal casting services with exceptional precision and quality for complex components
-                  across industries.
+                  High-strength, durable GLB products for structural applications including beams, flooring, and decking.
                 </p>
                 <Link href="/services" className="text-[#0a3b25] font-medium hover:underline uppercase text-sm">
                   Learn more →
@@ -115,10 +113,9 @@ export default function Home() {
                 <div className="bg-[#0a3b25] w-10 h-10 rounded-full flex items-center justify-center mb-4">
                   <span className="text-white font-bold">2</span>
                 </div>
-                <h3 className="text-xl font-bold mb-3">CNC Machining & Finishing</h3>
+                <h3 className="text-xl font-bold mb-3">Furniture & Interior</h3>
                 <p className="text-gray-600 mb-4">
-                  Advanced CNC machining capabilities for tight-tolerance components with superior surface finishes and
-                  dimensional accuracy.
+                  Eco-friendly GLB solutions for furniture manufacturing and interior design applications.
                 </p>
                 <Link href="/services" className="text-[#0a3b25] font-medium hover:underline uppercase text-sm">
                   Learn more →
@@ -130,24 +127,15 @@ export default function Home() {
                 <div className="bg-[#0a3b25] w-10 h-10 rounded-full flex items-center justify-center mb-4">
                   <span className="text-white font-bold">3</span>
                 </div>
-                <h3 className="text-xl font-bold mb-3">Engineering & Design</h3>
+                <h3 className="text-xl font-bold mb-3">Custom Solutions</h3>
                 <p className="text-gray-600 mb-4">
-                  Collaborative engineering services to optimize designs for manufacturability, performance, and
-                  cost-effectiveness.
+                  Bespoke GLB products tailored to your specific requirements and design specifications.
                 </p>
                 <Link href="/services" className="text-[#0a3b25] font-medium hover:underline uppercase text-sm">
                   Learn more →
                 </Link>
               </div>
             </ScrollAnimation>
-          </div>
-          <div className="flex justify-center mt-8 space-x-2">
-            <button className="w-8 h-8 rounded-full border border-gray-300 flex items-center justify-center bg-transparent hover:bg-[#0a3b25] hover:text-white hover:border-[#0a3b25] transition-colors">
-              <ChevronLeft className="h-4 w-4" />
-            </button>
-            <button className="w-8 h-8 rounded-full bg-[#0a3b25] text-white flex items-center justify-center">
-              <ChevronRight className="h-4 w-4" />
-            </button>
           </div>
         </div>
       </section>
@@ -159,22 +147,21 @@ export default function Home() {
             <div>
               <ScrollAnimation type="fade-right">
                 <h2 className="text-2xl md:text-3xl font-bold mb-4 font-heading">
-                  Our mission is precision and
+                  Our mission is sustainability and
                   <br />
-                  excellence in every component!
+                  excellence in every product!
                 </h2>
               </ScrollAnimation>
               <ScrollAnimation type="fade-right" delay={200}>
                 <p className="mb-8 text-gray-300">
-                  We are dedicated to delivering the highest quality precision-engineered components through innovative
-                  manufacturing processes and unwavering commitment to excellence.
+                  We are dedicated to delivering the highest quality Glue Laminated Bamboo products through sustainable practices, ethical sourcing, and unwavering commitment to environmental responsibility.
                 </p>
               </ScrollAnimation>
               <ScrollAnimation type="fade-right" delay={400}>
                 <div className="relative">
                   <Image
                     src="https://images.pexels.com/photos/2760243/pexels-photo-2760243.jpeg"
-                    alt="Precision manufacturing process"
+                    alt="GLB manufacturing process"
                     width={600}
                     height={400}
                     className="rounded-lg object-cover"
@@ -204,10 +191,9 @@ export default function Home() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-bold text-lg mb-1">Engineering expertise</h3>
+                    <h3 className="font-bold text-lg mb-1">Ethical sourcing</h3>
                     <p className="text-gray-300">
-                      Our team of experienced engineers and metallurgists brings decades of specialized knowledge to
-                      every project, ensuring optimal design and manufacturing solutions.
+                      Our bamboo is ethically farmed in Nigeria, supporting local communities and sustainable agricultural practices.
                     </p>
                   </div>
                 </div>
@@ -233,10 +219,9 @@ export default function Home() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-bold text-lg mb-1">Advanced technology</h3>
+                    <h3 className="font-bold text-lg mb-1">Sustainable manufacturing</h3>
                     <p className="text-gray-300">
-                      We invest in cutting-edge manufacturing technology and equipment to deliver components with
-                      exceptional precision, consistency, and quality.
+                      Our UK-based facility uses energy-efficient processes and eco-friendly methods to minimize environmental impact.
                     </p>
                   </div>
                 </div>
@@ -264,45 +249,10 @@ export default function Home() {
                   <div>
                     <h3 className="font-bold text-lg mb-1">Quality assurance</h3>
                     <p className="text-gray-300">
-                      Our comprehensive quality control systems and rigorous testing protocols ensure that every
-                      component meets or exceeds the most demanding specifications.
+                      Rigorous testing and quality control ensure our GLB products meet the highest standards for strength and durability.
                     </p>
                   </div>
                 </div>
-              </ScrollAnimation>
-              <ScrollAnimation type="fade-left" delay={300}>
-                <div className="flex gap-4">
-                  <div className="text-yellow-400 mt-1">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                      <path
-                        d="M9 12L11 14L15 10"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-lg mb-1">Sustainable manufacturing</h3>
-                    <p className="text-gray-300">
-                      We are committed to environmentally responsible manufacturing practices, implementing
-                      energy-efficient processes and material recycling throughout our operations.
-                    </p>
-                  </div>
-                </div>
-              </ScrollAnimation>
-              <ScrollAnimation type="fade-left" delay={400}>
-                <Button className="bg-yellow-400 hover:bg-yellow-500 text-black font-medium rounded-sm px-6 py-2 mt-4">
-                  LEARN MORE
-                </Button>
               </ScrollAnimation>
             </div>
           </div>

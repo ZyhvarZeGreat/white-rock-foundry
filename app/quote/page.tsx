@@ -94,8 +94,8 @@ export default function QuotePage() {
           <ScrollAnimation type="fade-up">
             <h1 className="text-4xl font-bold text-center mb-4 font-heading">Request a Quote</h1>
             <p className="text-center text-gray-600 max-w-2xl mx-auto mb-16">
-              Fill out the form below to request a detailed quote for your engineering and manufacturing needs. Our team
-              will get back to you within 24 hours.
+              Fill out the form below to request a detailed quote for your sustainable GLB project. Our team
+              will get back to you within 24 hours to discuss your requirements and sustainability goals.
             </p>
           </ScrollAnimation>
 
@@ -180,12 +180,11 @@ export default function QuotePage() {
                         <SelectValue placeholder="Select a service" />
                       </SelectTrigger>
                       <SelectContent>
-                        <SelectItem value="precision-casting">Precision Casting</SelectItem>
-                        <SelectItem value="cnc-machining">CNC Machining</SelectItem>
-                        <SelectItem value="engineering-design">Engineering Design</SelectItem>
-                        <SelectItem value="quality-assurance">Quality Assurance</SelectItem>
-                        <SelectItem value="metal-fabrication">Metal Fabrication</SelectItem>
-                        <SelectItem value="prototyping">Prototyping</SelectItem>
+                        <SelectItem value="structural-glb">Structural GLB</SelectItem>
+                        <SelectItem value="furniture-glb">Furniture GLB</SelectItem>
+                        <SelectItem value="interior-glb">Interior GLB</SelectItem>
+                        <SelectItem value="custom-solutions">Custom Solutions</SelectItem>
+                        <SelectItem value="sustainability-services">Sustainability Services</SelectItem>
                         <SelectItem value="other">Other</SelectItem>
                       </SelectContent>
                     </Select>
@@ -203,12 +202,12 @@ export default function QuotePage() {
                         <SelectValue placeholder="Select your industry" />
                       </SelectTrigger>
                       <SelectContent>
-                        <SelectItem value="aerospace">Aerospace</SelectItem>
-                        <SelectItem value="automotive">Automotive</SelectItem>
-                        <SelectItem value="medical">Medical</SelectItem>
-                        <SelectItem value="industrial">Industrial</SelectItem>
-                        <SelectItem value="energy">Energy</SelectItem>
-                        <SelectItem value="consumer">Consumer Products</SelectItem>
+                        <SelectItem value="construction">Construction</SelectItem>
+                        <SelectItem value="architecture">Architecture</SelectItem>
+                        <SelectItem value="furniture">Furniture Manufacturing</SelectItem>
+                        <SelectItem value="interior-design">Interior Design</SelectItem>
+                        <SelectItem value="retail">Retail</SelectItem>
+                        <SelectItem value="hospitality">Hospitality</SelectItem>
                         <SelectItem value="other">Other</SelectItem>
                       </SelectContent>
                     </Select>
@@ -246,12 +245,11 @@ export default function QuotePage() {
                         <SelectValue placeholder="Select your budget range" />
                       </SelectTrigger>
                       <SelectContent>
-                        <SelectItem value="under-5k">Under $5,000</SelectItem>
-                        <SelectItem value="5k-10k">$5,000 - $10,000</SelectItem>
-                        <SelectItem value="10k-25k">$10,000 - $25,000</SelectItem>
-                        <SelectItem value="25k-50k">$25,000 - $50,000</SelectItem>
-                        <SelectItem value="50k-100k">$50,000 - $100,000</SelectItem>
-                        <SelectItem value="over-100k">Over $100,000</SelectItem>
+                        <SelectItem value="under-10k">Under £10,000</SelectItem>
+                        <SelectItem value="10k-50k">£10,000 - £50,000</SelectItem>
+                        <SelectItem value="50k-100k">£50,000 - £100,000</SelectItem>
+                        <SelectItem value="100k-500k">£100,000 - £500,000</SelectItem>
+                        <SelectItem value="over-500k">Over £500,000</SelectItem>
                       </SelectContent>
                     </Select>
                     {errors.budget && (
@@ -259,12 +257,12 @@ export default function QuotePage() {
                     )}
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="description">Project Description *</Label>
+                    <Label htmlFor="project_description">Project Description *</Label>
                     <Textarea
                       id="project_description"
                       {...register("project_description")}
-                      placeholder="Please describe your project in detail, including specifications, materials, quantities, and any other relevant information."
-                      rows={6}
+                      placeholder="Describe your project requirements, sustainability goals, and any specific GLB applications you're considering"
+                      className="min-h-[150px]"
                     />
                     {errors.project_description && (
                       <p className="text-sm text-red-500">{errors.project_description.message}</p>
@@ -276,74 +274,25 @@ export default function QuotePage() {
               {/* Additional Information */}
               <div>
                 <h3 className="text-xl font-bold mb-4 font-heading">Additional Information</h3>
-                <div className="grid grid-cols-1 gap-6">
-                  <div className="flex items-start space-x-2">
-                    <Checkbox 
-                      id="has_drawings" 
-                      {...register("has_drawings")} 
-                    />
-                    <div className="grid gap-1.5 leading-none">
-                      <Label
-                        htmlFor="has_drawings"
-                        className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                      >
-                        I have technical drawings or CAD files to share
-                      </Label>
-                    </div>
+                <div className="space-y-4">
+                  <div className="flex items-center space-x-2">
+                    <Checkbox id="has_drawings" {...register("has_drawings")} />
+                    <Label htmlFor="has_drawings">I have technical drawings or specifications</Label>
                   </div>
-                  <div className="flex items-start space-x-2">
-                    <Checkbox 
-                      id="requires_nda" 
-                      {...register("requires_nda")} 
-                    />
-                    <div className="grid gap-1.5 leading-none">
-                      <Label
-                        htmlFor="requires_nda"
-                        className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                      >
-                        I require an NDA before sharing project details
-                      </Label>
-                    </div>
+                  <div className="flex items-center space-x-2">
+                    <Checkbox id="requires_nda" {...register("requires_nda")} />
+                    <Label htmlFor="requires_nda">I require an NDA before sharing project details</Label>
                   </div>
-                  <div className="flex items-start space-x-2">
-                    <Checkbox 
-                      id="newsletter_subscription" 
-                      {...register("newsletter_subscription")} 
-                      defaultChecked 
-                    />
-                    <div className="grid gap-1.5 leading-none">
-                      <Label
-                        htmlFor="newsletter_subscription"
-                        className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                      >
-                        Subscribe to our newsletter for industry insights and updates
-                      </Label>
-                    </div>
-                  </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="additional_comments">Additional Comments</Label>
-                    <Textarea
-                      id="additional_comments"
-                      {...register("additional_comments")}
-                      placeholder="Any other information you'd like to share with us"
-                      rows={4}
-                    />
-                    {errors.additional_comments && (
-                        <p className="text-sm text-red-500">{errors.additional_comments.message}</p>
-                    )}
+                  <div className="flex items-center space-x-2">
+                    <Checkbox id="newsletter_subscription" {...register("newsletter_subscription")} />
+                    <Label htmlFor="newsletter_subscription">Subscribe to our sustainability newsletter</Label>
                   </div>
                 </div>
               </div>
 
-              <div className="flex justify-center pt-4">
-                <Button
-                  type="submit"
-                  className="bg-[#0a3b25] hover:bg-[#0a3b25]/90 text-white font-medium rounded-sm px-8 py-3"
-                  disabled={isSubmitting}
-                >
-                  {isSubmitting ? "SUBMITTING..." : "SUBMIT QUOTE REQUEST"}
-                </Button>
-              </div>
+              <Button type="submit" className="w-full bg-[#0a3b25] hover:bg-[#0a3b25]/90 text-white font-medium rounded-sm" disabled={isSubmitting}>
+                {isSubmitting ? "Submitting..." : "Submit Quote Request"}
+              </Button>
             </form>
           </div>
         </div>
