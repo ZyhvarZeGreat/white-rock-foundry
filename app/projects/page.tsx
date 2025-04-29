@@ -8,7 +8,7 @@ import { ChevronRight } from "lucide-react"
 import { ScrollAnimation } from "@/components/scroll-animation"
 
 // Define project types
-type ProjectCategory = "all" | "aerospace" | "automotive" | "medical" | "industrial"
+type ProjectCategory = "all" | "construction" | "furniture" | "interior" | "sustainability"
 
 interface Project {
   id: string
@@ -23,75 +23,75 @@ interface Project {
 const projects: Project[] = [
   {
     id: "1",
-    title: "Aerospace component manufacturing",
+    title: "Sustainable Office Building",
     description:
-      "Precision-engineered components for the aerospace industry, meeting rigorous quality and performance standards.",
+      "Complete GLB structural system for a LEED-certified office building, featuring beams, columns, and flooring solutions.",
     image: "https://images.pexels.com/photos/2760243/pexels-photo-2760243.jpeg",
-    category: "aerospace",
-    slug: "aerospace-component-manufacturing",
+    category: "construction",
+    slug: "sustainable-office-building",
   },
   {
     id: "2",
-    title: "Automotive powertrain components",
+    title: "Eco-Friendly Furniture Collection",
     description:
-      "High-performance engine and transmission components engineered for durability and efficiency in demanding automotive applications.",
+      "Custom GLB furniture collection for a high-end interior design project, showcasing sustainable materials and modern aesthetics.",
     image: "https://images.pexels.com/photos/3862130/pexels-photo-3862130.jpeg",
-    category: "automotive",
-    slug: "automotive-powertrain-components",
+    category: "furniture",
+    slug: "eco-friendly-furniture-collection",
   },
   {
     id: "3",
-    title: "Medical device components",
+    title: "Green Building Cladding",
     description:
-      "Ultra-precise components for medical devices and surgical instruments, manufactured in our ISO 13485 certified facility.",
+      "Innovative GLB cladding system for a sustainable residential complex, combining aesthetics with environmental performance.",
     image: "https://images.pexels.com/photos/2760241/pexels-photo-2760241.jpeg",
-    category: "medical",
-    slug: "medical-device-components",
+    category: "construction",
+    slug: "green-building-cladding",
   },
   {
     id: "4",
-    title: "Industrial equipment parts",
+    title: "Interior Wall Panels",
     description:
-      "Durable, high-performance components for industrial machinery and equipment, designed for reliability in demanding environments.",
+      "Custom-designed GLB wall panels for a luxury hotel interior, creating a unique and sustainable design statement.",
     image: "https://images.pexels.com/photos/1108701/pexels-photo-1108701.jpeg",
-    category: "industrial",
-    slug: "industrial-equipment-parts",
+    category: "interior",
+    slug: "interior-wall-panels",
   },
   {
     id: "5",
-    title: "Aerospace structural components",
+    title: "Sustainable Decking System",
     description:
-      "Lightweight yet strong structural components for aircraft, optimized for weight reduction and performance.",
+      "High-performance GLB decking solution for a waterfront development, offering durability and environmental benefits.",
     image: "https://images.pexels.com/photos/1769734/pexels-photo-1769734.jpeg",
-    category: "aerospace",
-    slug: "aerospace-structural-components",
+    category: "construction",
+    slug: "sustainable-decking-system",
   },
   {
     id: "6",
-    title: "Automotive sensor housings",
+    title: "Custom Furniture Design",
     description:
-      "Precision-cast housings for automotive sensors, providing protection and optimal positioning for critical electronic components.",
+      "Bespoke GLB furniture pieces for a corporate office, demonstrating the versatility and beauty of sustainable materials.",
     image: "https://images.pexels.com/photos/2129796/pexels-photo-2129796.jpeg",
-    category: "automotive",
-    slug: "automotive-sensor-housings",
+    category: "furniture",
+    slug: "custom-furniture-design",
   },
   {
     id: "7",
-    title: "Medical implant components",
+    title: "Green Building Certification",
     description:
-      "Biocompatible components for medical implants, manufactured with exceptional precision and surface finish.",
+      "Comprehensive sustainability assessment and certification support for a GLB construction project.",
     image: "https://images.pexels.com/photos/1634278/pexels-photo-1634278.jpeg",
-    category: "medical",
-    slug: "medical-implant-components",
+    category: "sustainability",
+    slug: "green-building-certification",
   },
   {
     id: "8",
-    title: "Industrial valve components",
+    title: "Interior Ceiling System",
     description:
-      "High-performance valve components for industrial applications, engineered for reliability in extreme conditions.",
+      "Innovative GLB ceiling solution for a commercial space, combining acoustic performance with sustainable design.",
     image: "https://images.pexels.com/photos/1178448/pexels-photo-1178448.jpeg",
-    category: "industrial",
-    slug: "industrial-valve-components",
+    category: "interior",
+    slug: "interior-ceiling-system",
   },
 ]
 
@@ -110,8 +110,8 @@ export default function ProjectsPage() {
           <ScrollAnimation type="fade-up">
             <h1 className="text-4xl font-bold text-center mb-4 font-heading">Our Projects</h1>
             <p className="text-center text-gray-600 max-w-2xl mx-auto mb-16">
-              Explore our portfolio of completed and ongoing projects that showcase our commitment to quality,
-              innovation, and precision engineering.
+              Explore our portfolio of sustainable GLB projects that showcase our commitment to environmental responsibility,
+              innovation, and high-quality manufacturing.
             </p>
           </ScrollAnimation>
 
@@ -129,38 +129,38 @@ export default function ProjectsPage() {
             <Button
               variant="ghost"
               className={`text-[#0a3b25] hover:bg-[#0a3b25]/10 font-medium ${
-                activeCategory === "aerospace" ? "underline decoration-2 underline-offset-8" : ""
+                activeCategory === "construction" ? "underline decoration-2 underline-offset-8" : ""
               }`}
-              onClick={() => setActiveCategory("aerospace")}
+              onClick={() => setActiveCategory("construction")}
             >
-              AEROSPACE
+              CONSTRUCTION
             </Button>
             <Button
               variant="ghost"
               className={`text-[#0a3b25] hover:bg-[#0a3b25]/10 font-medium ${
-                activeCategory === "automotive" ? "underline decoration-2 underline-offset-8" : ""
+                activeCategory === "furniture" ? "underline decoration-2 underline-offset-8" : ""
               }`}
-              onClick={() => setActiveCategory("automotive")}
+              onClick={() => setActiveCategory("furniture")}
             >
-              AUTOMOTIVE
+              FURNITURE
             </Button>
             <Button
               variant="ghost"
               className={`text-[#0a3b25] hover:bg-[#0a3b25]/10 font-medium ${
-                activeCategory === "medical" ? "underline decoration-2 underline-offset-8" : ""
+                activeCategory === "interior" ? "underline decoration-2 underline-offset-8" : ""
               }`}
-              onClick={() => setActiveCategory("medical")}
+              onClick={() => setActiveCategory("interior")}
             >
-              MEDICAL
+              INTERIOR
             </Button>
             <Button
               variant="ghost"
               className={`text-[#0a3b25] hover:bg-[#0a3b25]/10 font-medium ${
-                activeCategory === "industrial" ? "underline decoration-2 underline-offset-8" : ""
+                activeCategory === "sustainability" ? "underline decoration-2 underline-offset-8" : ""
               }`}
-              onClick={() => setActiveCategory("industrial")}
+              onClick={() => setActiveCategory("sustainability")}
             >
-              INDUSTRIAL
+              SUSTAINABILITY
             </Button>
           </div>
 
