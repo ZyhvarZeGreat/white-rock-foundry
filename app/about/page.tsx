@@ -10,7 +10,7 @@ export default function AboutPage() {
         <div className="absolute inset-0">
           <Image
             src="https://images.pexels.com/photos/2760241/pexels-photo-2760241.jpeg"
-            alt="Engineering facility"
+            alt="GLB manufacturing facility"
             width={1920}
             height={600}
             className="w-full h-full object-cover"
@@ -26,7 +26,7 @@ export default function AboutPage() {
           </ScrollAnimation>
           <ScrollAnimation type="fade-up" delay={200}>
             <p className="text-white text-lg mb-8 max-w-2xl">
-              A legacy of precision engineering excellence and innovative manufacturing solutions since 2005.
+              Pioneering sustainable Glue Laminated Bamboo manufacturing in the UK, combining innovation with environmental responsibility.
             </p>
           </ScrollAnimation>
           <ScrollAnimation type="fade-up" delay={400}>
@@ -45,24 +45,16 @@ export default function AboutPage() {
               <div>
                 <p className="text-sm text-[#0a3b25] font-medium mb-2">OUR STORY</p>
                 <h2 className="text-3xl font-bold mb-6 font-heading">
-                  Pioneering precision engineering for over 15 years
+                  Revolutionizing sustainable construction materials
                 </h2>
                 <p className="text-gray-600 mb-4">
-                  White Rock Foundry was established in 2005 with a clear mission: to deliver precision-engineered
-                  components that meet the most demanding specifications across industries. What began as a small
-                  specialized foundry has grown into a comprehensive engineering and manufacturing facility serving
-                  clients worldwide.
+                  White Rock Foundry was established with a clear mission: to deliver sustainable, high-performance Glue Laminated Bamboo products that meet the growing demand for eco-friendly construction materials. Our journey began with a vision to combine ethical sourcing with innovative manufacturing processes.
                 </p>
                 <p className="text-gray-600 mb-4">
-                  Our journey has been defined by continuous innovation, investment in advanced technologies, and a
-                  relentless commitment to quality. Today, we operate a state-of-the-art 75,000 square foot facility
-                  equipped with the latest manufacturing technologies and staffed by a team of highly skilled engineers,
-                  metallurgists, and production specialists.
+                  We've built a state-of-the-art manufacturing facility in the UK, equipped with advanced technology for processing and fabricating GLB products. Our facility is designed to meet the highest environmental standards while maintaining exceptional quality control.
                 </p>
                 <p className="text-gray-600">
-                  Throughout our growth, we've maintained our founding principles: precision, reliability, and
-                  partnership with our clients. We don't just manufacture components—we collaborate with our clients to
-                  solve complex engineering challenges and deliver solutions that drive their success.
+                  Our commitment to sustainability extends beyond our products. We've established strong partnerships with bamboo farming cooperatives in Nigeria, ensuring ethical sourcing practices and supporting local communities. This dual focus on environmental responsibility and social impact defines our approach to business.
                 </p>
               </div>
             </ScrollAnimation>
@@ -71,14 +63,14 @@ export default function AboutPage() {
                 <div className="relative h-[500px] rounded-lg overflow-hidden">
                   <Image
                     src="https://images.pexels.com/photos/3862130/pexels-photo-3862130.jpeg"
-                    alt="Our facility"
+                    alt="Our GLB manufacturing facility"
                     fill
                     className="object-cover"
                   />
                 </div>
                 <div className="absolute -bottom-6 -left-6 bg-yellow-400 p-6 rounded-lg shadow-lg max-w-xs">
-                  <p className="text-2xl font-bold mb-2">15+</p>
-                  <p className="text-sm">Years of engineering excellence and innovation</p>
+                  <p className="text-2xl font-bold mb-2">5,000+</p>
+                  <p className="text-sm">Cubic meters annual GLB production capacity</p>
                 </div>
               </div>
             </ScrollAnimation>
@@ -92,10 +84,9 @@ export default function AboutPage() {
           <ScrollAnimation type="fade-up">
             <div className="text-center max-w-3xl mx-auto mb-16">
               <p className="text-sm text-[#0a3b25] font-medium mb-2">MISSION & VALUES</p>
-              <h2 className="text-3xl font-bold mb-6 font-heading">Guided by excellence in everything we do</h2>
+              <h2 className="text-3xl font-bold mb-6 font-heading">Guided by sustainability and excellence</h2>
               <p className="text-gray-600">
-                Our mission and values form the foundation of our company culture and guide our approach to every
-                project and client relationship.
+                Our mission and values form the foundation of our company culture and guide our approach to sustainable manufacturing and client relationships.
               </p>
             </div>
           </ScrollAnimation>
@@ -121,9 +112,7 @@ export default function AboutPage() {
                 </div>
                 <h3 className="text-xl font-bold mb-4">Our Mission</h3>
                 <p className="text-gray-600">
-                  To deliver precision-engineered components and manufacturing solutions that exceed client
-                  expectations, drive innovation, and set new standards for quality and performance in the industries we
-                  serve.
+                  To deliver sustainable, ethically sourced GLB products of the highest quality, promoting environmental responsibility and fostering economic growth in both Nigeria and the UK.
                 </p>
               </div>
             </ScrollAnimation>
@@ -149,8 +138,7 @@ export default function AboutPage() {
                 </div>
                 <h3 className="text-xl font-bold mb-4">Our Vision</h3>
                 <p className="text-gray-600">
-                  To be the global leader in precision engineering and manufacturing, recognized for our technical
-                  expertise, innovative solutions, and unwavering commitment to quality and customer satisfaction.
+                  To be the leading provider of sustainable GLB products in the UK and European markets, recognized for our commitment to environmental stewardship, ethical sourcing, and product innovation.
                 </p>
               </div>
             </ScrollAnimation>
@@ -176,11 +164,11 @@ export default function AboutPage() {
                 </div>
                 <h3 className="text-xl font-bold mb-4">Our Values</h3>
                 <ul className="text-gray-600 space-y-2">
-                  <li>• Excellence in everything we do</li>
-                  <li>• Innovation that drives progress</li>
-                  <li>• Integrity in all our relationships</li>
-                  <li>• Collaboration with clients and partners</li>
-                  <li>• Sustainability in our operations</li>
+                  <li>• Environmental responsibility</li>
+                  <li>• Ethical sourcing and fair trade</li>
+                  <li>• Innovation in sustainable materials</li>
+                  <li>• Quality and performance excellence</li>
+                  <li>• Community development and support</li>
                 </ul>
               </div>
             </ScrollAnimation>

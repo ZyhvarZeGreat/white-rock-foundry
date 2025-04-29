@@ -4,6 +4,8 @@ import { Inter, Plus_Jakarta_Sans } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
 import ClientLayout from "@/components/client-layout"
 import NextTopLoader from "nextjs-toploader"
+import type { Metadata } from "next"
+import Script from "next/script"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -17,7 +19,7 @@ const plusJakartaSans = Plus_Jakarta_Sans({
   variable: "--font-plus-jakarta-sans",
 })
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "White Rock Foundry - Precision Engineering & Manufacturing Solutions",
   description: "Innovative engineering solutions for industrial manufacturing and precision metalwork",
   generator: 'v0.dev'
@@ -30,6 +32,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1931633079128460"
+          strategy="afterInteractive"
+          crossOrigin="anonymous"
+        />
+      </head>
       <body className={`${inter.variable} ${plusJakartaSans.variable} font-sans`}>
         <NextTopLoader 
           color="#fff"
