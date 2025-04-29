@@ -19,7 +19,7 @@ export default function ContactPage() {
               <div className="relative h-full min-h-[400px]">
                 <Image
                   src="https://images.pexels.com/photos/3862130/pexels-photo-3862130.jpeg"
-                  alt="Aerial view of manufacturing facility"
+                  alt="GLB manufacturing facility"
                   width={600}
                   height={600}
                   className="w-full h-full object-cover rounded-lg"
@@ -29,6 +29,10 @@ export default function ContactPage() {
                 <ScrollAnimation type="fade-up">
                   <p className="text-sm text-[#0a3b25] font-medium mb-2">LET'S START A CONVERSATION</p>
                   <h1 className="text-4xl font-bold mb-8 font-heading">Connect with us</h1>
+                  <p className="text-gray-600 mb-6">
+                    Interested in sustainable GLB solutions for your construction, furniture, or interior design project? 
+                    We're here to help you explore the possibilities of eco-friendly bamboo products.
+                  </p>
                   <form className="space-y-6">
                     <div>
                       <Input
@@ -45,12 +49,19 @@ export default function ContactPage() {
                       />
                     </div>
                     <div>
+                      <Input
+                        type="text"
+                        placeholder="Project type (Construction/Furniture/Interior)"
+                        className="border-gray-300 focus:border-[#0a3b25] focus:ring-[#0a3b25] rounded-sm"
+                      />
+                    </div>
+                    <div>
                       <Textarea
-                        placeholder="Your message"
+                        placeholder="Tell us about your project and sustainability goals"
                         className="min-h-[150px] border-gray-300 focus:border-[#0a3b25] focus:ring-[#0a3b25] rounded-sm"
                       />
                     </div>
-                    <Button className="w-full bg-black hover:bg-black/90 text-white font-medium rounded-sm">
+                    <Button className="w-full bg-[#0a3b25] hover:bg-[#0a3b25]/90 text-white font-medium rounded-sm">
                       SUBMIT
                     </Button>
                   </form>
@@ -72,8 +83,8 @@ export default function ContactPage() {
                   in one place
                 </h2>
                 <p className="max-w-2xl mx-auto text-gray-600">
-                  Get in touch with us through your preferred method. Whether by phone, email, or social media, we're
-                  here to help. Visit us at our location or follow us online to stay updated.
+                  Get in touch with us to discuss your sustainable GLB project requirements. Whether you're looking for structural solutions, 
+                  furniture manufacturing, or interior design applications, we're here to help you achieve your sustainability goals.
                 </p>
               </ScrollAnimation>
             </div>
@@ -83,9 +94,11 @@ export default function ContactPage() {
                 <div className="text-center">
                   <h3 className="font-bold mb-4">Location:</h3>
                   <p className="text-gray-600">
-                    123 GREENFIELD AVENUE,
+                    WHITE ROCK FOUNDRY
                     <br />
-                    SPRINGFIELD, NY 10234, USA
+                    SUSTAINABLE MANUFACTURING CENTER
+                    <br />
+                    LONDON, UK
                   </p>
                 </div>
               </ScrollAnimation>
@@ -93,16 +106,20 @@ export default function ContactPage() {
                 <div className="text-center">
                   <h3 className="font-bold mb-4">Phones:</h3>
                   <p className="text-gray-600">
-                    +1 (555) 867-4321
+                    +44 (0) 20 1234 5678
                     <br />
-                    +1 (555) 934-2876
+                    +44 (0) 20 8765 4321
                   </p>
                 </div>
               </ScrollAnimation>
               <ScrollAnimation type="fade-up" delay={200}>
                 <div className="text-center">
                   <h3 className="font-bold mb-4">Email:</h3>
-                  <p className="text-gray-600">INFO@EXAMPLE.COM</p>
+                  <p className="text-gray-600">
+                    INFO@WHITEROCKFOUNDRY.COM
+                    <br />
+                    SALES@WHITEROCKFOUNDRY.COM
+                  </p>
                 </div>
               </ScrollAnimation>
               <ScrollAnimation type="fade-up" delay={300}>

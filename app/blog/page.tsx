@@ -2,6 +2,8 @@ import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
+import { ChevronRight } from "lucide-react"
+import { ScrollAnimation } from "@/components/scroll-animation"
 
 export default function BlogPage() {
   return (
@@ -356,6 +358,152 @@ export default function BlogPage() {
             </div>
           </div>
         </section>
+
+        <ScrollAnimation type="fade-up">
+          <h1 className="text-4xl font-bold text-center mb-4 font-heading">Our Blog</h1>
+          <p className="text-center text-gray-600 max-w-2xl mx-auto mb-16">
+            Stay informed about the latest developments in sustainable GLB manufacturing, green building practices,
+            and environmental responsibility in construction and design.
+          </p>
+        </ScrollAnimation>
+
+        {/* Featured Post */}
+        <ScrollAnimation type="fade-up">
+          <div className="bg-white rounded-lg overflow-hidden shadow-sm mb-12">
+            <div className="grid grid-cols-1 md:grid-cols-2">
+              <div className="relative h-64 md:h-full">
+                <Image
+                  src="https://images.pexels.com/photos/2760243/pexels-photo-2760243.jpeg"
+                  alt="Featured post"
+                  width={600}
+                  height={400}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-8">
+                <div className="flex items-center space-x-4 mb-4">
+                  <span className="text-sm text-[#0a3b25] font-medium">FEATURED</span>
+                  <span className="text-sm text-gray-500">March 15, 2024</span>
+                </div>
+                <h2 className="text-2xl font-bold mb-4">
+                  The Future of Sustainable Construction: GLB's Role in Green Building
+                </h2>
+                <p className="text-gray-600 mb-6">
+                  Explore how Glue Laminated Bamboo is revolutionizing sustainable construction practices and
+                  contributing to the global push for environmentally responsible building materials.
+                </p>
+                <Link
+                  href="/blog/the-future-of-sustainable-construction"
+                  className="text-[#0a3b25] font-medium hover:underline uppercase text-sm flex items-center"
+                >
+                  READ MORE <ChevronRight className="h-4 w-4 ml-1" />
+                </Link>
+              </div>
+            </div>
+          </div>
+        </ScrollAnimation>
+
+        {/* Blog Posts Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* Post 1 */}
+          <ScrollAnimation type="fade-up">
+            <div className="bg-white rounded-lg overflow-hidden shadow-sm">
+              <div className="relative h-48">
+                <Image
+                  src="https://images.pexels.com/photos/3862130/pexels-photo-3862130.jpeg"
+                  alt="Blog post 1"
+                  width={400}
+                  height={200}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <div className="flex items-center space-x-4 mb-4">
+                  <span className="text-sm text-[#0a3b25] font-medium">SUSTAINABILITY</span>
+                  <span className="text-sm text-gray-500">March 10, 2024</span>
+                </div>
+                <h3 className="text-xl font-bold mb-2">
+                  Ethical Sourcing: The Journey of Our Bamboo from Nigeria to the UK
+                </h3>
+                <p className="text-gray-600 mb-4">
+                  Discover how we ensure ethical and sustainable sourcing of bamboo from our partner farms in Nigeria.
+                </p>
+                <Link
+                  href="/blog/ethical-sourcing-bamboo"
+                  className="text-[#0a3b25] font-medium hover:underline uppercase text-sm flex items-center"
+                >
+                  READ MORE <ChevronRight className="h-4 w-4 ml-1" />
+                </Link>
+              </div>
+            </div>
+          </ScrollAnimation>
+
+          {/* Post 2 */}
+          <ScrollAnimation type="fade-up" delay={200}>
+            <div className="bg-white rounded-lg overflow-hidden shadow-sm">
+              <div className="relative h-48">
+                <Image
+                  src="https://images.pexels.com/photos/2760241/pexels-photo-2760241.jpeg"
+                  alt="Blog post 2"
+                  width={400}
+                  height={200}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <div className="flex items-center space-x-4 mb-4">
+                  <span className="text-sm text-[#0a3b25] font-medium">TECHNOLOGY</span>
+                  <span className="text-sm text-gray-500">March 5, 2024</span>
+                </div>
+                <h3 className="text-xl font-bold mb-2">
+                  Advanced GLB Manufacturing: Our State-of-the-Art UK Facility
+                </h3>
+                <p className="text-gray-600 mb-4">
+                  A behind-the-scenes look at our advanced manufacturing processes and quality control systems.
+                </p>
+                <Link
+                  href="/blog/advanced-glb-manufacturing"
+                  className="text-[#0a3b25] font-medium hover:underline uppercase text-sm flex items-center"
+                >
+                  READ MORE <ChevronRight className="h-4 w-4 ml-1" />
+                </Link>
+              </div>
+            </div>
+          </ScrollAnimation>
+
+          {/* Post 3 */}
+          <ScrollAnimation type="fade-up" delay={400}>
+            <div className="bg-white rounded-lg overflow-hidden shadow-sm">
+              <div className="relative h-48">
+                <Image
+                  src="https://images.pexels.com/photos/1108701/pexels-photo-1108701.jpeg"
+                  alt="Blog post 3"
+                  width={400}
+                  height={200}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <div className="flex items-center space-x-4 mb-4">
+                  <span className="text-sm text-[#0a3b25] font-medium">DESIGN</span>
+                  <span className="text-sm text-gray-500">February 28, 2024</span>
+                </div>
+                <h3 className="text-xl font-bold mb-2">
+                  Innovative GLB Applications in Modern Interior Design
+                </h3>
+                <p className="text-gray-600 mb-4">
+                  Exploring creative ways to incorporate GLB products in contemporary interior spaces.
+                </p>
+                <Link
+                  href="/blog/innovative-glb-applications"
+                  className="text-[#0a3b25] font-medium hover:underline uppercase text-sm flex items-center"
+                >
+                  READ MORE <ChevronRight className="h-4 w-4 ml-1" />
+                </Link>
+              </div>
+            </div>
+          </ScrollAnimation>
+        </div>
       </main>
 
   

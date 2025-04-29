@@ -18,8 +18,8 @@ export default function ServicesPage() {
             <ScrollAnimation type="fade-up">
               <h1 className="text-4xl font-bold text-center mb-4 font-heading">Our Services</h1>
               <p className="text-center text-gray-600 max-w-2xl mx-auto mb-16">
-                Our comprehensive engineering and manufacturing services deliver precision components and solutions for
-                the most demanding industries and applications.
+                Discover our comprehensive range of sustainable GLB manufacturing services, designed to meet your construction,
+                furniture, and interior design needs while promoting environmental responsibility.
               </p>
             </ScrollAnimation>
 
@@ -31,34 +31,33 @@ export default function ServicesPage() {
                   <div className="relative h-48">
                     <Image
                       src="https://images.pexels.com/photos/236705/pexels-photo-236705.jpeg"
-                      alt="Precision Metal Casting"
+                      alt="Structural GLB"
                       width={400}
                       height={200}
                       className="w-full h-full object-cover"
                     />
                   </div>
                   <div className="p-6">
-                    <h3 className="text-xl font-bold mb-2">Precision Metal Casting</h3>
+                    <h3 className="text-xl font-bold mb-2">Structural GLB</h3>
                     <p className="text-gray-600 mb-4">
-                      State-of-the-art metal casting services with exceptional precision and quality for complex
-                      components across industries.
+                      High-strength, durable GLB products for structural applications in construction and architecture.
                     </p>
                     <ul className="space-y-2 mb-6">
                       <li className="flex items-start">
                         <span className="text-[#0a3b25] mr-2">•</span>
-                        <span>Investment Casting</span>
+                        <span>Beams and Columns</span>
                       </li>
                       <li className="flex items-start">
                         <span className="text-[#0a3b25] mr-2">•</span>
-                        <span>Die Casting</span>
+                        <span>Flooring Systems</span>
                       </li>
                       <li className="flex items-start">
                         <span className="text-[#0a3b25] mr-2">•</span>
-                        <span>Sand Casting</span>
+                        <span>Decking Solutions</span>
                       </li>
                       <li className="flex items-start">
                         <span className="text-[#0a3b25] mr-2">•</span>
-                        <span>Specialty Alloys</span>
+                        <span>Cladding Panels</span>
                       </li>
                     </ul>
                     <Button
@@ -77,34 +76,33 @@ export default function ServicesPage() {
                   <div className="relative h-48">
                     <Image
                       src="https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg"
-                      alt="CNC Machining & Finishing"
+                      alt="Furniture & Interior"
                       width={400}
                       height={200}
                       className="w-full h-full object-cover"
                     />
                   </div>
                   <div className="p-6">
-                    <h3 className="text-xl font-bold mb-2">CNC Machining & Finishing</h3>
+                    <h3 className="text-xl font-bold mb-2">Furniture & Interior</h3>
                     <p className="text-gray-600 mb-4">
-                      Advanced CNC machining capabilities for tight-tolerance components with superior surface finishes
-                      and dimensional accuracy.
+                      Eco-friendly GLB solutions for furniture manufacturing and interior design applications.
                     </p>
                     <ul className="space-y-2 mb-6">
                       <li className="flex items-start">
                         <span className="text-[#0a3b25] mr-2">•</span>
-                        <span>Multi-Axis Machining</span>
+                        <span>Custom Furniture</span>
                       </li>
                       <li className="flex items-start">
                         <span className="text-[#0a3b25] mr-2">•</span>
-                        <span>Precision Turning</span>
+                        <span>Wall Panels</span>
                       </li>
                       <li className="flex items-start">
                         <span className="text-[#0a3b25] mr-2">•</span>
-                        <span>Surface Finishing</span>
+                        <span>Ceiling Systems</span>
                       </li>
                       <li className="flex items-start">
                         <span className="text-[#0a3b25] mr-2">•</span>
-                        <span>Heat Treatment</span>
+                        <span>Decorative Elements</span>
                       </li>
                     </ul>
                     <Button
@@ -123,34 +121,33 @@ export default function ServicesPage() {
                   <div className="relative h-48">
                     <Image
                       src="https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg"
-                      alt="Engineering & Design"
+                      alt="Custom Solutions"
                       width={400}
                       height={200}
                       className="w-full h-full object-cover"
                     />
                   </div>
                   <div className="p-6">
-                    <h3 className="text-xl font-bold mb-2">Engineering & Design</h3>
+                    <h3 className="text-xl font-bold mb-2">Custom Solutions</h3>
                     <p className="text-gray-600 mb-4">
-                      Collaborative engineering services to optimize designs for manufacturability, performance, and
-                      cost-effectiveness.
+                      Bespoke GLB products tailored to your specific requirements and design specifications.
                     </p>
                     <ul className="space-y-2 mb-6">
                       <li className="flex items-start">
                         <span className="text-[#0a3b25] mr-2">•</span>
-                        <span>3D Modeling & CAD</span>
+                        <span>Design Consultation</span>
                       </li>
                       <li className="flex items-start">
                         <span className="text-[#0a3b25] mr-2">•</span>
-                        <span>Design for Manufacturing</span>
+                        <span>Custom Dimensions</span>
                       </li>
                       <li className="flex items-start">
                         <span className="text-[#0a3b25] mr-2">•</span>
-                        <span>Prototyping</span>
+                        <span>Special Finishes</span>
                       </li>
                       <li className="flex items-start">
                         <span className="text-[#0a3b25] mr-2">•</span>
-                        <span>Reverse Engineering</span>
+                        <span>Technical Support</span>
                       </li>
                     </ul>
                     <Button
@@ -178,25 +175,24 @@ export default function ServicesPage() {
                   <div className="p-6">
                     <h3 className="text-xl font-bold mb-2">Quality Assurance</h3>
                     <p className="text-gray-600 mb-4">
-                      Comprehensive quality control systems and rigorous testing protocols to ensure every component
-                      meets or exceeds specifications.
+                      Rigorous testing and quality control to ensure our GLB products meet the highest standards for strength and durability.
                     </p>
                     <ul className="space-y-2 mb-6">
                       <li className="flex items-start">
                         <span className="text-[#0a3b25] mr-2">•</span>
-                        <span>Dimensional Inspection</span>
+                        <span>Strength Testing</span>
                       </li>
                       <li className="flex items-start">
                         <span className="text-[#0a3b25] mr-2">•</span>
-                        <span>Material Testing</span>
+                        <span>Durability Assessment</span>
                       </li>
                       <li className="flex items-start">
                         <span className="text-[#0a3b25] mr-2">•</span>
-                        <span>Non-Destructive Testing</span>
+                        <span>Environmental Testing</span>
                       </li>
                       <li className="flex items-start">
                         <span className="text-[#0a3b25] mr-2">•</span>
-                        <span>Documentation & Certification</span>
+                        <span>ISO Certification</span>
                       </li>
                     </ul>
                     <Button
@@ -215,33 +211,33 @@ export default function ServicesPage() {
                   <div className="relative h-48">
                     <Image
                       src="https://images.pexels.com/photos/3768/snow-garden-winter-plant.jpg"
-                      alt="Prototyping & Development"
+                      alt="Sustainability Services"
                       width={400}
                       height={200}
                       className="w-full h-full object-cover"
                     />
                   </div>
                   <div className="p-6">
-                    <h3 className="text-xl font-bold mb-2">Prototyping & Development</h3>
+                    <h3 className="text-xl font-bold mb-2">Sustainability Services</h3>
                     <p className="text-gray-600 mb-4">
-                      Rapid prototyping and development services to bring your concepts to life quickly and efficiently.
+                      Comprehensive sustainability services to support your green building initiatives and environmental goals.
                     </p>
                     <ul className="space-y-2 mb-6">
                       <li className="flex items-start">
                         <span className="text-[#0a3b25] mr-2">•</span>
-                        <span>Rapid Prototyping</span>
+                        <span>Environmental Impact Assessment</span>
                       </li>
                       <li className="flex items-start">
                         <span className="text-[#0a3b25] mr-2">•</span>
-                        <span>Concept Validation</span>
+                        <span>Carbon Footprint Analysis</span>
                       </li>
                       <li className="flex items-start">
                         <span className="text-[#0a3b25] mr-2">•</span>
-                        <span>Iterative Development</span>
+                        <span>Sustainability Certification</span>
                       </li>
                       <li className="flex items-start">
                         <span className="text-[#0a3b25] mr-2">•</span>
-                        <span>Pre-Production Testing</span>
+                        <span>Green Building Support</span>
                       </li>
                     </ul>
                     <Button
