@@ -190,12 +190,12 @@ export default function AboutPage() {
             </div>
           </ScrollAnimation>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            <ScrollAnimation type="fade-up">
+          <div className="flex w-full items-center justify-center gap-8 max-w-7xl mx-auto px-4">
+            <ScrollAnimation className="mx-auto" type="fade-up">
               <div className="group">
                 <div className="relative overflow-hidden rounded-lg">
                   <Image
-                    src="https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg"
+                    src="https://images.pexels.com/photos/1181391/pexels-photo-1181391.jpeg?auto=compress&cs=tinysrgb&w=1260&h=450&dpr=1"
                     alt="CEO"
                     width={300}
                     height={400}
@@ -216,108 +216,15 @@ export default function AboutPage() {
                     </div>
                   </div>
                 </div>
-                <div className="mt-4">
-                  <h3 className="font-bold text-lg">Robert Anderson</h3>
+                <div className="mt-4 text-center">
+                  <h3 className="font-bold text-lg">Martin Abbah Okute</h3>
                   <p className="text-[#0a3b25]">Chief Executive Officer</p>
                 </div>
               </div>
             </ScrollAnimation>
 
-            <ScrollAnimation type="fade-up" delay={100}>
-              <div className="group">
-                <div className="relative overflow-hidden rounded-lg">
-                  <Image
-                    src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg"
-                    alt="CTO"
-                    width={300}
-                    height={400}
-                    className="w-full transition-transform duration-500 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
-                    <div className="flex space-x-3 mb-2">
-                      <a href="#" className="text-white hover:text-yellow-400">
-                        <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                          <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" />
-                        </svg>
-                      </a>
-                      <a href="#" className="text-white hover:text-yellow-400">
-                        <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                          <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-                        </svg>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div className="mt-4">
-                  <h3 className="font-bold text-lg">Emily Carter</h3>
-                  <p className="text-[#0a3b25]">Chief Technology Officer</p>
-                </div>
-              </div>
-            </ScrollAnimation>
 
-            <ScrollAnimation type="fade-up" delay={200}>
-              <div className="group">
-                <div className="relative overflow-hidden rounded-lg">
-                  <Image
-                    src="https://images.pexels.com/photos/3184405/pexels-photo-3184405.jpeg"
-                    alt="COO"
-                    width={300}
-                    height={400}
-                    className="w-full transition-transform duration-500 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
-                    <div className="flex space-x-3 mb-2">
-                      <a href="#" className="text-white hover:text-yellow-400">
-                        <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                          <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" />
-                        </svg>
-                      </a>
-                      <a href="#" className="text-white hover:text-yellow-400">
-                        <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                          <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-                        </svg>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div className="mt-4">
-                  <h3 className="font-bold text-lg">Sarah Johnson</h3>
-                  <p className="text-[#0a3b25]">Chief Operations Officer</p>
-                </div>
-              </div>
-            </ScrollAnimation>
-
-            <ScrollAnimation type="fade-up" delay={300}>
-              <div className="group">
-                <div className="relative overflow-hidden rounded-lg">
-                  <Image
-                    src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg"
-                    alt="Director of Engineering"
-                    width={300}
-                    height={400}
-                    className="w-full transition-transform duration-500 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
-                    <div className="flex space-x-3 mb-2">
-                      <a href="#" className="text-white hover:text-yellow-400">
-                        <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                          <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" />
-                        </svg>
-                      </a>
-                      <a href="#" className="text-white hover:text-yellow-400">
-                        <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                          <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-                        </svg>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div className="mt-4">
-                  <h3 className="font-bold text-lg">Michael O'Connell</h3>
-                  <p className="text-[#0a3b25]">Director of Engineering</p>
-                </div>
-              </div>
-            </ScrollAnimation>
+           
           </div>
         </div>
       </section>
