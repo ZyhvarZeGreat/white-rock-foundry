@@ -229,6 +229,193 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Business Concept Section */}
+      <section className="section-padding bg-gray-50">
+        <div className="container mx-auto container-padding">
+          <ScrollAnimation type="fade-up">
+            <div className="text-center max-w-3xl mx-auto mb-16">
+              <p className="text-sm text-[#0a3b25] font-medium mb-2">BUSINESS CONCEPT</p>
+              <h2 className="text-3xl font-bold mb-6 font-heading">Revolutionizing Sustainable Construction</h2>
+              <p className="text-gray-600">
+                Pioneering eco-friendly GLB manufacturing in the UK, combining innovation with environmental responsibility.
+              </p>
+            </div>
+          </ScrollAnimation>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <ScrollAnimation type="fade-up">
+              <div className="bg-white p-8 rounded-lg shadow-sm">
+                <div className="w-12 h-12 bg-[#0a3b25] rounded-full flex items-center justify-center mb-6">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-white">
+                    <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold mb-4">Construction</h3>
+                <p className="text-gray-600">
+                  Structural beams, flooring, cladding, and decking for sustainable building projects.
+                </p>
+              </div>
+            </ScrollAnimation>
+
+            <ScrollAnimation type="fade-up" delay={200}>
+              <div className="bg-white p-8 rounded-lg shadow-sm">
+                <div className="w-12 h-12 bg-[#0a3b25] rounded-full flex items-center justify-center mb-6">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-white">
+                    <path d="M20 7h-7m7 10h-7m7-5h-7M4 5h16a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold mb-4">Furniture</h3>
+                <p className="text-gray-600">
+                  Eco-friendly and bespoke furniture for residential and commercial spaces.
+                </p>
+              </div>
+            </ScrollAnimation>
+
+            <ScrollAnimation type="fade-up" delay={400}>
+              <div className="bg-white p-8 rounded-lg shadow-sm">
+                <div className="w-12 h-12 bg-[#0a3b25] rounded-full flex items-center justify-center mb-6">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-white">
+                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                    <polyline points="9 22 9 12 15 12 15 22" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold mb-4">Interior Design</h3>
+                <p className="text-gray-600">
+                  Decorative wall panels, ceilings, and custom design features.
+                </p>
+              </div>
+            </ScrollAnimation>
+          </div>
+        </div>
+      </section>
+
+      {/* Market Analysis Section */}
+      <section className="section-padding bg-white">
+        <div className="container mx-auto container-padding">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <ScrollAnimation type="fade-right">
+              <div>
+                <p className="text-sm text-[#0a3b25] font-medium mb-2">MARKET ANALYSIS</p>
+                <h2 className="text-3xl font-bold mb-6 font-heading">Growing Demand for Sustainable Materials</h2>
+                <div className="space-y-6">
+                  <div className="flex items-start space-x-4">
+                    <div className="w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center flex-shrink-0">
+                      <span className="text-[#0a3b25] font-bold">1</span>
+                    </div>
+                    <div>
+                      <h3 className="font-bold mb-2">Construction Sector</h3>
+                      <p className="text-gray-600">Structural materials for green building projects</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-4">
+                    <div className="w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center flex-shrink-0">
+                      <span className="text-[#0a3b25] font-bold">2</span>
+                    </div>
+                    <div>
+                      <h3 className="font-bold mb-2">Furniture Manufacturers</h3>
+                      <p className="text-gray-600">Eco-conscious brands seeking sustainable alternatives</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-4">
+                    <div className="w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center flex-shrink-0">
+                      <span className="text-[#0a3b25] font-bold">3</span>
+                    </div>
+                    <div>
+                      <h3 className="font-bold mb-2">Interior Design Firms</h3>
+                      <p className="text-gray-600">Decorative solutions for high-end spaces</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ScrollAnimation>
+            <ScrollAnimation type="fade-left">
+              <div className="bg-gray-50 p-8 rounded-lg">
+                <h3 className="text-xl font-bold mb-6">Market Trends</h3>
+                <div className="space-y-4">
+                  <div className="flex items-center space-x-3">
+                    <svg className="w-6 h-6 text-[#0a3b25]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <p className="text-gray-600">Increased preference for renewable materials</p>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <svg className="w-6 h-6 text-[#0a3b25]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <p className="text-gray-600">Growing government incentives for green building</p>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <svg className="w-6 h-6 text-[#0a3b25]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <p className="text-gray-600">Rising consumer awareness about sustainability</p>
+                  </div>
+                </div>
+              </div>
+            </ScrollAnimation>
+          </div>
+        </div>
+      </section>
+
+      {/* Impact Section */}
+      <section className="section-padding bg-gray-50">
+        <div className="container mx-auto container-padding">
+          <ScrollAnimation type="fade-up">
+            <div className="text-center max-w-3xl mx-auto mb-16">
+              <p className="text-sm text-[#0a3b25] font-medium mb-2">OUR IMPACT</p>
+              <h2 className="text-3xl font-bold mb-6 font-heading">Creating Positive Change</h2>
+              <p className="text-gray-600">
+                Our commitment extends beyond business success to creating meaningful impact across environmental, economic, and social dimensions.
+              </p>
+            </div>
+          </ScrollAnimation>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <ScrollAnimation type="fade-up">
+              <div className="bg-white p-8 rounded-lg shadow-sm text-center">
+                <div className="w-16 h-16 bg-[#0a3b25] rounded-full flex items-center justify-center mx-auto mb-6">
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold mb-4">Environmental Impact</h3>
+                <p className="text-gray-600">
+                  Reducing deforestation and contributing to global carbon reduction efforts through sustainable practices.
+                </p>
+              </div>
+            </ScrollAnimation>
+
+            <ScrollAnimation type="fade-up" delay={200}>
+              <div className="bg-white p-8 rounded-lg shadow-sm text-center">
+                <div className="w-16 h-16 bg-[#0a3b25] rounded-full flex items-center justify-center mx-auto mb-6">
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold mb-4">Economic Impact</h3>
+                <p className="text-gray-600">
+                  Creating jobs in Nigeria and the UK while empowering communities through fair-trade practices.
+                </p>
+              </div>
+            </ScrollAnimation>
+
+            <ScrollAnimation type="fade-up" delay={400}>
+              <div className="bg-white p-8 rounded-lg shadow-sm text-center">
+                <div className="w-16 h-16 bg-[#0a3b25] rounded-full flex items-center justify-center mx-auto mb-6">
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold mb-4">Social Impact</h3>
+                <p className="text-gray-600">
+                  Promoting sustainable construction practices and raising awareness about bamboo as a material of the future.
+                </p>
+              </div>
+            </ScrollAnimation>
+          </div>
+        </div>
+      </section>
+
       {/* Facilities Section */}
       <section className="section-padding bg-gray-50">
         <div className="container mx-auto container-padding">
