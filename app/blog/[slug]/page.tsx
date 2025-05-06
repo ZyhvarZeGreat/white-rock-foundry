@@ -2,9 +2,22 @@ import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 
-export default function BlogPostPage({ params }: { params: { slug: string } }) {
+interface BlogPost {
+  title: string;
+  category: string;
+  author: string;
+  date: string;
+  image: string;
+  content: string;
+}
+
+interface BlogPosts {
+  [key: string]: BlogPost;
+}
+
+export default async function BlogPostPage({ params }: { params: { slug: string } }) {
   // This is a static example, in a real app you would fetch the blog post based on the slug
-  const blogPosts = {
+  const blogPosts: BlogPosts = {
     "precision-metal-casting-innovations": {
       title: "Precision Metal Casting Innovations: Breaking New Ground in Manufacturing",
       category: "MANUFACTURING TECHNOLOGY",

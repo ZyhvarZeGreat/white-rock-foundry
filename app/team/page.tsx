@@ -3,6 +3,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Plus } from "lucide-react"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
+import { ScrollAnimation } from "@/components/scroll-animation"
 
 export default function TeamPage() {
   return (
@@ -79,89 +80,109 @@ export default function TeamPage() {
             {/* Team Grid */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-16">
               {/* Team Member 1 */}
-              <div className="bg-[#0a3b25] text-white overflow-hidden">
-                <div className="relative h-80">
-                  <Image
-                    src="https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg"
-                    alt="Mike Jones"
-                    width={300}
-                    height={400}
-                    className="w-full h-full object-cover"
-                  />
+              <ScrollAnimation type="fade-up">
+                <div className="bg-white rounded-lg overflow-hidden shadow-sm">
+                  <div className="relative h-64">
+                    <Image
+                      src="/bamboo pic 5.jpg"
+                      alt="Team Member 1"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <h3 className="text-xl font-bold mb-2">John Smith</h3>
+                    <p className="text-gray-600 mb-4">CEO & Founder</p>
+                    <p className="text-gray-600">
+                      With over 20 years of experience in bamboo manufacturing, John leads our team with vision and expertise.
+                    </p>
+                  </div>
                 </div>
-                <div className="p-4">
-                  <h3 className="font-bold text-lg">Mike Jones</h3>
-                  <p className="text-sm text-gray-300">Environmental Specialist</p>
-                </div>
-              </div>
+              </ScrollAnimation>
 
               {/* Team Member 2 */}
-              <div className="bg-[#0a3b25] text-white overflow-hidden">
-                <div className="relative h-80">
-                  <Image
-                    src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg"
-                    alt="Emily Carter"
-                    width={300}
-                    height={400}
-                    className="w-full h-full object-cover"
-                  />
+              <ScrollAnimation type="fade-up" delay={200}>
+                <div className="bg-white rounded-lg overflow-hidden shadow-sm">
+                  <div className="relative h-64">
+                    <Image
+                      src="/bamboo pic 4.jpg"
+                      alt="Team Member 2"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <h3 className="text-xl font-bold mb-2">Sarah Johnson</h3>
+                    <p className="text-gray-600 mb-4">Production Manager</p>
+                    <p className="text-gray-600">
+                      Sarah oversees our manufacturing processes, ensuring quality and efficiency in every product.
+                    </p>
+                  </div>
                 </div>
-                <div className="p-4">
-                  <h3 className="font-bold text-lg">Emily Carter</h3>
-                  <p className="text-sm text-gray-300">Operations Manager</p>
-                </div>
-              </div>
+              </ScrollAnimation>
 
               {/* Team Member 3 */}
-              <div className="bg-[#0a3b25] text-white overflow-hidden">
-                <div className="relative h-80">
-                  <Image
-                    src="https://images.pexels.com/photos/3184405/pexels-photo-3184405.jpeg"
-                    alt="Sarah Johnson"
-                    width={300}
-                    height={400}
-                    className="w-full h-full object-cover"
-                  />
+              <ScrollAnimation type="fade-up" delay={400}>
+                <div className="bg-white rounded-lg overflow-hidden shadow-sm">
+                  <div className="relative h-64">
+                    <Image
+                      src="/bamboo pic 3.jpg"
+                      alt="Team Member 3"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <h3 className="text-xl font-bold mb-2">Michael Chen</h3>
+                    <p className="text-gray-600 mb-4">Design Engineer</p>
+                    <p className="text-gray-600">
+                      Michael brings innovative design solutions to our bamboo products, combining aesthetics with functionality.
+                    </p>
+                  </div>
                 </div>
-                <div className="p-4">
-                  <h3 className="font-bold text-lg">Sarah Johnson</h3>
-                  <p className="text-sm text-gray-300">Urban Maintenance Technician</p>
-                </div>
-              </div>
+              </ScrollAnimation>
 
               {/* Team Member 4 */}
-              <div className="bg-[#0a3b25] text-white overflow-hidden">
-                <div className="relative h-80">
-                  <Image
-                    src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg"
-                    alt="Michael O'Connor"
-                    width={300}
-                    height={400}
-                    className="w-full h-full object-cover"
-                  />
+              <ScrollAnimation type="fade-up">
+                <div className="bg-white rounded-lg overflow-hidden shadow-sm">
+                  <div className="relative h-64">
+                    <Image
+                      src="/bamboo pic2.jpeg.jpg"
+                      alt="Team Member 4"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <h3 className="text-xl font-bold mb-2">Emily Davis</h3>
+                    <p className="text-gray-600 mb-4">Quality Control Specialist</p>
+                    <p className="text-gray-600">
+                      Emily ensures that every product meets our rigorous quality standards before reaching our customers.
+                    </p>
+                  </div>
                 </div>
-                <div className="p-4">
-                  <h3 className="font-bold text-lg">Michael O'Connor</h3>
-                  <p className="text-sm text-gray-300">Environmental Health Specialist</p>
-                </div>
-              </div>
+              </ScrollAnimation>
 
               {/* Team Member 5 */}
-              <div className="bg-[#0a3b25] text-white overflow-hidden">
-                <div className="relative h-80">
-                  <Image
-                    src="https://images.pexels.com/photos/3184317/pexels-photo-3184317.jpeg"
-                    alt="Sophia Reed"
-                    width={300}
-                    height={400}
-                    className="w-full h-full object-cover"
-                  />
+              <ScrollAnimation type="fade-up" delay={200}>
+                <div className="bg-white rounded-lg overflow-hidden shadow-sm">
+                  <div className="relative h-64">
+                    <Image
+                      src="/bamboo pic.jpg"
+                      alt="Team Member 5"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <h3 className="text-xl font-bold mb-2">David Wilson</h3>
+                    <p className="text-gray-600 mb-4">Sustainability Coordinator</p>
+                    <p className="text-gray-600">
+                      David leads our sustainability initiatives, ensuring our manufacturing processes are environmentally responsible.
+                    </p>
+                  </div>
                 </div>
-                <div className="p-4">
-                  <h3 className="font-bold text-lg">Sophia Reed</h3>
-                  <p className="text-sm text-gray-300">Waste Management Coordinator</p>
-                </div>
-              </div>
+              </ScrollAnimation>
 
               {/* Team Member 6 */}
               <div className="bg-[#0a3b25] text-white overflow-hidden">

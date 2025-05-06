@@ -59,7 +59,7 @@ export default function PrecisionCastingPage() {
             </div>
             <div className="relative h-96 rounded-lg overflow-hidden shadow-xl">
               <Image
-                src="https://images.pexels.com/photos/3862130/pexels-photo-3862130.jpeg"
+                src="/pexels-rostislav-4767063.jpg"
                 alt="Precision Casting Process"
                 fill
                 className="object-cover"
@@ -338,7 +338,7 @@ export default function PrecisionCastingPage() {
             </div>
             <div className="relative h-96 rounded-lg overflow-hidden shadow-xl order-1 md:order-2">
               <Image
-                src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg"
+                src="/pexels-rostislav-4767063.jpg"
                 alt="Quality Control Process"
                 fill
                 className="object-cover"
@@ -362,7 +362,7 @@ export default function PrecisionCastingPage() {
             <div className="bg-white p-6 rounded-lg shadow-md text-center">
               <div className="h-20 w-20 mx-auto mb-4">
                 <Image
-                  src="https://images.pexels.com/photos/3862130/pexels-photo-3862130.jpeg"
+                  src="/pexels-thomas-balabaud-735585-1579715.jpg"
                   alt="Aerospace"
                   width={80}
                   height={80}
@@ -378,7 +378,7 @@ export default function PrecisionCastingPage() {
             <div className="bg-white p-6 rounded-lg shadow-md text-center">
               <div className="h-20 w-20 mx-auto mb-4">
                 <Image
-                  src="https://images.pexels.com/photos/2760243/pexels-photo-2760243.jpeg"
+                  src="/pexels-arthousestudio-4572632.jpg"
                   alt="Automotive"
                   width={80}
                   height={80}

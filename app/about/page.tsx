@@ -9,7 +9,7 @@ export default function AboutPage() {
       <section className="relative">
         <div className="absolute inset-0">
           <Image
-            src="https://images.pexels.com/photos/2760241/pexels-photo-2760241.jpeg"
+            src="/pexels-asia-culture-center-3116378-14176513.jpg"
             alt="GLB manufacturing facility"
             width={1920}
             height={600}
@@ -62,7 +62,7 @@ export default function AboutPage() {
               <div className="relative">
                 <div className="relative h-[500px] rounded-lg overflow-hidden">
                   <Image
-                    src="https://images.pexels.com/photos/3862130/pexels-photo-3862130.jpeg"
+                    src="/pexels-cax0000-1834996.jpg"
                     alt="Our GLB manufacturing facility"
                     fill
                     className="object-cover"

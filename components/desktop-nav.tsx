@@ -15,6 +15,16 @@ const navItems: NavItem[] = [
   { title: "HOME", href: "/" },
   { title: "ABOUT", href: "/about" },
   {
+    title: "PRODUCTS",
+    href: "/products",
+    children: [
+      { title: "GLB Beams", href: "/products/glb-beams" },
+      { title: "GLB Columns", href: "/products/glb-columns" },
+      { title: "GLB Panels", href: "/products/glb-panels" },
+      { title: "GLB Decking", href: "/products/glb-decking" },
+    ],
+  },
+  {
     title: "SERVICES",
     href: "/services",
     children: [
@@ -39,8 +49,26 @@ const navItems: NavItem[] = [
     href: "/resources",
     children: [
       { title: "Blog", href: "/resources/blog" },
-      { title: "Case Studies", href: "/resources/case-studies" },
-      { title: "Technical Guides", href: "/resources/technical-guides" },
+      { 
+        title: "Case Studies", 
+        href: "/case-studies",
+        children: [
+          { title: "Modern Office Complex", href: "/case-studies/modern-office-complex" },
+          { title: "Luxury Residential Tower", href: "/case-studies/luxury-residential-tower" },
+          { title: "Sustainable Industrial Park", href: "/case-studies/sustainable-industrial-park" },
+          { title: "Public Transportation Hub", href: "/case-studies/public-transportation-hub" },
+        ]
+      },
+      { 
+        title: "Technical Guides", 
+        href: "/technical-guides",
+        children: [
+          { title: "Installation Guide", href: "/technical-guides/installation-guide" },
+          { title: "Maintenance & Care", href: "/technical-guides/maintenance-care" },
+          { title: "Technical Specifications", href: "/technical-guides/technical-specifications" },
+          { title: "Sustainability & Certification", href: "/technical-guides/sustainability-certification" },
+        ]
+      },
       { title: "FAQ", href: "/resources/faq" },
     ],
   },
