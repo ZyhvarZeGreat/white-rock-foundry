@@ -11,7 +11,7 @@ export default function StructuralGLBPage() {
         <section className="relative">
           <div className="absolute inset-0">
             <Image
-              src="https://images.pexels.com/photos/2760243/pexels-photo-2760243.jpeg"
+              src="/pexels-katebranch-28909012.jpg"
               alt="Structural GLB manufacturing"
               width={1920}
               height={600}

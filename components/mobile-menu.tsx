@@ -16,12 +16,22 @@ const navItems: NavItem[] = [
   { title: "HOME", href: "/" },
   { title: "ABOUT", href: "/about" },
   {
+    title: "PRODUCTS",
+    href: "/products",
+    children: [
+      { title: "GLB Beams", href: "/products/glb-beams" },
+      { title: "GLB Columns", href: "/products/glb-columns" },
+      { title: "GLB Panels", href: "/products/glb-panels" },
+      { title: "GLB Decking", href: "/products/glb-decking" },
+    ],
+  },
+  {
     title: "SERVICES",
     href: "/services",
     children: [
-      { title: "Precision Casting", href: "/services/precision-casting" },
-      { title: "CNC Machining", href: "/services/cnc-machining" },
-      { title: "Engineering Design", href: "/services/engineering-design" },
+      { title: "Structural GLB", href: "/services/structural-glb" },
+      { title: "Furniture & Interior", href: "/services/furniture-interior" },
+      { title: "Custom Solutions", href: "/services/custom-solutions" },
       { title: "Quality Assurance", href: "/services/quality-assurance" },
     ],
   },
@@ -29,19 +39,37 @@ const navItems: NavItem[] = [
     title: "PROJECTS",
     href: "/projects",
     children: [
-      { title: "Aerospace", href: "/projects/aerospace" },
-      { title: "Automotive", href: "/projects/automotive" },
-      { title: "Medical", href: "/projects/medical" },
+      { title: "Residential", href: "/projects/residential" },
+      { title: "Commercial", href: "/projects/commercial" },
       { title: "Industrial", href: "/projects/industrial" },
+      { title: "Infrastructure", href: "/projects/infrastructure" },
     ],
   },
   {
     title: "RESOURCES",
     href: "/resources",
     children: [
-      { title: "Blog", href: "/blog" },
-      { title: "Case Studies", href: "/resources/case-studies" },
-      { title: "Technical Guides", href: "/resources/technical-guides" },
+      { title: "Blog", href: "/resources/blog" },
+      { 
+        title: "Case Studies", 
+        href: "/case-studies",
+        children: [
+          { title: "Modern Office Complex", href: "/case-studies/modern-office-complex" },
+          { title: "Luxury Residential Tower", href: "/case-studies/luxury-residential-tower" },
+          { title: "Sustainable Industrial Park", href: "/case-studies/sustainable-industrial-park" },
+          { title: "Public Transportation Hub", href: "/case-studies/public-transportation-hub" },
+        ]
+      },
+      { 
+        title: "Technical Guides", 
+        href: "/technical-guides",
+        children: [
+          { title: "Installation Guide", href: "/technical-guides/installation-guide" },
+          { title: "Maintenance & Care", href: "/technical-guides/maintenance-care" },
+          { title: "Technical Specifications", href: "/technical-guides/technical-specifications" },
+          { title: "Sustainability & Certification", href: "/technical-guides/sustainability-certification" },
+        ]
+      },
       { title: "FAQ", href: "/resources/faq" },
     ],
   },

@@ -11,7 +11,7 @@ export default function QualityAssurancePage() {
         <section className="relative">
           <div className="absolute inset-0">
             <Image
-              src="https://images.pexels.com/photos/3862130/pexels-photo-3862130.jpeg"
+              src="/pexels-roger-ben-323520146-18446420.jpg"
               alt="Quality assurance"
               width={1920}
               height={600}

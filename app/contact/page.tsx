@@ -18,7 +18,7 @@ export default function ContactPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="relative h-full min-h-[400px]">
                 <Image
-                  src="https://images.pexels.com/photos/3862130/pexels-photo-3862130.jpeg"
+                  src="/pexels-katebranch-28909012.jpg"
                   alt="GLB manufacturing facility"
                   width={600}
                   height={600}
