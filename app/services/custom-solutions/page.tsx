@@ -11,7 +11,7 @@ export default function CustomSolutionsPage() {
         <section className="relative">
           <div className="absolute inset-0">
             <Image
-              src="https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg"
+              src="/pexels-rostislav-4767063.jpg"
               alt="Custom GLB solutions"
               width={1920}
               height={600}
@@ -56,7 +56,7 @@ export default function CustomSolutionsPage() {
               <ScrollAnimation type="fade-left">
                 <div className="relative h-[400px] rounded-lg overflow-hidden">
                   <Image
-                    src="https://images.pexels.com/photos/3862130/pexels-photo-3862130.jpeg"
+                    src="/pexels-roger-ben-323520146-18446420.jpg"
                     alt="Custom GLB manufacturing"
                     fill
                     className="object-cover"

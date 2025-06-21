@@ -11,7 +11,7 @@ export default function FurnitureInteriorPage() {
         <section className="relative">
           <div className="absolute inset-0">
             <Image
-              src="https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg"
+              src="/pexels-june-liu-368305200-31806951.jpg"
               alt="Furniture and interior GLB manufacturing"
               width={1920}
               height={600}
@@ -56,7 +56,7 @@ export default function FurnitureInteriorPage() {
               <ScrollAnimation type="fade-left">
                 <div className="relative h-[400px] rounded-lg overflow-hidden">
                   <Image
-                    src="https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg"
+                    src="/pexels-thomas-balabaud-735585-1579715.jpg"
                     alt="GLB furniture manufacturing"
                     fill
                     className="object-cover"

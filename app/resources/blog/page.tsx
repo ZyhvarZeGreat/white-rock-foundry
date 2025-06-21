@@ -11,7 +11,7 @@ export default function BlogPage() {
         <section className="relative">
           <div className="absolute inset-0">
             <Image
-              src="https://images.pexels.com/photos/3862130/pexels-photo-3862130.jpeg"
+              src="/pexels-satoshi-3753404.jpg"
               alt="Blog"
               width={1920}
               height={600}
@@ -44,7 +44,7 @@ export default function BlogPage() {
                 <div className="bg-white rounded-lg overflow-hidden shadow-sm">
                   <div className="relative h-64">
                     <Image
-                      src="https://images.pexels.com/photos/3862130/pexels-photo-3862130.jpeg"
+                      src="/pexels-satoshi-3753404.jpg"
                       alt="GLB manufacturing trends"
                       fill
                       className="object-cover"
@@ -55,7 +55,7 @@ export default function BlogPage() {
                     <p className="text-gray-600 mb-4">
                       Explore the cutting-edge developments and innovations shaping the future of GLB manufacturing.
                     </p>
-                    <Link href="/resources/blog/glb-manufacturing-trends">
+                    <Link href="/blog/advanced-materials-in-engineering">
                       <Button className="w-full bg-[#0a3b25] hover:bg-[#0a3b25]/90 text-white">
                         Read More
                       </Button>
@@ -69,7 +69,7 @@ export default function BlogPage() {
                 <div className="bg-white rounded-lg overflow-hidden shadow-sm">
                   <div className="relative h-64">
                     <Image
-                      src="https://images.pexels.com/photos/3862130/pexels-photo-3862130.jpeg"
+                      src="/pexels-roger-ben-323520146-18446420.jpg"
                       alt="Sustainable construction"
                       fill
                       className="object-cover"
@@ -80,7 +80,7 @@ export default function BlogPage() {
                     <p className="text-gray-600 mb-4">
                       Learn how GLB materials are contributing to sustainable building practices and environmental conservation.
                     </p>
-                    <Link href="/resources/blog/sustainable-construction">
+                    <Link href="/blog/quality-control-in-precision-manufacturing">
                       <Button className="w-full bg-[#0a3b25] hover:bg-[#0a3b25]/90 text-white">
                         Read More
                       </Button>
@@ -94,7 +94,7 @@ export default function BlogPage() {
                 <div className="bg-white rounded-lg overflow-hidden shadow-sm">
                   <div className="relative h-64">
                     <Image
-                      src="https://images.pexels.com/photos/3862130/pexels-photo-3862130.jpeg"
+                      src="/pexels-rostislav-4767063.jpg"
                       alt="GLB case study"
                       fill
                       className="object-cover"
@@ -105,7 +105,7 @@ export default function BlogPage() {
                     <p className="text-gray-600 mb-4">
                       A detailed case study of how GLB solutions were implemented in a large-scale infrastructure project.
                     </p>
-                    <Link href="/resources/blog/infrastructure-case-study">
+                    <Link href="/blog/categories/quality-assurance">
                       <Button className="w-full bg-[#0a3b25] hover:bg-[#0a3b25]/90 text-white">
                         Read More
                       </Button>
@@ -126,11 +126,11 @@ export default function BlogPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <ScrollAnimation type="fade-up">
                 <div className="bg-white p-6 rounded-lg shadow-sm">
-                  <h3 className="text-xl font-bold mb-4">Industry News</h3>
+                  <h3 className="text-xl font-bold mb-4">Quality Assurance</h3>
                   <p className="text-gray-600 mb-4">
                     Stay informed about the latest developments and trends in the GLB manufacturing industry.
                   </p>
-                  <Link href="/resources/blog/category/industry-news">
+                  <Link href="/blog/categories/quality-assurance">
                     <Button className="w-full bg-[#0a3b25] hover:bg-[#0a3b25]/90 text-white">
                       View Articles
                     </Button>
@@ -144,7 +144,7 @@ export default function BlogPage() {
                   <p className="text-gray-600 mb-4">
                     Deep dive into the technical aspects of GLB manufacturing and applications.
                   </p>
-                  <Link href="/resources/blog/category/technical-insights">
+                  <Link href="/blog/advanced-materials-in-engineering">
                     <Button className="w-full bg-[#0a3b25] hover:bg-[#0a3b25]/90 text-white">
                       View Articles
                     </Button>
@@ -158,7 +158,7 @@ export default function BlogPage() {
                   <p className="text-gray-600 mb-4">
                     Real-world examples of GLB solutions in action across various projects and industries.
                   </p>
-                  <Link href="/resources/blog/category/case-studies">
+                  <Link href="/blog/quality-control-in-precision-manufacturing">
                     <Button className="w-full bg-[#0a3b25] hover:bg-[#0a3b25]/90 text-white">
                       View Articles
                     </Button>

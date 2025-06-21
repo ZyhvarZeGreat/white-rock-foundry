@@ -11,10 +11,10 @@ export default function Home() {
       <section className="relative">
         <div className="absolute inset-0">
           <Image
-            src="https://images.pexels.com/photos/3862130/pexels-photo-3862130.jpeg"
-            alt="GLB manufacturing facility"
+            src="/pexels-y-box-1283725278-27195949.jpg"
+            alt="Bamboo Manufacturing"
             width={1920}
-            height={500}
+            height={700}
             className="w-full h-full object-cover"
             priority
           />
@@ -24,7 +24,7 @@ export default function Home() {
           <div className="max-w-2xl">
             <ScrollAnimation type="fade-up">
               <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 font-heading">
-                Sustainable <span className="text-yellow-400">GLB</span>
+                Sustainable <span className="text-yellow-400"> (GLB) GLUE LAMINATED BAMBOO </span>
                 <br />
                 for modern construction
               </h1>
@@ -52,7 +52,7 @@ export default function Home() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-16 bg-white">
+      {/* <section className="py-16 bg-white">
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <ScrollAnimation type="fade-up">
@@ -81,7 +81,7 @@ export default function Home() {
             </ScrollAnimation>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Services Section */}
       <section className="py-16 bg-white">
@@ -160,8 +160,8 @@ export default function Home() {
               <ScrollAnimation type="fade-right" delay={400}>
                 <div className="relative">
                   <Image
-                    src="https://images.pexels.com/photos/2760243/pexels-photo-2760243.jpeg"
-                    alt="GLB manufacturing process"
+                    src="/bamboo pic 4.jpg"
+                    alt="Bamboo Manufacturing Overview"
                     width={600}
                     height={400}
                     className="rounded-lg object-cover"
@@ -263,7 +263,7 @@ export default function Home() {
       <section className="py-32 bg-yellow-400 relative overflow-hidden">
         <div className="absolute inset-0 opacity-20">
           <Image
-            src="https://images.pexels.com/photos/3862130/pexels-photo-3862130.jpeg"
+            src="/bamboo pic 3.jpg"
             alt="Background texture"
             width={1920}
             height={600}
