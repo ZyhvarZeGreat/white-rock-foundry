@@ -114,11 +114,7 @@ export default function ContactPage() {
               <ScrollAnimation type="fade-up" delay={100}>
                 <div className="text-center">
                   <h3 className="font-bold mb-4">Phones:</h3>
-                  <p className="text-gray-600">
-                    +44 (0) 20 1234 5678
-                    <br />
-                    +44 (0) 20 8765 4321
-                  </p>
+                  <p className="text-gray-600">+44 79 031 27248</p>
                 </div>
               </ScrollAnimation>
               <ScrollAnimation type="fade-up" delay={200}>
@@ -130,11 +126,11 @@ export default function ContactPage() {
                 </div>
               </ScrollAnimation>
               <ScrollAnimation type="fade-up" delay={300}>
-                <div className="text-center">
-                  <h3 className="font-bold mb-4">Socials:</h3>
+                <div className="text-center ml-32">
+                  <h3 className="font-bold  mb-4">Socials:</h3>
                   <div className="flex justify-center space-x-4">
-                    <Link
-                      href="#"
+                    <a
+                      href="https://instagram.com/whiterock_foundry"
                       className="text-gray-600 hover:text-[#0a3b25]"
                     >
                       <svg
@@ -160,7 +156,7 @@ export default function ContactPage() {
                         <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
                         <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
                       </svg>
-                    </Link>
+                    </a>
                     <Link
                       href="#"
                       className="text-gray-600 hover:text-[#0a3b25]"
