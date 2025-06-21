@@ -1,15 +1,14 @@
-import Image from "next/image"
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
-import { ScrollAnimation } from "@/components/scroll-animation"
+import Image from "next/image";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { ScrollAnimation } from "@/components/scroll-animation";
 
 export default function ContactPage() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Header/Navigation */}
- 
 
       <main className="flex-grow">
         {/* Contact Form Section */}
@@ -27,11 +26,17 @@ export default function ContactPage() {
               </div>
               <div>
                 <ScrollAnimation type="fade-up">
-                  <p className="text-sm text-[#0a3b25] font-medium mb-2">LET'S START A CONVERSATION</p>
-                  <h1 className="text-4xl font-bold mb-8 font-heading">Connect with us</h1>
+                  <p className="text-sm text-[#0a3b25] font-medium mb-2">
+                    LET'S START A CONVERSATION
+                  </p>
+                  <h1 className="text-4xl font-bold mb-8 font-heading">
+                    Connect with us
+                  </h1>
                   <p className="text-gray-600 mb-6">
-                    Interested in sustainable GLB solutions for your construction, furniture, or interior design project? 
-                    We're here to help you explore the possibilities of eco-friendly bamboo products.
+                    Interested in sustainable GLB solutions for your
+                    construction, furniture, or interior design project? We're
+                    here to help you explore the possibilities of eco-friendly
+                    bamboo products.
                   </p>
                   <form className="space-y-6">
                     <div>
@@ -76,15 +81,19 @@ export default function ContactPage() {
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
               <ScrollAnimation type="fade-up">
-                <p className="text-sm text-[#0a3b25] font-medium mb-2">STAY CONNECTED</p>
+                <p className="text-sm text-[#0a3b25] font-medium mb-2">
+                  STAY CONNECTED
+                </p>
                 <h2 className="text-3xl font-bold mb-4 font-heading">
                   Find all the ways to reach us
                   <br />
                   in one place
                 </h2>
                 <p className="max-w-2xl mx-auto text-gray-600">
-                  Get in touch with us to discuss your sustainable GLB project requirements. Whether you're looking for structural solutions, 
-                  furniture manufacturing, or interior design applications, we're here to help you achieve your sustainability goals.
+                  Get in touch with us to discuss your sustainable GLB project
+                  requirements. Whether you're looking for structural solutions,
+                  furniture manufacturing, or interior design applications,
+                  we're here to help you achieve your sustainability goals.
                 </p>
               </ScrollAnimation>
             </div>
@@ -115,10 +124,8 @@ export default function ContactPage() {
               <ScrollAnimation type="fade-up" delay={200}>
                 <div className="text-center">
                   <h3 className="font-bold mb-4">Email:</h3>
-                  <p className="text-gray-600">
-                    INFO@WHITEROCKFOUNDRY.COM
-                    <br />
-                    SALES@WHITEROCKFOUNDRY.COM
+                  <p className="text-gray-600 uppercase">
+                    admin@whiterockfoundry.com
                   </p>
                 </div>
               </ScrollAnimation>
@@ -126,7 +133,10 @@ export default function ContactPage() {
                 <div className="text-center">
                   <h3 className="font-bold mb-4">Socials:</h3>
                   <div className="flex justify-center space-x-4">
-                    <Link href="#" className="text-gray-600 hover:text-[#0a3b25]">
+                    <Link
+                      href="#"
+                      className="text-gray-600 hover:text-[#0a3b25]"
+                    >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -139,12 +149,22 @@ export default function ContactPage() {
                         strokeLinejoin="round"
                         className="h-6 w-6"
                       >
-                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                        <rect
+                          width="20"
+                          height="20"
+                          x="2"
+                          y="2"
+                          rx="5"
+                          ry="5"
+                        />
                         <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
                         <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
                       </svg>
                     </Link>
-                    <Link href="#" className="text-gray-600 hover:text-[#0a3b25]">
+                    <Link
+                      href="#"
+                      className="text-gray-600 hover:text-[#0a3b25]"
+                    >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -160,7 +180,10 @@ export default function ContactPage() {
                         <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
                       </svg>
                     </Link>
-                    <Link href="#" className="text-gray-600 hover:text-[#0a3b25]">
+                    <Link
+                      href="#"
+                      className="text-gray-600 hover:text-[#0a3b25]"
+                    >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -177,7 +200,10 @@ export default function ContactPage() {
                         <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" />
                       </svg>
                     </Link>
-                    <Link href="#" className="text-gray-600 hover:text-[#0a3b25]">
+                    <Link
+                      href="#"
+                      className="text-gray-600 hover:text-[#0a3b25]"
+                    >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -212,10 +238,7 @@ export default function ContactPage() {
         </section>
 
         {/* CTA Section */}
-    
       </main>
-
-
     </div>
-  )
+  );
 }
