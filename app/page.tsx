@@ -11,7 +11,7 @@ export default function Home() {
       <section className="relative">
         <div className="absolute inset-0">
           <Image
-            src="/pexels-y-box-1283725278-27195949.jpg"
+            src="/glubam1.png"
             alt="Bamboo Manufacturing"
             width={1920}
             height={700}
@@ -160,7 +160,7 @@ export default function Home() {
               <ScrollAnimation type="fade-right" delay={400}>
                 <div className="relative">
                   <Image
-                    src="/bamboo pic 4.jpg"
+                    src="/glubam2.png"
                     alt="Bamboo Manufacturing Overview"
                     width={600}
                     height={400}

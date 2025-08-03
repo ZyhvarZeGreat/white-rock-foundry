@@ -37,22 +37,22 @@ const applications = [
   {
     title: "Outdoor Decking",
     description: "Durable decking for residential and commercial outdoor spaces",
-    image: "/bamboo pic 5.jpg"
+    image: "/glubam8.png"
   },
   {
     title: "Pool Surrounds",
     description: "Water-resistant decking for pool areas and wet environments",
-    image: "/bamboo pic 4.jpg"
+    image: "/glubam7.png"
   },
   {
     title: "Public Spaces",
     description: "High-traffic decking for public areas and walkways",
-    image: "/bamboo pic 3.jpg"
+    image: "/glubam2.png"
   },
   {
     title: "Rooftop Terraces",
     description: "Weather-resistant decking for elevated outdoor spaces",
-    image: "/bamboo pic2.jpeg.jpg"
+    image: "/glubam1.png"
   }
 ]
 
@@ -107,7 +107,7 @@ export default function GLBDeckingPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div className="relative h-[400px] rounded-lg overflow-hidden">
                 <Image
-                  src="/bamboo pic2.jpeg.jpg"
+                  src="/glubam2.png"
                   alt="GLB Decking"
                   fill
                   className="object-cover"

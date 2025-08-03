@@ -8,7 +8,7 @@ const products = [
     id: "glb-beams",
     name: "GLB Beams",
     description: "High-strength engineered beams for superior structural performance",
-    image: "/bamboo pic 5.jpg",
+    image: "/glubam8.png",
     features: [
       "Superior load-bearing capacity",
       "Dimensional stability",
@@ -34,7 +34,7 @@ const products = [
     id: "glb-columns",
     name: "GLB Columns",
     description: "Engineered columns for structural support and architectural design",
-    image: "/bamboo pic 4.jpg",
+    image: "/glubam7.png",
     features: [
       "High compressive strength",
       "Architectural versatility",
@@ -58,7 +58,7 @@ const products = [
     id: "glb-panels",
     name: "GLB Panels",
     description: "Versatile panels for walls, ceilings, and architectural features",
-    image: "/bamboo pic 3.jpg",
+    image: "/glubam2.png",
     features: [
       "Excellent dimensional stability",
       "High impact resistance",
@@ -82,7 +82,7 @@ const products = [
     id: "glb-decking",
     name: "GLB Decking",
     description: "Durable outdoor decking for residential and commercial applications",
-    image: "/bamboo pic2.jpeg.jpg",
+    image: "/glubam2",
     features: [
       "Superior durability",
       "Weather resistance",
@@ -224,7 +224,7 @@ export default function ProductsPage() {
         <section className="py-16 bg-yellow-400 relative overflow-hidden">
           <div className="absolute inset-0 opacity-20">
             <Image
-              src="/bamboo pic.jpg"
+              src="/glubam8.png "
               alt="Background texture"
               fill
               className="object-cover"

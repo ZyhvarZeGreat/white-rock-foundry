@@ -11,7 +11,7 @@ export default function ResidentialProjectsPage() {
         <section className="relative">
           <div className="absolute inset-0">
             <Image
-              src="https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg"
+              src="/glubam2.png"
               alt="Residential projects"
               width={1920}
               height={600}
@@ -47,7 +47,7 @@ export default function ResidentialProjectsPage() {
                 <div className="bg-white rounded-lg overflow-hidden shadow-sm">
                   <div className="relative h-64">
                     <Image
-                      src="https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg"
+                      src="/glubam3.png"
                       alt="Modern home project"
                       fill
                       className="object-cover"
@@ -72,7 +72,7 @@ export default function ResidentialProjectsPage() {
                 <div className="bg-white rounded-lg overflow-hidden shadow-sm">
                   <div className="relative h-64">
                     <Image
-                      src="https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg"
+                      src="/glubam8.png"
                       alt="Luxury villa project"
                       fill
                       className="object-cover"
@@ -97,7 +97,7 @@ export default function ResidentialProjectsPage() {
                 <div className="bg-white rounded-lg overflow-hidden shadow-sm">
                   <div className="relative h-64">
                     <Image
-                      src="https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg"
+                      src="/glubam4.png"
                       alt="Eco-friendly home project"
                       fill
                       className="object-cover"
@@ -161,7 +161,7 @@ export default function ResidentialProjectsPage() {
         <section className="py-16 bg-yellow-400 relative overflow-hidden">
           <div className="absolute inset-0 opacity-20">
             <Image
-              src="https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg"
+              src="/glubam3.png"
               alt="Background texture"
               width={1920}
               height={600}

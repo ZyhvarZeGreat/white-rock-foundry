@@ -11,7 +11,7 @@ export default function InfrastructureProjectsPage() {
         <section className="relative">
           <div className="absolute inset-0">
             <Image
-              src="https://images.pexels.com/photos/3862130/pexels-photo-3862130.jpeg"
+             src="/glubam1.png"
               alt="Infrastructure projects"
               width={1920}
               height={600}
@@ -47,7 +47,7 @@ export default function InfrastructureProjectsPage() {
                 <div className="bg-white rounded-lg overflow-hidden shadow-sm">
                   <div className="relative h-64">
                     <Image
-                      src="https://images.pexels.com/photos/3862130/pexels-photo-3862130.jpeg"
+                          src="/glubam8.png"
                       alt="Bridge project"
                       fill
                       className="object-cover"
@@ -72,7 +72,7 @@ export default function InfrastructureProjectsPage() {
                 <div className="bg-white rounded-lg overflow-hidden shadow-sm">
                   <div className="relative h-64">
                     <Image
-                      src="https://images.pexels.com/photos/3862130/pexels-photo-3862130.jpeg"
+                      src="/glubam3.png"
                       alt="Public facility project"
                       fill
                       className="object-cover"
@@ -97,7 +97,7 @@ export default function InfrastructureProjectsPage() {
                 <div className="bg-white rounded-lg overflow-hidden shadow-sm">
                   <div className="relative h-64">
                     <Image
-                      src="https://images.pexels.com/photos/3862130/pexels-photo-3862130.jpeg"
+                      src="/glubam3.pn  g"
                       alt="Transportation hub project"
                       fill
                       className="object-cover"

@@ -11,7 +11,7 @@ export default function IndustrialProjectsPage() {
         <section className="relative">
           <div className="absolute inset-0">
             <Image
-              src="https://images.pexels.com/photos/3862130/pexels-photo-3862130.jpeg"
+              src="/glubam4.png"
               alt="Industrial projects"
               width={1920}
               height={600}
@@ -47,7 +47,7 @@ export default function IndustrialProjectsPage() {
                 <div className="bg-white rounded-lg overflow-hidden shadow-sm">
                   <div className="relative h-64">
                     <Image
-                      src="https://images.pexels.com/photos/3862130/pexels-photo-3862130.jpeg"
+                      src="/glubam3.png"
                       alt="Manufacturing plant project"
                       fill
                       className="object-cover"
@@ -72,7 +72,7 @@ export default function IndustrialProjectsPage() {
                 <div className="bg-white rounded-lg overflow-hidden shadow-sm">
                   <div className="relative h-64">
                     <Image
-                      src="https://images.pexels.com/photos/3862130/pexels-photo-3862130.jpeg"
+                      src="/glubam4.png"
                       alt="Warehouse project"
                       fill
                       className="object-cover"
@@ -97,7 +97,7 @@ export default function IndustrialProjectsPage() {
                 <div className="bg-white rounded-lg overflow-hidden shadow-sm">
                   <div className="relative h-64">
                     <Image
-                      src="https://images.pexels.com/photos/3862130/pexels-photo-3862130.jpeg"
+                      src="/glubam2.png"
                       alt="Processing facility project"
                       fill
                       className="object-cover"

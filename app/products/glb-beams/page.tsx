@@ -37,22 +37,22 @@ const applications = [
   {
     title: "Structural Framing",
     description: "Primary load-bearing elements in buildings and structures",
-    image: "/bamboo pic 5.jpg"
+    image: "/glubam8.png"
   },
   {
     title: "Floor Systems",
     description: "Support beams for floor joists and decking",
-    image: "/bamboo pic 4.jpg"
+    image: "/glubam7.png"
   },
   {
     title: "Roof Trusses",
     description: "Supporting elements in roof construction",
-    image: "/bamboo pic 3.jpg"
+    src: "/glubam4.png",
   },
   {
     title: "Bridge Components",
     description: "Structural elements in pedestrian and light vehicle bridges",
-    image: "/bamboo pic2.jpeg.jpg"
+    src: "/glubam3.png"
   }
 ]
 
@@ -107,7 +107,7 @@ export default function GLBBeamsPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div className="relative h-[400px] rounded-lg overflow-hidden">
                 <Image
-                  src="/bamboo pic 5.jpg"
+                  src="/glubam8.png"
                   alt="GLB Beams"
                   fill
                   className="object-cover"
@@ -217,7 +217,7 @@ export default function GLBBeamsPage() {
         <section className="py-16 bg-yellow-400 relative overflow-hidden">
           <div className="absolute inset-0 opacity-20">
             <Image
-              src="/bamboo pic.jpg"
+              src="/glubam8.png"
               alt="Background texture"
               fill
               className="object-cover"

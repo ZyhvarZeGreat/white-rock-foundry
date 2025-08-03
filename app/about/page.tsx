@@ -9,7 +9,7 @@ export default function AboutPage() {
       <section className="relative">
         <div className="absolute inset-0">
           <Image
-            src="/pexels-asia-culture-center-3116378-14176513.jpg"
+            src="/glubam4.png"
             alt="GLB manufacturing facility"
             width={1920}
             height={600}
@@ -62,7 +62,7 @@ export default function AboutPage() {
               <div className="relative">
                 <div className="relative h-[500px] rounded-lg overflow-hidden">
                   <Image
-                    src="/pexels-cax0000-1834996.jpg"
+                    src="/glubam2.png"
                     alt="Our GLB manufacturing facility"
                     fill
                     className="object-cover"
@@ -437,7 +437,7 @@ export default function AboutPage() {
               <div className="grid grid-cols-2 gap-4">
                 <div className="relative h-64 rounded-lg overflow-hidden">
                   <Image
-                    src="https://images.pexels.com/photos/2760243/pexels-photo-2760243.jpeg"
+                    src="/glubam2.png"
                     alt="Manufacturing facility"
                     fill
                     className="object-cover"
@@ -445,7 +445,7 @@ export default function AboutPage() {
                 </div>
                 <div className="relative h-64 rounded-lg overflow-hidden">
                   <Image
-                    src="https://images.pexels.com/photos/3862130/pexels-photo-3862130.jpeg"
+                    src="/glubam8.png"
                     alt="CNC machining"
                     fill
                     className="object-cover"
@@ -453,7 +453,7 @@ export default function AboutPage() {
                 </div>
                 <div className="relative h-64 rounded-lg overflow-hidden">
                   <Image
-                    src="https://images.pexels.com/photos/2760241/pexels-photo-2760241.jpeg"
+                    src="/glubam6.png"
                     alt="Quality control"
                     fill
                     className="object-cover"
@@ -461,7 +461,7 @@ export default function AboutPage() {
                 </div>
                 <div className="relative h-64 rounded-lg overflow-hidden">
                   <Image
-                    src="https://images.pexels.com/photos/1108101/pexels-photo-1108101.jpeg"
+                    src="/glubam3.png"
                     alt="Engineering design"
                     fill
                     className="object-cover"
@@ -551,7 +551,7 @@ export default function AboutPage() {
       <section className="section-padding bg-yellow-400 relative overflow-hidden">
         <div className="absolute inset-0 opacity-20">
           <Image
-            src="https://images.pexels.com/photos/3862130/pexels-photo-3862130.jpeg"
+            src="/glubam7.png"
             alt="Background texture"
             width={1920}
             height={600}

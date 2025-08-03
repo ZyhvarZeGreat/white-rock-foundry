@@ -56,7 +56,7 @@ export default function CustomSolutionsPage() {
               <ScrollAnimation type="fade-left">
                 <div className="relative h-[400px] rounded-lg overflow-hidden">
                   <Image
-                    src="/pexels-roger-ben-323520146-18446420.jpg"
+                    src="/glubam2.png"
                     alt="Custom GLB manufacturing"
                     fill
                     className="object-cover"

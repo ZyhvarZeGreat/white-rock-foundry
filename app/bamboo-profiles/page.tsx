@@ -4,23 +4,23 @@ import { Button } from "@/components/ui/button"
 
 const bambooImages = [
   {
-    src: "/bamboo pic 5.jpg",
+    src: "/glubam8.png",
     label: "Bamboo Profile 5"
   },
   {
-    src: "/bamboo pic 4.jpg",
+    src: "/glubam7.png",
     label: "Bamboo Profile 4"
   },
   {
-    src: "/bamboo pic 3.jpg",
+    src: "/glubam2.png",
     label: "Bamboo Profile 3"
   },
   {
-    src: "/bamboo pic2.jpeg.jpg",
+    src: "/glubam6.png",
     label: "Bamboo Profile 2"
   },
   {
-    src: "/bamboo pic.jpg",
+    src: "/glubam1.png",
     label: "Bamboo Profile 1"
   },
 ]

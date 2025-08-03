@@ -30,7 +30,7 @@ export default function ServicesPage() {
                 <Link href="/services/structural-glb" className="block group">
                   <div className="relative h-64 rounded-lg overflow-hidden">
                     <Image
-                      src="/bamboo pic 5.jpg"
+                      src="/glubam8.png"
                       alt="Structural GLB"
                       fill
                       className="object-cover transition-transform duration-300 group-hover:scale-110"
@@ -66,7 +66,7 @@ export default function ServicesPage() {
                 <Link href="/services/precision-casting" className="block group">
                   <div className="relative h-64 rounded-lg overflow-hidden">
                     <Image
-                      src="/bamboo pic 3.jpg"
+                      src="/glubam3.png"
                       alt="Precision Casting"
                       fill
                       className="object-cover transition-transform duration-300 group-hover:scale-110"
@@ -84,7 +84,7 @@ export default function ServicesPage() {
                 <Link href="/services/quality-assurance" className="block group">
                   <div className="relative h-64 rounded-lg overflow-hidden">
                     <Image
-                      src="/bamboo pic2.jpeg.jpg"
+                      src="/glubam2.png"
                       alt="Quality Assurance"
                       fill
                       className="object-cover transition-transform duration-300 group-hover:scale-110"
@@ -102,7 +102,7 @@ export default function ServicesPage() {
                 <Link href="/services/custom-solutions" className="block group">
                   <div className="relative h-64 rounded-lg overflow-hidden">
                     <Image
-                      src="/bamboo pic.jpg"
+                      src="/glubam4.png"
                       alt="Custom Solutions"
                       fill
                       className="object-cover transition-transform duration-300 group-hover:scale-110"

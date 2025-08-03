@@ -11,7 +11,7 @@ export default function CommercialProjectsPage() {
         <section className="relative">
           <div className="absolute inset-0">
             <Image
-              src="https://images.pexels.com/photos/325153/pexels-photo-325153.jpeg"
+              src="/glubam6.png"
               alt="Commercial projects"
               width={1920}
               height={600}
@@ -47,7 +47,7 @@ export default function CommercialProjectsPage() {
                 <div className="bg-white rounded-lg overflow-hidden shadow-sm">
                   <div className="relative h-64">
                     <Image
-                      src="https://images.pexels.com/photos/325153/pexels-photo-325153.jpeg"
+                      src="/glubam1.png"
                       alt="Office building project"
                       fill
                       className="object-cover"
@@ -72,7 +72,7 @@ export default function CommercialProjectsPage() {
                 <div className="bg-white rounded-lg overflow-hidden shadow-sm">
                   <div className="relative h-64">
                     <Image
-                      src="https://images.pexels.com/photos/325153/pexels-photo-325153.jpeg"
+                      src="/glubam4.png"
                       alt="Shopping mall project"
                       fill
                       className="object-cover"
@@ -97,7 +97,7 @@ export default function CommercialProjectsPage() {
                 <div className="bg-white rounded-lg overflow-hidden shadow-sm">
                   <div className="relative h-64">
                     <Image
-                      src="https://images.pexels.com/photos/325153/pexels-photo-325153.jpeg"
+                      src="/glubam3.png"
                       alt="Hotel project"
                       fill
                       className="object-cover"

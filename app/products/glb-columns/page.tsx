@@ -37,22 +37,22 @@ const applications = [
   {
     title: "Structural Support",
     description: "Vertical load-bearing elements in buildings and structures",
-    image: "/bamboo pic 5.jpg"
+    image: "/glubam8.png"
   },
   {
     title: "Architectural Features",
     description: "Decorative and functional columns in modern architecture",
-    image: "/bamboo pic 4.jpg"
+    image: "/glubam7.png"
   },
   {
     title: "Industrial Applications",
     description: "Support columns in industrial facilities and warehouses",
-    image: "/bamboo pic 3.jpg"
+    image: "/glubam2.png"
   },
   {
     title: "Outdoor Structures",
     description: "Columns for pergolas, pavilions, and outdoor spaces",
-    image: "/bamboo pic2.jpeg.jpg"
+    image: "/glubam1.png"
   }
 ]
 
@@ -107,7 +107,7 @@ export default function GLBColumnsPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div className="relative h-[400px] rounded-lg overflow-hidden">
                 <Image
-                  src="/bamboo pic 4.jpg"
+                  src="/glubam7.png"
                   alt="GLB Columns"
                   fill
                   className="object-cover"

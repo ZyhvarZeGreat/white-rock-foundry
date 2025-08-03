@@ -56,7 +56,7 @@ export default function StructuralGLBPage() {
               <ScrollAnimation type="fade-left">
                 <div className="relative h-[400px] rounded-lg overflow-hidden">
                   <Image
-                    src="https://images.pexels.com/photos/3862130/pexels-photo-3862130.jpeg"
+                    src="/glubam5.png"
                     alt="GLB manufacturing process"
                     fill
                     className="object-cover"
@@ -264,7 +264,7 @@ export default function StructuralGLBPage() {
         <section className="py-16 bg-yellow-400 relative overflow-hidden">
           <div className="absolute inset-0 opacity-20">
             <Image
-              src="https://images.pexels.com/photos/3862130/pexels-photo-3862130.jpeg"
+              src="/glubam2.png"
               alt="Background texture"
               width={1920}
               height={600}

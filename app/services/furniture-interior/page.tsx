@@ -56,7 +56,7 @@ export default function FurnitureInteriorPage() {
               <ScrollAnimation type="fade-left">
                 <div className="relative h-[400px] rounded-lg overflow-hidden">
                   <Image
-                    src="/pexels-thomas-balabaud-735585-1579715.jpg"
+                    src="/glubam4.png"
                     alt="GLB furniture manufacturing"
                     fill
                     className="object-cover"

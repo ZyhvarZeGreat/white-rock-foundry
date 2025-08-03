@@ -59,7 +59,7 @@ export default function PrecisionCastingPage() {
             </div>
             <div className="relative h-96 rounded-lg overflow-hidden shadow-xl">
               <Image
-                src="/pexels-rostislav-4767063.jpg"
+                src="/glubam3.png"
                 alt="Precision Casting Process"
                 fill
                 className="object-cover"
@@ -338,7 +338,7 @@ export default function PrecisionCastingPage() {
             </div>
             <div className="relative h-96 rounded-lg overflow-hidden shadow-xl order-1 md:order-2">
               <Image
-                src="/pexels-rostislav-4767063.jpg"
+                src="/glubam3.png"
                 alt="Quality Control Process"
                 fill
                 className="object-cover"
