@@ -107,7 +107,7 @@ export default function GLBPanelsPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div className="relative h-[400px] rounded-lg overflow-hidden">
                 <Image
-                  src="/bamboo pic 3.jpg"
+                  src="/glubam-panel1.png"
                   alt="GLB Panels"
                   fill
                   className="object-cover"

@@ -11,7 +11,7 @@ export default function Home() {
       <section className="relative">
         <div className="absolute inset-0">
           <Image
-            src="/glubam1.png"
+            src="/glubam-home.png"
             alt="Bamboo Manufacturing"
             width={1920}
             height={700}

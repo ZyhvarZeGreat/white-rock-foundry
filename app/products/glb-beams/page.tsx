@@ -107,7 +107,7 @@ export default function GLBBeamsPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div className="relative h-[400px] rounded-lg overflow-hidden">
                 <Image
-                  src="/glubam8.png"
+                  src="/glubam-beam1.png"
                   alt="GLB Beams"
                   fill
                   className="object-cover"

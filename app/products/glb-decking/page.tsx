@@ -107,7 +107,7 @@ export default function GLBDeckingPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div className="relative h-[400px] rounded-lg overflow-hidden">
                 <Image
-                  src="/glubam2.png"
+                  src="/glubam-decking2.png"
                   alt="GLB Decking"
                   fill
                   className="object-cover"

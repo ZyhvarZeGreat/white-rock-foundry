@@ -11,7 +11,7 @@ export default function StructuralGLBPage() {
         <section className="relative">
           <div className="absolute inset-0">
             <Image
-              src="/pexels-katebranch-28909012.jpg"
+              src="/glubam-structural.png"
               alt="Structural GLB manufacturing"
               width={1920}
               height={600}
@@ -56,7 +56,7 @@ export default function StructuralGLBPage() {
               <ScrollAnimation type="fade-left">
                 <div className="relative h-[400px] rounded-lg overflow-hidden">
                   <Image
-                    src="/glubam5.png"
+                    src="/glubam8.png"
                     alt="GLB manufacturing process"
                     fill
                     className="object-cover"
