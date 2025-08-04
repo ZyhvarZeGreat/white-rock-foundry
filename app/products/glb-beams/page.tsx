@@ -43,16 +43,6 @@ const applications = [
     title: "Floor Systems",
     description: "Support beams for floor joists and decking",
     image: "/glubam7.png"
-  },
-  {
-    title: "Roof Trusses",
-    description: "Supporting elements in roof construction",
-    src: "/glubam4.png",
-  },
-  {
-    title: "Bridge Components",
-    description: "Structural elements in pedestrian and light vehicle bridges",
-    src: "/glubam3.png"
   }
 ]
 
