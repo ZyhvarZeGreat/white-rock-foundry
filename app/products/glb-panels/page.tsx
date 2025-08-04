@@ -37,22 +37,22 @@ const applications = [
   {
     title: "Wall Cladding",
     description: "Interior and exterior wall panels for modern architecture",
-    image: "/bamboo pic 5.jpg"
+    image: "/glubam2.png"
   },
   {
     title: "Furniture",
     description: "High-quality panels for furniture and cabinetry",
-    image: "/bamboo pic 4.jpg"
+    image: "/glubam8.png"
   },
   {
     title: "Flooring",
     description: "Durable flooring panels for residential and commercial spaces",
-    image: "/bamboo pic 3.jpg"
+    image: "/glubam4.png"
   },
   {
     title: "Ceiling Systems",
     description: "Acoustic and decorative ceiling panels",
-    image: "/bamboo pic2.jpeg.jpg"
+    image: "/glubam-decking2.png"
   }
 ]
 
