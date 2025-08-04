@@ -160,7 +160,7 @@ export default function Home() {
               <ScrollAnimation type="fade-right" delay={400}>
                 <div className="relative">
                   <Image
-                    src="/glubam2.png"
+                    src="/glubam-landing.png"
                     alt="Bamboo Manufacturing Overview"
                     width={600}
                     height={400}
