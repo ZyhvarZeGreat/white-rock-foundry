@@ -416,7 +416,7 @@ export default function AboutPage() {
               <div className="grid grid-cols-2 gap-4">
                 <div className="relative h-64 rounded-lg overflow-hidden">
                   <Image
-                    src="/glubam2.png"
+                    src="/glubam2.jpg"
                     alt="Manufacturing facility"
                     fill
                     className="object-cover"
@@ -424,7 +424,7 @@ export default function AboutPage() {
                 </div>
                 <div className="relative h-64 rounded-lg overflow-hidden">
                   <Image
-                    src="/glubam8.png"
+                    src="/glubam1.jpg"
                     alt="CNC machining"
                     fill
                     className="object-cover"
@@ -432,7 +432,7 @@ export default function AboutPage() {
                 </div>
                 <div className="relative h-64 rounded-lg overflow-hidden">
                   <Image
-                    src="/glubam6.png"
+                    src="/glubam4.jpg"
                     alt="Quality control"
                     fill
                     className="object-cover"
@@ -440,7 +440,7 @@ export default function AboutPage() {
                 </div>
                 <div className="relative h-64 rounded-lg overflow-hidden">
                   <Image
-                    src="/glubam3.png"
+                    src="/glubam3.jpg"
                     alt="Engineering design"
                     fill
                     className="object-cover"
