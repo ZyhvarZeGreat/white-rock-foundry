@@ -287,6 +287,87 @@ export default function Home() {
           </ScrollAnimation>
         </div>
       </section>
+
+      {/* Glass Products Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4 md:px-6">
+          <ScrollAnimation type="fade-up">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold mb-4">Premium Glass Solutions</h2>
+              <p className="text-gray-600 max-w-2xl mx-auto">
+                Discover our range of high-performance glass products designed for both aesthetics and security
+              </p>
+            </div>
+          </ScrollAnimation>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <ScrollAnimation type="fade-up">
+              <div className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                <div className="h-48 bg-gray-100 rounded-md mb-4 overflow-hidden">
+                  <Image 
+                    src="/glass1.jpg" 
+                    alt="Tempered Glass"
+                    width={400}
+                    height={300}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h3 className="text-xl font-semibold mb-2">Tempered Glass</h3>
+                <p className="text-gray-600 mb-4">Heat-treated for enhanced strength and safety, perfect for high-traffic areas.</p>
+                <Link href="/products/glass-products/tempered">
+                  <Button variant="outline" className="w-full">Learn More</Button>
+                </Link>
+              </div>
+            </ScrollAnimation>
+
+            <ScrollAnimation type="fade-up" delay={100}>
+              <div className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                <div className="h-48 bg-gray-100 rounded-md mb-4 overflow-hidden">
+                  <Image 
+                    src="/glass-ballistic.jpg" 
+                    alt="Ballistic Glass"
+                    width={400}
+                    height={300}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h3 className="text-xl font-semibold mb-2">Ballistic Glass</h3>
+                <p className="text-gray-600 mb-4">High-security laminated glass designed to resist penetration from bullets and forced entry.</p>
+                <Link href="/products/glass-products/ballistic">
+                  <Button variant="outline" className="w-full">Learn More</Button>
+                </Link>
+              </div>
+            </ScrollAnimation>
+
+            <ScrollAnimation type="fade-up" delay={200}>
+              <div className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                <div className="h-48 bg-gray-100 rounded-md mb-4 overflow-hidden">
+                  <Image 
+                    src="/glass3.jpg" 
+                    alt="Laminated Glass"
+                    width={400}
+                    height={300}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h3 className="text-xl font-semibold mb-2">Laminated Glass</h3>
+                <p className="text-gray-600 mb-4">Safety glass that holds together when shattered, ideal for security and sound reduction.</p>
+                <Link href="/products/glass-products/laminated">
+                  <Button variant="outline" className="w-full">Learn More</Button>
+                </Link>
+              </div>
+            </ScrollAnimation>
+          </div>
+
+          <div className="text-center mt-12">
+            <Link href="/products/glass-products">
+              <Button className="bg-[#0a3b25] hover:bg-[#0c4a30] text-white">
+                View All Glass Products <ChevronRight className="ml-2 h-4 w-4" />
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
     </>
   )
 }

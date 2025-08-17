@@ -38,6 +38,7 @@ interface GlassProduct {
   id: string;
   title: string;
   description: string;
+  excerpt: string;
   image?: string;
 }
 
@@ -45,37 +46,50 @@ const glassProducts: GlassProduct[] = [
   {
     id: "tempered",
     title: "Tempered Glass",
-    description: "Heat-treated for enhanced strength and safety",
+    description: "Heat-treated safety glass that's 4-5x stronger than standard glass, shattering into small, blunt pieces when broken",
+    excerpt: "Premium safety glass for durability and security",
     image: "/glass1.jpg"
   },
   {
     id: "laminated",
     title: "Laminated Glass",
-    description: "Multiple layers bonded for safety and security",
+    description: "Multi-layered safety glass with a durable interlayer that holds the glass together when shattered, providing enhanced security and sound reduction",
+    excerpt: "Impact-resistant glass with superior safety features",
     image: "/glass2.jpg"
   },
   {
     id: "tinted",
     title: "Tinted Glass",
-    description: "Reduces heat and glare while maintaining visibility",
+    description: "Glass treated with a special coating to reduce heat and glare while maintaining excellent visibility and UV protection",
+    excerpt: "Energy-efficient glass with solar control benefits",
     image: "/glass3.jpg"
   },
   {
     id: "frosted",
     title: "Frosted Glass",
-    description: "Provides privacy while allowing light transmission",
+    description: "Decorative glass with an etched surface that provides privacy while allowing natural light transmission",
+    excerpt: "Elegant privacy solution with natural light diffusion",
     image: "/glass4.jpg"
+  },
+  {
+    id: "ballistic",
+    title: "Ballistic Glass",
+    description: "High-security laminated glass designed to resist penetration from bullets and forced entry, available in various protection levels",
+    excerpt: "Maximum security glass for high-risk environments",
+    image: "/glass-ballistic.jpg"
   },
   {
     id: "mirrored",
     title: "Mirrored Glass",
-    description: "Reflective surface for decorative and functional use",
+    description: "Reflective glass surface that combines functionality with aesthetic appeal, perfect for decorative and practical applications",
+    excerpt: "Stylish reflective glass for modern interiors",
     image: "/glass5.jpg"
   },
   {
     id: "smart",
     title: "Smart Glass",
-    description: "Switchable privacy glass with adjustable opacity",
+    description: "Switchable privacy glass that can change from transparent to opaque with the flip of a switch, offering on-demand privacy and light control",
+    excerpt: "Innovative glass with adjustable opacity",
     image: "/glass6.jpg"
   }
 ].map(product => ({

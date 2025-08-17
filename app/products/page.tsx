@@ -5,6 +5,25 @@ import { ScrollAnimation } from "@/components/scroll-animation"
 
 const products = [
   {
+    id: "ballistic-glass",
+    name: "Ballistic Glass",
+    description: "High-security laminated glass designed to resist penetration from bullets and forced entry",
+    image: "/glass-ballistic.jpg",
+    features: [
+      "Multiple layers of glass and polycarbonate",
+      "Bullet-resistant to various threat levels",
+      "Forced entry protection",
+      "Optional one-way vision",
+      "UV protection"
+    ],
+    specifications: {
+      "Thickness": "25mm - 75mm",
+      "Protection Levels": "UL 752 Level 1-10",
+      "Transparency": "70-90%",
+      "Weight": "40-120 kg/m²"
+    }
+  },
+  {
     id: "glb-beams",
     name: "GLB Beams",
     description: "High-strength engineered beams for superior structural performance",
