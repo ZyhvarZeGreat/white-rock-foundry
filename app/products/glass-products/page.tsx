@@ -76,7 +76,7 @@ const glassProducts: GlassProduct[] = [
     title: "Ballistic Glass",
     description: "High-security laminated glass designed to resist penetration from bullets and forced entry, available in various protection levels",
     excerpt: "Maximum security glass for high-risk environments",
-    image: "/glass-ballistic.jpg"
+    image: "/ballistic-glass.png"
   },
   {
     id: "mirrored",
