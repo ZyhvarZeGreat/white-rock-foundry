@@ -26,7 +26,7 @@ export default async function BlogPostPage({ params }: { params: { slug: string 
       image: "https://images.pexels.com/photos/2760243/pexels-photo-2760243.jpeg",
       content: `
         <h2>The Evolution of Precision Casting in Modern Manufacturing</h2>
-        <p>Precision metal casting has undergone a remarkable transformation in recent years, with technological advancements pushing the boundaries of what's possible in manufacturing. At White Rock Foundry, we're at the forefront of these innovations, implementing cutting-edge techniques that enhance precision, reduce waste, and improve overall product quality.</p>
+        <p>Precision metal casting has undergone a remarkable transformation in recent years, with technological advancements pushing the boundaries of what's possible in manufacturing. At Verdantlam, we're at the forefront of these innovations, implementing cutting-edge techniques that enhance precision, reduce waste, and improve overall product quality.</p>
         
         <h3>1. Digital Simulation and Modeling</h3>
         <p>One of the most significant advancements in precision casting is the use of sophisticated digital simulation tools. These technologies allow engineers to model the entire casting process virtually before any physical work begins. By simulating how molten metal will flow and solidify within a mold, we can identify potential issues such as porosity, shrinkage, or incomplete fills before they occur in production.</p>
@@ -44,7 +44,7 @@ export default async function BlogPostPage({ params }: { params: { slug: string 
         <p>The integration of IoT sensors and real-time monitoring systems has revolutionized quality control in precision casting. These technologies allow for continuous monitoring of critical parameters such as temperature, pressure, and cooling rates throughout the casting process. Any deviations from optimal conditions can be immediately identified and corrected, ensuring consistent quality across production runs.</p>
         
         <h3>The Future of Precision Casting</h3>
-        <p>Looking ahead, the future of precision casting is incredibly promising. Emerging technologies such as AI-driven process optimization, advanced robotics for automation, and new sustainable materials are set to further transform the industry. At White Rock Foundry, we're committed to staying at the cutting edge of these developments, continuously investing in research and development to deliver the highest quality precision castings to our clients.</p>
+        <p>Looking ahead, the future of precision casting is incredibly promising. Emerging technologies such as AI-driven process optimization, advanced robotics for automation, and new sustainable materials are set to further transform the industry. At Verdantlam, we're committed to staying at the cutting edge of these developments, continuously investing in research and development to deliver the highest quality precision castings to our clients.</p>
         
         <h3>Conclusion</h3>
         <p>Precision metal casting continues to evolve at a rapid pace, driven by technological innovation and increasing demands for higher quality, more complex components. By embracing these advancements, manufacturers can achieve levels of precision, efficiency, and quality that were previously impossible. As we move forward, the companies that thrive will be those that successfully integrate these new technologies while maintaining a focus on craftsmanship and expertise that has always been at the heart of quality casting.</p>
@@ -58,7 +58,7 @@ export default async function BlogPostPage({ params }: { params: { slug: string 
       image: "https://images.pexels.com/photos/1108101/pexels-photo-1108101.jpeg",
       content: `
         <h2>Embracing Sustainability in Metal Manufacturing</h2>
-        <p>The manufacturing industry, particularly metal foundries, has traditionally been associated with high energy consumption and environmental impact. However, at White Rock Foundry, we're leading the charge in implementing sustainable practices that reduce our ecological footprint while maintaining the highest standards of quality and efficiency.</p>
+        <p>The manufacturing industry, particularly metal foundries, has traditionally been associated with high energy consumption and environmental impact. However, at Verdantlam, we're leading the charge in implementing sustainable practices that reduce our ecological footprint while maintaining the highest standards of quality and efficiency.</p>
         
         <h3>1. Energy Efficiency Innovations</h3>
         <p>Energy consumption represents one of the largest environmental impacts in foundry operations. Modern foundries are implementing a range of technologies to reduce energy usage, from high-efficiency induction furnaces to waste heat recovery systems. At our facilities, we've installed advanced energy management systems that optimize power consumption in real-time, resulting in a 30% reduction in energy use over the past five years.</p>
@@ -82,7 +82,7 @@ export default async function BlogPostPage({ params }: { params: { slug: string 
         <p>It's important to note that these sustainability initiatives aren't just good for the planet—they're good for business. Energy efficiency reduces operating costs, waste reduction improves material utilization, and sustainable practices help attract and retain both customers and employees who value environmental responsibility. Our experience has shown that sustainability and profitability go hand in hand.</p>
         
         <h3>Conclusion</h3>
-        <p>The future of foundry operations lies in sustainable manufacturing practices that reduce environmental impact while improving efficiency and quality. By embracing these innovations, White Rock Foundry is demonstrating that traditional manufacturing can be transformed into a model of environmental responsibility without compromising on performance or profitability. As we continue to innovate and improve, we invite our industry colleagues to join us in building a more sustainable future for metal manufacturing.</p>
+        <p>The future of foundry operations lies in sustainable manufacturing practices that reduce environmental impact while improving efficiency and quality. By embracing these innovations, Verdantlam is demonstrating that traditional manufacturing can be transformed into a model of environmental responsibility without compromising on performance or profitability. As we continue to innovate and improve, we invite our industry colleagues to join us in building a more sustainable future for metal manufacturing.</p>
       `,
     },
     "digital-transformation-in-engineering": {
@@ -93,7 +93,7 @@ export default async function BlogPostPage({ params }: { params: { slug: string 
       image: "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg",
       content: `
         <h2>The Digital Revolution in Engineering and Manufacturing</h2>
-        <p>Digital transformation is fundamentally changing how engineering firms design, test, and manufacture products. At White Rock Foundry, we've embraced this revolution, implementing cutting-edge digital technologies that enhance our capabilities and deliver superior results for our clients.</p>
+        <p>Digital transformation is fundamentally changing how engineering firms design, test, and manufacture products. At Verdantlam, we've embraced this revolution, implementing cutting-edge digital technologies that enhance our capabilities and deliver superior results for our clients.</p>
         
         <h3>1. Advanced CAD/CAM Integration</h3>
         <p>The seamless integration of Computer-Aided Design (CAD) and Computer-Aided Manufacturing (CAM) systems has dramatically streamlined the product development process. Our engineers work with sophisticated 3D modeling software that allows for incredibly detailed design work, which then flows directly into our manufacturing systems. This integration eliminates translation errors and ensures that the final product precisely matches the original design intent.</p>
@@ -114,10 +114,10 @@ export default async function BlogPostPage({ params }: { params: { slug: string 
         <p>Blockchain technology is enhancing transparency and traceability throughout the engineering supply chain. We're implementing blockchain solutions to create immutable records of material sourcing, manufacturing processes, and quality testing. This provides our clients with complete confidence in the provenance and quality of their products, which is particularly important for critical applications in aerospace and medical industries.</p>
         
         <h3>Overcoming Digital Transformation Challenges</h3>
-        <p>While the benefits of digital transformation are clear, the journey is not without challenges. Successful implementation requires significant investment in technology, training, and organizational change. At White Rock Foundry, we've approached this transformation methodically, focusing on building digital literacy across our workforce and ensuring that new technologies align with our core business objectives.</p>
+        <p>While the benefits of digital transformation are clear, the journey is not without challenges. Successful implementation requires significant investment in technology, training, and organizational change. At Verdantlam, we've approached this transformation methodically, focusing on building digital literacy across our workforce and ensuring that new technologies align with our core business objectives.</p>
         
         <h3>Conclusion</h3>
-        <p>Digital transformation is not merely about adopting new technologies—it's about fundamentally rethinking how engineering and manufacturing businesses operate in the digital age. By embracing these innovations, White Rock Foundry has enhanced our ability to deliver complex, high-quality products with greater efficiency and precision than ever before. As digital technologies continue to evolve, we remain committed to staying at the forefront of this revolution, continuously exploring new ways to leverage digital tools to create value for our clients and maintain our competitive edge in the global marketplace.</p>
+        <p>Digital transformation is not merely about adopting new technologies—it's about fundamentally rethinking how engineering and manufacturing businesses operate in the digital age. By embracing these innovations, Verdantlam has enhanced our ability to deliver complex, high-quality products with greater efficiency and precision than ever before. As digital technologies continue to evolve, we remain committed to staying at the forefront of this revolution, continuously exploring new ways to leverage digital tools to create value for our clients and maintain our competitive edge in the global marketplace.</p>
       `,
     },
     "advanced-materials-in-engineering": {
@@ -128,7 +128,7 @@ export default async function BlogPostPage({ params }: { params: { slug: string 
       image: "https://images.pexels.com/photos/2760241/pexels-photo-2760241.jpeg",
       content: `
         <h2>The Material Revolution in Modern Engineering</h2>
-        <p>The development and application of advanced materials is transforming what's possible in engineering and manufacturing. At White Rock Foundry, we're constantly exploring new materials that can help our clients overcome challenges and achieve breakthrough performance in their products.</p>
+        <p>The development and application of advanced materials is transforming what's possible in engineering and manufacturing. At Verdantlam, we're constantly exploring new materials that can help our clients overcome challenges and achieve breakthrough performance in their products.</p>
         
         <h3>1. High-Performance Metal Alloys</h3>
         <p>Recent advances in metallurgy have produced alloys with unprecedented combinations of strength, weight, and durability. Our metallurgists work with nickel-based superalloys that maintain their properties at extreme temperatures, making them ideal for aerospace and power generation applications. Similarly, advanced aluminum and titanium alloys offer exceptional strength-to-weight ratios that enable more efficient, fuel-saving designs in transportation applications.</p>
@@ -152,7 +152,7 @@ export default async function BlogPostPage({ params }: { params: { slug: string 
         <p>With this expanding universe of material options, material selection has become an increasingly complex and critical aspect of the engineering process. Our materials engineers use sophisticated modeling and simulation tools to evaluate how different materials will perform under specific operating conditions, helping to identify the optimal material for each application based on performance requirements, cost constraints, and sustainability considerations.</p>
         
         <h3>Conclusion</h3>
-        <p>The rapid evolution of advanced materials is enabling engineering solutions that would have been impossible just a few years ago. At White Rock Foundry, we're committed to staying at the forefront of materials science, continuously exploring new materials and applications that can help our clients achieve their goals. By combining cutting-edge materials with our expertise in design and manufacturing, we're helping to create products that are stronger, lighter, more efficient, and more sustainable than ever before.</p>
+        <p>The rapid evolution of advanced materials is enabling engineering solutions that would have been impossible just a few years ago. At Verdantlam, we're committed to staying at the forefront of materials science, continuously exploring new materials and applications that can help our clients achieve their goals. By combining cutting-edge materials with our expertise in design and manufacturing, we're helping to create products that are stronger, lighter, more efficient, and more sustainable than ever before.</p>
       `,
     },
     "quality-control-in-precision-manufacturing": {
@@ -163,7 +163,7 @@ export default async function BlogPostPage({ params }: { params: { slug: string 
       image: "https://images.pexels.com/photos/3862130/pexels-photo-3862130.jpeg",
       content: `
         <h2>The Critical Role of Quality Control in Modern Manufacturing</h2>
-        <p>In precision manufacturing, quality isn't just a goal—it's a fundamental requirement. At White Rock Foundry, we've developed comprehensive quality control systems that ensure excellence at every stage of the manufacturing process, from initial design through final inspection and delivery.</p>
+        <p>In precision manufacturing, quality isn't just a goal—it's a fundamental requirement. At Verdantlam, we've developed comprehensive quality control systems that ensure excellence at every stage of the manufacturing process, from initial design through final inspection and delivery.</p>
         
         <h3>1. Design for Quality</h3>
         <p>Quality control begins long before manufacturing starts. Our Design for Manufacturing (DFM) approach incorporates quality considerations from the earliest stages of product development. By analyzing designs for potential manufacturing challenges and building in features that facilitate inspection and testing, we can prevent quality issues rather than merely detecting them later. This proactive approach significantly reduces defects and rework while improving overall product reliability.</p>
@@ -190,7 +190,7 @@ export default async function BlogPostPage({ params }: { params: { slug: string 
         <p>While comprehensive quality control requires significant investment, the economics are compelling. The cost of preventing defects is invariably lower than the cost of detecting and correcting them later—and far lower than the cost of field failures. Our quality systems not only ensure customer satisfaction but also improve efficiency by reducing scrap, rework, and warranty claims.</p>
         
         <h3>Conclusion</h3>
-        <p>In precision manufacturing, quality is not an add-on or a department—it's a philosophy that permeates every aspect of the organization. At White Rock Foundry, our commitment to quality control ensures that our clients receive components and assemblies that meet or exceed their specifications, perform reliably in the field, and support their reputation for excellence. As manufacturing technologies continue to advance, we remain dedicated to evolving our quality systems to maintain the highest standards of precision and reliability in everything we produce.</p>
+        <p>In precision manufacturing, quality is not an add-on or a department—it's a philosophy that permeates every aspect of the organization. At Verdantlam, our commitment to quality control ensures that our clients receive components and assemblies that meet or exceed their specifications, perform reliably in the field, and support their reputation for excellence. As manufacturing technologies continue to advance, we remain dedicated to evolving our quality systems to maintain the highest standards of precision and reliability in everything we produce.</p>
       `,
     },
   }

@@ -6,7 +6,7 @@ export function SiteFooter() {
     <footer className="bg-white text-[#0a3b25] py-12 border-t">
       <div className="container mx-auto px-4">
         <div className="mb-8 text-center">
-          <h2 className="text-xl font-bold mb-4">White Rock Foundry</h2>
+          <h2 className="text-xl font-bold mb-4">Verdantlam</h2>
           <p className="max-w-md mx-auto text-gray-600">
             Precision engineering solutions for modern manufacturing challenges
           </p>
@@ -43,7 +43,7 @@ export function SiteFooter() {
             </Link>
           </div>
           <p className="text-gray-500 text-sm text-center">
-            © {new Date().getFullYear()} White Rock Foundry. All Rights Reserved.{" "}
+            © {new Date().getFullYear()} Verdantlam. All Rights Reserved.{" "}
             <Link href="#" className="underline">
               Licensing
             </Link>

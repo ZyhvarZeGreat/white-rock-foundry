@@ -43,7 +43,7 @@ export default function QualityAssurancePage() {
                 <div>
                   <h2 className="text-3xl font-bold mb-6 font-heading">Our Quality Commitment</h2>
                   <p className="text-gray-600 mb-4">
-                    At White Rock Foundry, we maintain rigorous quality control standards throughout our GLB manufacturing 
+                    At Verdantlam, we maintain rigorous quality control standards throughout our GLB manufacturing 
                     process. Our comprehensive quality assurance program ensures that every product meets or exceeds 
                     industry standards and customer expectations.
                   </p>

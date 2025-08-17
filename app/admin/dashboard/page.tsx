@@ -5,8 +5,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { FileText, Users, Eye, ArrowUp, ArrowDown, ImageIcon, Settings, Plus } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Admin Dashboard | White Rock Foundry",
-  description: "White Rock Foundry admin dashboard",
+  title: "Admin Dashboard | Verdantlam",
+  description: "Verdantlam admin dashboard",
 }
 
 export default function DashboardPage() {

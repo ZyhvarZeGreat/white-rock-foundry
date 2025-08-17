@@ -30,7 +30,7 @@ export default function PrecisionCastingPage() {
             <div>
               <h2 className="text-3xl font-bold mb-6 font-heading">Precision Casting Excellence</h2>
               <p className="mb-4 text-gray-700">
-                White Rock Foundry specializes in advanced precision casting techniques that deliver complex metal
+                Verdantlam specializes in advanced precision casting techniques that deliver complex metal
                 components with exceptional dimensional accuracy, superior surface finish, and excellent mechanical
                 properties.
               </p>
@@ -309,7 +309,7 @@ export default function PrecisionCastingPage() {
             <div className="order-2 md:order-1">
               <h2 className="text-3xl font-bold mb-6 font-heading">Quality Assurance</h2>
               <p className="mb-4 text-gray-700">
-                At White Rock Foundry, quality is built into every step of our casting process. Our comprehensive
+                At Verdantlam, quality is built into every step of our casting process. Our comprehensive
                 quality control system ensures that every component meets or exceeds your specifications.
               </p>
               <p className="mb-6 text-gray-700">Our quality assurance processes include:</p>

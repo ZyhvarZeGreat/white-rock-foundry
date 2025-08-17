@@ -9,7 +9,7 @@ export function SiteHeader() {
       <div className="container mx-auto flex items-center justify-between py-4 px-4 md:px-6">
         <div className="flex items-center">
           <Link href="/" className="text-xl font-bold">
-            White Rock Foundry
+            Verdantlam
           </Link>
         </div>
         <DesktopNav />

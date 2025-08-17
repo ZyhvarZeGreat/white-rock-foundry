@@ -22,6 +22,7 @@ const navItems: NavItem[] = [
       { title: "GLB Columns", href: "/products/glb-columns" },
       { title: "GLB Panels", href: "/products/glb-panels" },
       { title: "GLB Decking", href: "/products/glb-decking" },
+      { title: "Glass Products", href: "/products/glass-products" },
     ],
   },
   {
