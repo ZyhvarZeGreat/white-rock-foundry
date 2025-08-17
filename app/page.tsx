@@ -3,6 +3,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import { ScrollAnimation } from "@/components/scroll-animation"
+import { VeridantAddress } from "@/components/veridant-address"
 
 export default function Home() {
   return (
@@ -366,6 +367,7 @@ export default function Home() {
               </Button>
             </Link>
           </div>
+          <VeridantAddress />
         </div>
       </section>
     </>
