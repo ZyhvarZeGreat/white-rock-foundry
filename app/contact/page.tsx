@@ -122,7 +122,7 @@ export default function ContactPage() {
                 <div className="text-center">
                   <h3 className="font-bold mb-4">Location:</h3>
                   <p className="text-gray-600">
-                    Verdantlam
+                    Verdant lam
                     <br />
                     SUSTAINABLE MANUFACTURING CENTER
                     <br />

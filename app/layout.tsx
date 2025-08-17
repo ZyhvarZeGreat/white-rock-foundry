@@ -20,7 +20,7 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 })
 
 export const metadata: Metadata = {
-  title: "Verdantlam - Precision Engineering & Manufacturing Solutions",
+  title: "Verdant lam - Precision Engineering & Manufacturing Solutions",
   description: "Innovative engineering solutions for industrial manufacturing and precision metalwork",
   generator: 'v0.dev'
 }

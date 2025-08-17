@@ -78,7 +78,7 @@ export default function SettingsPage() {
                       id="bio"
                       className="w-full min-h-[100px] rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
                       placeholder="Tell us about yourself"
-                      defaultValue="Administrator at Verdantlam with over 10 years of experience in the engineering industry."
+                      defaultValue="Administrator at Verdant lam with over 10 years of experience in the engineering industry."
                     />
                   </div>
                 </CardContent>
@@ -147,7 +147,7 @@ export default function SettingsPage() {
                 <CardContent className="space-y-4">
                   <div className="space-y-2">
                     <Label htmlFor="companyName">Company Name</Label>
-                    <Input id="companyName" defaultValue="Verdantlam" />
+                    <Input id="companyName" defaultValue="Verdant lam" />
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="website" className="flex items-center gap-2">
@@ -160,7 +160,7 @@ export default function SettingsPage() {
                     <textarea
                       id="companyDescription"
                       className="w-full min-h-[100px] rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                      defaultValue="Verdantlam is a leading engineering firm specializing in precision manufacturing and metal casting. With decades of experience, we deliver high-quality solutions for various industries."
+                      defaultValue="Verdant lam is a leading engineering firm specializing in precision manufacturing and metal casting. With decades of experience, we deliver high-quality solutions for various industries."
                     />
                   </div>
                   <div className="space-y-2">

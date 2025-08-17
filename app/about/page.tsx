@@ -23,7 +23,7 @@ export default function AboutPage() {
         <div className="container mx-auto relative z-10 py-24 md:py-36 container-padding">
           <ScrollAnimation type="fade-up">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 font-heading">
-              About <span className="text-yellow-400">Verdantlam</span>
+              About <span className="text-yellow-400">Verdant lam</span>
             </h1>
           </ScrollAnimation>
           <ScrollAnimation type="fade-up" delay={200}>
@@ -544,7 +544,7 @@ export default function AboutPage() {
                 Ready to partner with a leader in precision engineering?
               </h2>
               <p className="mb-8 text-[#0a3b25] text-lg">
-                Contact us today to discuss your manufacturing needs and discover how Verdantlam can deliver the
+                Contact us today to discuss your manufacturing needs and discover how Verdant lam can deliver the
                 precision components your projects demand.
               </p>
               <Button className="bg-[#0a3b25] hover:bg-[#0a3b25]/90 text-white font-medium rounded-sm px-8 py-3">

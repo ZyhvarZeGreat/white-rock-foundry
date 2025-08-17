@@ -12,8 +12,8 @@ const inter = Inter({
 })
 
 export const metadata = {
-  title: "Admin Dashboard - Verdantlam",
-  description: "Admin dashboard for Verdantlam website",
+  title: "Admin Dashboard - Verdant lam",
+  description: "Admin dashboard for Verdant lam website",
 }
 
 export default function AdminLayout({ children }: { children: React.ReactNode }) {

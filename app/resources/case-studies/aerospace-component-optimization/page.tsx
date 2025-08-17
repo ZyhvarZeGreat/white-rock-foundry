@@ -141,7 +141,7 @@ export default function CaseStudyDetailPage() {
             <div className="bg-white p-8 rounded-lg shadow-md">
               <h2 className="text-2xl font-bold mb-4">Client Testimonial</h2>
               <blockquote className="border-l-4 border-[#0a3b25] pl-4 italic mb-4">
-                "Verdantlam's innovative approach to our weight reduction challenge delivered results that
+                "Verdant lam's innovative approach to our weight reduction challenge delivered results that
                 exceeded our expectations. Their team's expertise in materials science and advanced manufacturing
                 techniques was evident throughout the project. The redesigned components not only met our weight targets
                 but also improved durability – a rare combination. We're now exploring additional opportunities to work

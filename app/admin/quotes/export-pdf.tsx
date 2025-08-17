@@ -46,7 +46,7 @@ export function ExportPDF({ quote, isOpen, onClose }: ExportPDFProps) {
       const lineHeight = 20
 
       // Draw company logo/header
-      page.drawText("Verdantlam", {
+      page.drawText("Verdant lam", {
         x: margin,
         y: page.getHeight() - margin,
         size: 24,
@@ -279,7 +279,7 @@ export function ExportPDF({ quote, isOpen, onClose }: ExportPDFProps) {
 
       // Footer
       const footerY = margin + 30
-      page.drawText("Verdantlam - Precision Engineering Solutions", {
+      page.drawText("Verdant lam - Precision Engineering Solutions", {
         x: margin,
         y: footerY,
         size: 8,
