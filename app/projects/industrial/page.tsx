@@ -11,7 +11,7 @@ export default function IndustrialProjectsPage() {
         <section className="relative">
           <div className="absolute inset-0">
             <Image
-              src="/glubam4.png"
+              src="/glubam4.jpg"
               alt="Industrial projects"
               width={1920}
               height={600}
@@ -47,7 +47,7 @@ export default function IndustrialProjectsPage() {
                 <div className="bg-white rounded-lg overflow-hidden shadow-sm">
                   <div className="relative h-64">
                     <Image
-                      src="/glubam3.png"
+                      src="/glubam3.jpg"
                       alt="Manufacturing plant project"
                       fill
                       className="object-cover"

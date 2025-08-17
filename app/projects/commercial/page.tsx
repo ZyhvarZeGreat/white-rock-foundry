@@ -11,7 +11,7 @@ export default function CommercialProjectsPage() {
         <section className="relative">
           <div className="absolute inset-0">
             <Image
-              src="/glubam6.png"
+              src="/glubam4.jpg"
               alt="Commercial projects"
               width={1920}
               height={600}
@@ -47,7 +47,7 @@ export default function CommercialProjectsPage() {
                 <div className="bg-white rounded-lg overflow-hidden shadow-sm">
                   <div className="relative h-64">
                     <Image
-                      src="/glubam1.png"
+                      src="/glubam1.jpg"
                       alt="Office building project"
                       fill
                       className="object-cover"
@@ -97,7 +97,7 @@ export default function CommercialProjectsPage() {
                 <div className="bg-white rounded-lg overflow-hidden shadow-sm">
                   <div className="relative h-64">
                     <Image
-                      src="/glubam3.png"
+                      src="/glubam3.jpg"
                       alt="Hotel project"
                       fill
                       className="object-cover"

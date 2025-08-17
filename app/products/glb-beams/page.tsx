@@ -37,12 +37,12 @@ const applications = [
   {
     title: "Structural Framing",
     description: "Primary load-bearing elements in buildings and structures",
-    image: "/glubam8.png"
+    image: "/glubam1.jpg"
   },
   {
     title: "Floor Systems",
     description: "Support beams for floor joists and decking",
-    image: "/glubam7.png"
+    image: "/glubam2.jpg"
   }
 ]
 
@@ -97,7 +97,7 @@ export default function GLBBeamsPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div className="relative h-[400px] rounded-lg overflow-hidden">
                 <Image
-                  src="/glubam-beam1.png"
+                  src="/glubam3.jpg"
                   alt="GLB Beams"
                   fill
                   className="object-cover"

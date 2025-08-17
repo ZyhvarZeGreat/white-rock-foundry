@@ -37,7 +37,7 @@ const applications = [
   {
     title: "Structural Support",
     description: "Vertical load-bearing elements in buildings and structures",
-    image: "/glubam6.png"
+    image: "/glubam4.jpg"
   },
   {
     title: "Architectural Features",
@@ -107,7 +107,7 @@ export default function GLBColumnsPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div className="relative h-[400px] rounded-lg overflow-hidden">
                 <Image
-                  src="/glubam6.png"
+                  src="/glubam4.jpg"
                   alt="GLB Columns"
                   fill
                   className="object-cover"

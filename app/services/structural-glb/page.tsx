@@ -56,7 +56,7 @@ export default function StructuralGLBPage() {
               <ScrollAnimation type="fade-left">
                 <div className="relative h-[400px] rounded-lg overflow-hidden">
                   <Image
-                    src="/glubam8.png"
+                    src="/glubam4.jpg"
                     alt="GLB manufacturing process"
                     fill
                     className="object-cover"
