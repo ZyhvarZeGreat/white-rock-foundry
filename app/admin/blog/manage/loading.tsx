@@ -6,7 +6,7 @@ export default function BlogManageLoading() {
       <header className="bg-[#0a3b25] text-white">
         <div className="container mx-auto flex items-center justify-between py-4 px-4">
           <div className="flex items-center">
-            <div className="text-xl font-bold">Verdant lam</div>
+            <div className="text-xl font-bold">Verdant Lam</div>
           </div>
           <div className="flex items-center space-x-4">
             <div className="text-white">Admin Dashboard</div>

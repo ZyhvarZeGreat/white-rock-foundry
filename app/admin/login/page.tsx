@@ -5,8 +5,8 @@ import { Input } from "@/components/ui/input"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 
 export const metadata: Metadata = {
-  title: "Admin Login | Verdant lam",
-  description: "Login to the Verdant lam admin dashboard",
+  title: "Admin Login | Verdant Lam",
+  description: "Login to the Verdant Lam admin dashboard",
 }
 
 export default function AdminLoginPage() {
