@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { ScrollAnimation } from "@/components/scroll-animation";
+import Address from "@/components/address";
 
 export default function ContactPage() {
   return (
@@ -15,14 +16,32 @@ export default function ContactPage() {
         <section className="py-16">
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="relative h-full min-h-[400px]">
-                <Image
-                  src="/pexels-katebranch-28909012.jpg"
-                  alt="GLB manufacturing facility"
-                  width={600}
-                  height={600}
-                  className="w-full h-full object-cover rounded-lg"
-                />
+              <div className="space-y-8">
+                <div className="relative h-64 md:h-auto">
+                  <Image
+                    src="/pexels-katebranch-28909012.jpg"
+                    alt="GLB manufacturing facility"
+                    fill
+                    className="object-cover rounded-lg"
+                  />
+                </div>
+                <div className="bg-gray-50 p-6 rounded-lg">
+                  <h3 className="text-xl font-semibold text-gray-800 mb-4">Visit Us</h3>
+                  <div className="space-y-2">
+                    <p className="text-gray-600">We'd love to hear from you. Visit our office during business hours or get in touch using the form.</p>
+                    <div className="mt-4">
+                      <Address className="space-y-1" />
+                    </div>
+                    <div className="pt-4">
+                      <h4 className="font-medium text-gray-800 mb-2">Business Hours</h4>
+                      <ul className="text-gray-600 space-y-1">
+                        <li>Monday - Friday: 9:00 AM - 5:00 PM</li>
+                        <li>Saturday: 10:00 AM - 2:00 PM</li>
+                        <li>Sunday: Closed</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div>
                 <ScrollAnimation type="fade-up">

@@ -1,6 +1,8 @@
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { ScrollAnimation } from "@/components/scroll-animation"
+import Link from "next/link"
+import Address from "@/components/address"
 
 export default function AboutPage() {
   return (
@@ -30,8 +32,8 @@ export default function AboutPage() {
             </p>
           </ScrollAnimation>
           <ScrollAnimation type="fade-up" delay={400}>
-            <Button className="bg-yellow-400 hover:bg-yellow-500 text-black font-medium rounded-sm px-6 py-2">
-              OUR CAPABILITIES
+            <Button asChild className="bg-yellow-400 hover:bg-yellow-500 text-black font-medium rounded-sm px-6 py-2">
+              <Link href="/contact?ref=about">CONTACT US</Link>
             </Button>
           </ScrollAnimation>
         </div>
@@ -48,9 +50,12 @@ export default function AboutPage() {
                   Revolutionizing sustainable construction materials
                 </h2>
                 <p className="text-gray-600 mb-4">
-                  Verdantlam was established with a clear mission: to deliver sustainable, high-performance Glue Laminated Bamboo products that meet the growing demand for eco-friendly construction materials. Our journey began with a vision to combine ethical sourcing with innovative manufacturing processes.
+                  Founded in 2023, our journey began with a vision to transform the construction industry through innovative, eco-friendly materials. We recognized the urgent need for sustainable alternatives to traditional building materials and set out to create something revolutionary.
                 </p>
-                <p className="text-gray-600 mb-4">
+                <p className="text-gray-600">
+                  Our team of experts in material science and sustainable engineering has developed proprietary techniques to create high-performance Glue Laminated Bamboo products that don't compromise on quality or environmental responsibility.
+                </p>
+                <p className="text-gray-600">
                   We've built a state-of-the-art manufacturing facility in the UK, equipped with advanced technology for processing and fabricating GLB products. Our facility is designed to meet the highest environmental standards while maintaining exceptional quality control.
                 </p>
                 <p className="text-gray-600">

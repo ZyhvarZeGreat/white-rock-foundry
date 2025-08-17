@@ -27,7 +27,7 @@ const glassTypes = {
       "Standard": "EN 12150",
       "Color": "Clear, Tinted, or Custom"
     },
-    image: "/glubam-beam1.png"
+    image: "/glass1.jpg"
   },
   'laminated': {
     title: "Laminated Glass",
@@ -50,7 +50,7 @@ const glassTypes = {
       "Standard": "EN 14449",
       "Color": "Clear, Tinted, or Custom"
     },
-    image: "/glubam-beam2.png"
+    image: "/glass2.jpg"
   },
   'tinted': {
     title: "Tinted Glass",
@@ -73,7 +73,7 @@ const glassTypes = {
       "Light Transmission": "15% - 80%",
       "Solar Control": "Excellent"
     },
-    image: "/glubam-panel1.png"
+    image: "/glass3.jpg"
   },
   'frosted': {
     title: "Frosted Glass",
@@ -96,7 +96,7 @@ const glassTypes = {
       "Patterns": "Multiple options available",
       "Customization": "Custom designs possible"
     },
-    image: "/glubam-structural.png"
+    image: "/glass4.jpg"
   },
   'mirrored': {
     title: "Mirrored Glass",
@@ -119,7 +119,7 @@ const glassTypes = {
       "Backing": "Silver, Copper, or Aluminum",
       "Customization": "Various shapes and sizes"
     },
-    image: "/glubam-decking1.png"
+    image: "/glass5.jpg"
   },
   'smart': {
     title: "Smart Glass",
@@ -142,7 +142,7 @@ const glassTypes = {
       "Power Consumption": "4-5W/m²",
       "Lifespan": "100,000+ cycles"
     },
-    image: "/glubam-decking2.png"
+    image: "/glass6.jpg"
   }
 } as const;
 
@@ -161,6 +161,11 @@ export default async function GlassTypePage({ params }: PageProps) {
 
   // Get the glass type data with proper type assertion
   const glassType = glassTypes[params.slug as GlassType];
+  
+  // Get related products (excluding current one)
+  const relatedProducts = Object.entries(glassTypes)
+    .filter(([key]) => key !== params.slug)
+    .slice(0, 3);
 
   // If no matching glass type found, return 404
   if (!glassType) {
@@ -255,11 +260,15 @@ export default async function GlassTypePage({ params }: PageProps) {
 
                 {/* CTA Buttons */}
                 <div className="pt-4 space-y-3">
-                  <Button className="w-full bg-blue-600 hover:bg-blue-700 py-6 text-lg">
-                    Request a Quote
+                  <Button asChild className="w-full bg-[#0a3b25] hover:bg-[#0a3b25]/90 py-6 text-lg">
+                    <Link href={`/quotes?product=glass&type=${params.slug}`}>
+                      Request a Quote
+                    </Link>
                   </Button>
-                  <Button variant="outline" className="w-full py-6 text-lg">
-                    Contact Sales
+                  <Button asChild variant="outline" className="w-full py-6 text-lg">
+                    <Link href={`/contact?ref=glass-${params.slug}`}>
+                      Contact Sales
+                    </Link>
                   </Button>
                 </div>
               </div>
@@ -271,10 +280,7 @@ export default async function GlassTypePage({ params }: PageProps) {
         <div className="mt-16">
           <h2 className="text-2xl font-bold mb-8">Explore Other Glass Types</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {Object.entries(glassTypes)
-              .filter(([key]) => key !== params.slug)
-              .slice(0, 3)
-              .map(([key, product]) => (
+            {relatedProducts.map(([key, product]) => (
                 <Link key={key} href={`/products/glass-products/${key}`} className="group">
                   <div className="bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg h-full flex flex-col">
                     <div className="relative h-48 w-full">
@@ -285,16 +291,14 @@ export default async function GlassTypePage({ params }: PageProps) {
                         className="object-cover transition-transform duration-300 group-hover:scale-105"
                       />
                     </div>
-                    <div className="p-4 flex-grow">
-                      <h3 className="text-lg font-semibold mb-2 group-hover:text-blue-600 transition-colors">
+                    <div className="p-6 flex-grow">
+                      <h3 className="text-lg font-semibold text-gray-900 group-hover:text-[#0a3b25] transition-colors mb-2">
                         {product.title}
                       </h3>
-                      <p className="text-gray-600 text-sm line-clamp-2">
-                        {product.description}
-                      </p>
+                      <p className="text-gray-600">{product.description}</p>
                     </div>
                     <div className="px-4 pb-4">
-                      <span className="text-blue-600 text-sm font-medium inline-flex items-center">
+                      <span className="text-[#0a3b25] text-sm font-medium inline-flex items-center">
                         Learn more
                         <svg className="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

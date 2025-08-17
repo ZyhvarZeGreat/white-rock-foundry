@@ -46,37 +46,37 @@ const glassProducts: GlassProduct[] = [
     id: "tempered",
     title: "Tempered Glass",
     description: "Heat-treated for enhanced strength and safety",
-    image: "/glubam-beam1.png"
+    image: "/glass1.jpg"
   },
   {
     id: "laminated",
     title: "Laminated Glass",
     description: "Multiple layers bonded for safety and security",
-    image: "/glubam-beam2.png"
+    image: "/glass2.jpg"
   },
   {
     id: "tinted",
     title: "Tinted Glass",
     description: "Reduces heat and glare while maintaining visibility",
-    image: "/glubam-panel1.png"
+    image: "/glass3.jpg"
   },
   {
     id: "frosted",
     title: "Frosted Glass",
     description: "Provides privacy while allowing light transmission",
-    image: "/glubam-structural.png"
+    image: "/glass4.jpg"
   },
   {
     id: "mirrored",
     title: "Mirrored Glass",
     description: "Reflective surface for decorative and functional use",
-    image: "/glubam-decking1.png"
+    image: "/glass5.jpg"
   },
   {
     id: "smart",
     title: "Smart Glass",
     description: "Switchable privacy glass with adjustable opacity",
-    image: "/glubam-decking2.png"
+    image: "/glass6.jpg"
   }
 ].map(product => ({
   ...product,
@@ -88,25 +88,25 @@ const productFeatures = [
     id: "tempered",
     title: "Tempered Glass",
     description: "Heat-treated for enhanced strength and safety",
-    image: "/glubam-beam1.png"
+    image: "/glass1.png"
   },
   {
     id: "laminated",
     title: "Laminated Glass",
     description: "Multiple layers bonded for safety and security",
-    image: "/glubam-beam2.png"
+    image: "/glass2.jpg"
   },
   {
     id: "tinted",
     title: "Tinted Glass",
     description: "Reduces heat and glare while maintaining visibility",
-    image: "/glubam-panel1.png"
+    image: "/glass3.jpg"
   },
   {
     id: "frosted",
     title: "Frosted Glass",
     description: "Provides privacy while allowing light transmission",
-    image: "/glubam-structural.png"
+    image: "/glass4.jpg"
   }
 ]
 
@@ -297,9 +297,13 @@ export default function GlassProductsPage() {
                 how our premium glass products can enhance your space.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button className="bg-white text-blue-900 hover:bg-blue-50 font-medium rounded-sm px-8 py-3">
-                  Request a Quote
-                </Button>
+                <div className="text-center mt-12">
+                  <Button asChild className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-8 rounded-full text-lg">
+                    <Link href="/quotes?product=glass">
+                      Get a Free Quote
+                    </Link>
+                  </Button>
+                </div>
                 <Button variant="outline" className="border-white text-white hover:bg-white/10 font-medium rounded-sm px-8 py-3">
                   View Gallery
                 </Button>
