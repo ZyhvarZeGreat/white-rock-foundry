@@ -25,9 +25,13 @@ export default function Home() {
           <div className="max-w-2xl">
             <ScrollAnimation type="fade-up">
               <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 font-heading">
-                Sustainable <span className="text-yellow-400"> (GLB) GLUE LAMINATED BAMBOO </span>
+                Embracing Sustainability with
                 <br />
-                for modern construction
+                <span className="text-yellow-400">GLUE LAMINATED BAMBOO</span>
+                <span className="text-gray-500"> and</span>
+                <span className="text-yellow-400"> Ballistic Glass</span>
+                <br />
+                for Modern Construction
               </h1>
             </ScrollAnimation>
             <ScrollAnimation type="fade-up" delay={200}>
