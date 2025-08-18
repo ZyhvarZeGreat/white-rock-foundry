@@ -11,7 +11,7 @@ export default function AboutPage() {
       <section className="relative">
         <div className="absolute inset-0">
           <Image
-            src="/glubam4.png"
+            src="/glubam1.jpg"
             alt="GLB manufacturing facility"
             width={1920}
             height={600}
