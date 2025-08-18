@@ -140,7 +140,7 @@ export default function ContactPage() {
                 <div className="text-center">
                   <h3 className="font-bold mb-4">Email:</h3>
                   <p className="text-gray-600 uppercase">
-                    admin@whiterockfoundry.com
+                    services_@verdantlam.com
                   </p>
                 </div>
               </ScrollAnimation>
