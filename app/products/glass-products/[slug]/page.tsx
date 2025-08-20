@@ -57,7 +57,7 @@ const glassTypes: Record<GlassType, GlassProduct> = {
       "Weight": "40-120 kg/m²",
       "Standard": "EN 1063, UL 752"
     },
-    image: "/glass-ballistic.jpg"
+    image: "/ballistic-new2.png"
   },
   'laminated': {
     id: 'laminated',

@@ -329,7 +329,7 @@ export default function Home() {
               <div className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
                 <div className="h-48 bg-gray-100 rounded-md mb-4 overflow-hidden">
                   <Image 
-                    src="/glass-ballistic.jpg" 
+                    src="/ballistic-new2.png" 
                     alt="Ballistic Glass"
                     width={400}
                     height={300}
