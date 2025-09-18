@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   title: "Verdant Lam - Precision Engineering & Manufacturing Solutions",
   description: "Innovative engineering solutions for industrial manufacturing and precision metalwork",
   generator: 'v0.dev',
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://example.com'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://www.verdantlam.com'),
   icons: {
     icon: [
       { url: '/favicon/favicon.svg', type: 'image/svg+xml' },
