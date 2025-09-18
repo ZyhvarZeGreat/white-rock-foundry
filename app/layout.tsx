@@ -22,7 +22,21 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 export const metadata: Metadata = {
   title: "Verdant Lam - Precision Engineering & Manufacturing Solutions",
   description: "Innovative engineering solutions for industrial manufacturing and precision metalwork",
-  generator: 'v0.dev'
+  generator: 'v0.dev',
+  icons: {
+    icon: [
+      { url: '/favicon/favicon.ico', type: 'image/ico' },
+      { url: '/favicon/favicon.ico', sizes: '32x32', type: 'image/ico' },
+      { url: '/favicon/favicon.ico', sizes: '16x16', type: 'image/ico' }
+    ],
+    apple: [
+      { url: '/favicon.ico', sizes: '180x180', type: 'image/ico' }
+    ],
+    shortcut: ['/favicon.ico'],
+    other: [
+      { rel: 'mask-icon', url: '/favicon.ico', color: '#0f172a' }
+    ]
+  }
 }
 
 export default function RootLayout({
