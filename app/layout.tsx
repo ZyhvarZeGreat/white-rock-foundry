@@ -23,19 +23,40 @@ export const metadata: Metadata = {
   title: "Verdant Lam - Precision Engineering & Manufacturing Solutions",
   description: "Innovative engineering solutions for industrial manufacturing and precision metalwork",
   generator: 'v0.dev',
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://example.com'),
   icons: {
     icon: [
-      { url: '/favicon/favicon.ico', type: 'image/ico' },
-      { url: '/favicon/favicon.ico', sizes: '32x32', type: 'image/ico' },
-      { url: '/favicon/favicon.ico', sizes: '16x16', type: 'image/ico' }
+      { url: '/favicon/favicon.svg', type: 'image/svg+xml' },
+      { url: '/favicon/favicon-96x96.png', sizes: '96x96', type: 'image/png' }
     ],
     apple: [
-      { url: '/favicon.ico', sizes: '180x180', type: 'image/ico' }
+      { url: '/favicon/apple-touch-icon.png', sizes: '180x180', type: 'image/png' }
     ],
-    shortcut: ['/favicon.ico'],
+    shortcut: ['/favicon/favicon.svg'],
     other: [
-      { rel: 'mask-icon', url: '/favicon.ico', color: '#0f172a' }
+      { rel: 'mask-icon', url: '/favicon/favicon.svg', color: '#0f172a' }
     ]
+  },
+  openGraph: {
+    title: "Verdant Lam - Precision Engineering & Manufacturing Solutions",
+    description: "Innovative engineering solutions for industrial manufacturing and precision metalwork",
+    url: '/',
+    siteName: 'Verdant Lam',
+    images: [
+      {
+        url: '/glass-hero.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Verdant Lam hero image'
+      }
+    ],
+    type: 'website'
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Verdant Lam - Precision Engineering & Manufacturing Solutions',
+    description: 'Innovative engineering solutions for industrial manufacturing and precision metalwork',
+    images: ['/glass-hero.jpg']
   }
 }
 
@@ -47,6 +68,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <Script id="org-logo-jsonld" type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Organization',
+            name: 'Verdant Lam',
+            url: (process.env.NEXT_PUBLIC_SITE_URL || 'https://example.com'),
+            logo: (process.env.NEXT_PUBLIC_SITE_URL || 'https://example.com') + '/placeholder-logo.png'
+          })
+        }} />
         <Script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1931633079128460"
