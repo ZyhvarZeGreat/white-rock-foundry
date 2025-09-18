@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     siteName: 'Verdant Lam',
     images: [
       {
-        url: '/glass-hero.jpg',
+        url: '/favicon/favicon-96x96.png',
         width: 1200,
         height: 630,
         alt: 'Verdant Lam hero image'
