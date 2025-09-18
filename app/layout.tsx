@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Verdant Lam - Precision Engineering & Manufacturing Solutions',
     description: 'Innovative engineering solutions for industrial manufacturing and precision metalwork',
-    images: ['/glass-hero.jpg']
+    images: ['/favicon/favicon-96x96.png']
   }
 }
 
