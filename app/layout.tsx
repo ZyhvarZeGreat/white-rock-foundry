@@ -74,8 +74,8 @@ export default function RootLayout({
             '@context': 'https://schema.org',
             '@type': 'Organization',
             name: 'Verdant Lam',
-            url: (process.env.NEXT_PUBLIC_SITE_URL || 'https://example.com'),
-            logo: (process.env.NEXT_PUBLIC_SITE_URL || 'https://example.com') + '/placeholder-logo.png'
+            url: (process.env.NEXT_PUBLIC_SITE_URL || 'https://www.verdantlam.com'),
+            logo: (process.env.NEXT_PUBLIC_SITE_URL || 'https://www.verdantlam.com') + '/favicon/favicon-96x96.png'
           })
         }} />
         <Script
