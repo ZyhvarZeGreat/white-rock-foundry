@@ -26,17 +26,19 @@ export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://www.verdantlam.com'),
   icons: {
     icon: [
+      { url: '/favicon.ico', sizes: 'any' },
       { url: '/favicon/favicon.svg', type: 'image/svg+xml' },
       { url: '/favicon/favicon-96x96.png', sizes: '96x96', type: 'image/png' }
     ],
     apple: [
       { url: '/favicon/apple-touch-icon.png', sizes: '180x180', type: 'image/png' }
     ],
-    shortcut: ['/favicon/favicon.svg'],
+    shortcut: ['/favicon.ico'],
     other: [
       { rel: 'mask-icon', url: '/favicon/favicon.svg', color: '#0f172a' }
     ]
   },
+  manifest: '/favicon/site.webmanifest',
   openGraph: {
     title: "Verdant Lam - Precision Engineering & Manufacturing Solutions",
     description: "Innovative engineering solutions for industrial manufacturing and precision metalwork",
