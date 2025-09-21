@@ -70,6 +70,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* Additional favicon meta tags for better compatibility */}
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/favicon/favicon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png" />
+        <link rel="manifest" href="/favicon/site.webmanifest" />
+        <meta name="theme-color" content="#0f172a" />
+        
         <Script id="org-logo-jsonld" type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
